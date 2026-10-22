@@ -1,0 +1,3943 @@
+{
+ "meta": {
+  "esDemo": false,
+  "empresa": "CoMinVi",
+  "unidad": "Unidad Aranzazu",
+  "ubicacion": "Concepción del Oro, Zacatecas",
+  "zonaHoraria": "America/Mexico_City",
+  "actualizado": "20 oct 2026, 21:00",
+  "fuenteRH": {
+   "tablero": "Tablero RH Aranzazu",
+   "baseDatos": 1792541833005,
+   "sincronizado": "2026-10-21 07:32"
+  }
+ },
+ "seguridad": {
+  "fechaUltimoAccidente": "2026-01-06",
+  "recordDias": 0,
+  "ccrm": {
+   "corte": "22 oct 2026",
+   "diasAcumulados": 21,
+   "total": {
+    "dia": 168,
+    "acum": 2285,
+    "meta": 3740,
+    "plan": 2534,
+    "pctProgramado": 68
+   },
+   "niveles": [
+    {
+     "nombre": "Gerentes",
+     "dia": 6,
+     "acum": 88,
+     "meta": 144,
+     "plan": 98
+    },
+    {
+     "nombre": "Supervisores",
+     "dia": 13,
+     "acum": 313,
+     "meta": 620,
+     "plan": 420
+    },
+    {
+     "nombre": "Operadores",
+     "dia": 149,
+     "acum": 1884,
+     "meta": 2976,
+     "plan": 2016
+    }
+   ],
+   "toleranciaAmarillo": 5
+  },
+  "reglaDelDia": "",
+  "reglasDeOro": [
+   "Verificación obligatoria de ademe y macizo rocoso antes de barrenar.",
+   "Nunca te coloques bajo roca sin sostener. Primero se amacice, después se trabaja.",
+   "Bloqueo y etiquetado de energía antes de cualquier mantenimiento.",
+   "Contacto visual con el operador antes de acercarte a equipo móvil.",
+   "Si no es seguro, no se hace. Detén el trabajo y repórtalo.",
+   "Confirma la ventilación antes de entrar a un frente ciego.",
+   "Tres puntos de apoyo al subir o bajar de cualquier equipo."
+  ]
+ },
+ "resultados": {
+  "corte": "21 oct 2026",
+  "diaReporte": 21,
+  "fuente": "Reporte_Octubre_DesaProd 2026.xlsx · hoja Resumen",
+  "dia": {
+   "extraccionSecas": 3697.79,
+   "extraccionHumedas": 3892.41,
+   "planExtraccion": 3694.52,
+   "desarrollo": 25.1,
+   "planDesarrollo": 26.2,
+   "disparos": 7,
+   "disparosPlan": 10,
+   "rellenoRF": 0,
+   "rellenoCRF": 0
+  },
+  "mes": {
+   "extraccionSecas": 64911.12,
+   "extraccionHumedas": 68327.49,
+   "planExtraccion": 76367.52,
+   "desarrollo": 458.1,
+   "planDesarrollo": 533.4,
+   "rellenoRF": 135,
+   "rellenoCRF": 0
+  }
+ },
+ "personal": [
+  {
+   "id": 1,
+   "nombre": "Gonzalez Yruz Victor Manuel",
+   "puesto": "Ayudante de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-10",
+   "ingreso": "2019-09-27",
+   "foto": ""
+  },
+  {
+   "id": 2,
+   "nombre": "Moreno Hernandez Victor Alfonso",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-30",
+   "ingreso": "2022-03-03",
+   "foto": ""
+  },
+  {
+   "id": 3,
+   "nombre": "Medina Perez Santiago",
+   "puesto": "Operador de Tijera",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-25",
+   "ingreso": "2020-10-14",
+   "foto": ""
+  },
+  {
+   "id": 4,
+   "nombre": "Gomez Lopez Sergio",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-05",
+   "ingreso": "2011-11-25",
+   "foto": ""
+  },
+  {
+   "id": 5,
+   "nombre": "Hernandez Oliva Luis Antonio",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-19",
+   "ingreso": "2022-01-23",
+   "foto": ""
+  },
+  {
+   "id": 6,
+   "nombre": "Ayala Perez Jose Armando",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-06",
+   "ingreso": "2020-07-03",
+   "foto": ""
+  },
+  {
+   "id": 8,
+   "nombre": "Mireles Candia Jose Juan",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-08",
+   "ingreso": "2024-01-05",
+   "foto": ""
+  },
+  {
+   "id": 9,
+   "nombre": "Beltran Castillo Jovanny",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-30",
+   "ingreso": "2024-09-18",
+   "foto": ""
+  },
+  {
+   "id": 10,
+   "nombre": "Arreola Salas Jose Ivan",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-11",
+   "ingreso": "2021-04-30",
+   "foto": ""
+  },
+  {
+   "id": 11,
+   "nombre": "Moran Rios Jose de Jesus",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-18",
+   "ingreso": "2021-07-23",
+   "foto": ""
+  },
+  {
+   "id": 12,
+   "nombre": "Mendez Zamacona Juan Eduardo",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-06",
+   "ingreso": "2012-03-22",
+   "foto": ""
+  },
+  {
+   "id": 13,
+   "nombre": "Hernandez Ayala Edgar Rafael",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-22",
+   "ingreso": "2018-07-31",
+   "foto": ""
+  },
+  {
+   "id": 14,
+   "nombre": "Sanchez Labra Jaime",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-01",
+   "ingreso": "2022-03-18",
+   "foto": ""
+  },
+  {
+   "id": 15,
+   "nombre": "Valtierra Murrieta Carlos Rene",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-25",
+   "ingreso": "2024-05-22",
+   "foto": ""
+  },
+  {
+   "id": 16,
+   "nombre": "Sanchez Sandoval Benito",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-24",
+   "ingreso": "2025-04-14",
+   "foto": ""
+  },
+  {
+   "id": 17,
+   "nombre": "Lozano Pizarro Jesus Jose",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-05",
+   "ingreso": "2016-09-10",
+   "foto": ""
+  },
+  {
+   "id": 18,
+   "nombre": "Rocamontes Melchor Leonardo Daniel",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-22",
+   "ingreso": "2012-11-05",
+   "foto": ""
+  },
+  {
+   "id": 19,
+   "nombre": "Mozqueda Hernandez Jose Alfredo",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-31",
+   "ingreso": "2017-05-08",
+   "foto": ""
+  },
+  {
+   "id": 20,
+   "nombre": "Gutierrez Aguilera Victor Manuel",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-18",
+   "ingreso": "2018-10-03",
+   "foto": ""
+  },
+  {
+   "id": 21,
+   "nombre": "Ramirez Hernandez Santos Efren",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-19",
+   "ingreso": "2019-09-12",
+   "foto": ""
+  },
+  {
+   "id": 22,
+   "nombre": "Aparicio Rodriguez Agustin",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-10",
+   "ingreso": "2018-06-21",
+   "foto": ""
+  },
+  {
+   "id": 23,
+   "nombre": "Ibarra Salas Jose Joaquin",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-15",
+   "ingreso": "2024-05-22",
+   "foto": ""
+  },
+  {
+   "id": 25,
+   "nombre": "Alcocer Garcia Jose Roberto",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-01",
+   "ingreso": "2022-09-24",
+   "foto": ""
+  },
+  {
+   "id": 26,
+   "nombre": "Galaviz Regalado Nicolas Roberto",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-06",
+   "ingreso": "2025-02-07",
+   "foto": ""
+  },
+  {
+   "id": 27,
+   "nombre": "Ramirez Ramirez Irving Ivan",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-28",
+   "ingreso": "2016-11-12",
+   "foto": ""
+  },
+  {
+   "id": 28,
+   "nombre": "Rojas Rodriguez Juan Pablo",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-31",
+   "ingreso": "2016-04-30",
+   "foto": ""
+  },
+  {
+   "id": 29,
+   "nombre": "Mejia Paz Alfredo",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-03",
+   "ingreso": "2016-07-09",
+   "foto": ""
+  },
+  {
+   "id": 30,
+   "nombre": "Guzman Ortega Jesus",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-19",
+   "ingreso": "2019-02-06",
+   "foto": ""
+  },
+  {
+   "id": 31,
+   "nombre": "Vazquez Salas Juan Carlos",
+   "puesto": "Ayudante de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-20",
+   "ingreso": "2016-08-06",
+   "foto": ""
+  },
+  {
+   "id": 32,
+   "nombre": "Tarango Ortiz Luis Enrique",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-15",
+   "ingreso": "2019-08-16",
+   "foto": ""
+  },
+  {
+   "id": 34,
+   "nombre": "Escobedo Ramirez Pablo Desiderio",
+   "puesto": "Operador de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-18",
+   "ingreso": "2024-02-23",
+   "foto": ""
+  },
+  {
+   "id": 35,
+   "nombre": "Hernandez Teran Ramiro",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-11",
+   "ingreso": "2017-01-26",
+   "foto": ""
+  },
+  {
+   "id": 36,
+   "nombre": "Candelas Esquivel Francisco Javier",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-04",
+   "ingreso": "2017-02-13",
+   "foto": ""
+  },
+  {
+   "id": 37,
+   "nombre": "Carrizales Rivas Rodrigo",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-13",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 39,
+   "nombre": "Trejo Lugo Omar Fabian",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-16",
+   "ingreso": "2022-05-05",
+   "foto": ""
+  },
+  {
+   "id": 40,
+   "nombre": "Alday Miranda Jose Miguel",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-09",
+   "ingreso": "2017-09-01",
+   "foto": ""
+  },
+  {
+   "id": 41,
+   "nombre": "Hernandez Vazquez Jesus Domingo",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-28",
+   "ingreso": "2023-02-09",
+   "foto": ""
+  },
+  {
+   "id": 42,
+   "nombre": "Gutierrez Molina Leopoldo",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-15",
+   "ingreso": "2020-08-17",
+   "foto": ""
+  },
+  {
+   "id": 44,
+   "nombre": "Rodriguez Mendoza Agustin",
+   "puesto": "Oficial de Inyeccion",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-11",
+   "ingreso": "2018-05-23",
+   "foto": ""
+  },
+  {
+   "id": 45,
+   "nombre": "Villeda Villeda Eutiquio",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-07",
+   "ingreso": "2018-06-03",
+   "foto": ""
+  },
+  {
+   "id": 46,
+   "nombre": "Alvarado Gonzalez Martin",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-11",
+   "ingreso": "2019-05-22",
+   "foto": ""
+  },
+  {
+   "id": 47,
+   "nombre": "Pacheco Villapudua Jose Juan",
+   "puesto": "Ayudante de Voladuras Bl",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-19",
+   "ingreso": "2018-06-21",
+   "foto": ""
+  },
+  {
+   "id": 48,
+   "nombre": "Calva Silva Cesar Eduardo",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-19",
+   "ingreso": "2022-09-29",
+   "foto": ""
+  },
+  {
+   "id": 51,
+   "nombre": "Murillo Bonilla Jose Alfredo",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-18",
+   "ingreso": "2018-07-22",
+   "foto": ""
+  },
+  {
+   "id": 52,
+   "nombre": "Raudales Iñiguez Josue",
+   "puesto": "Soldador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-20",
+   "ingreso": "2019-01-23",
+   "foto": ""
+  },
+  {
+   "id": 53,
+   "nombre": "Zavala Gaytan Jose Ricardo",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-03",
+   "ingreso": "2018-07-29",
+   "foto": ""
+  },
+  {
+   "id": 54,
+   "nombre": "Mendoza Ordaz Roberto",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "04-09",
+   "ingreso": "2025-11-05",
+   "foto": ""
+  },
+  {
+   "id": 55,
+   "nombre": "Rodriguez Dueñas Francisco Javier",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-01",
+   "ingreso": "2019-09-13",
+   "foto": ""
+  },
+  {
+   "id": 56,
+   "nombre": "Segovia de la Torre Leobardo",
+   "puesto": "Ayudante de Voladuras Bl",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-13",
+   "ingreso": "2025-09-10",
+   "foto": ""
+  },
+  {
+   "id": 57,
+   "nombre": "Herrera Reyes Noe Ernesto",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-04",
+   "ingreso": "2023-01-06",
+   "foto": ""
+  },
+  {
+   "id": 58,
+   "nombre": "Cantero Rodriguez Edgar Erik",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-09",
+   "ingreso": "2026-02-13",
+   "foto": ""
+  },
+  {
+   "id": 59,
+   "nombre": "Lopez Ruiz Jesus",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-16",
+   "ingreso": "2018-08-26",
+   "foto": ""
+  },
+  {
+   "id": 60,
+   "nombre": "Alcantar Flores Marco Antonio",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-16",
+   "ingreso": "2018-08-26",
+   "foto": ""
+  },
+  {
+   "id": 61,
+   "nombre": "Camacho Cruz Juan Carlos",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-12",
+   "ingreso": "2018-08-26",
+   "foto": ""
+  },
+  {
+   "id": 62,
+   "nombre": "Cepeda Lumbreras Juan Alberto",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-17",
+   "ingreso": "2018-08-26",
+   "foto": ""
+  },
+  {
+   "id": 63,
+   "nombre": "Dimas Anguiano Alejandro",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-24",
+   "ingreso": "2018-08-28",
+   "foto": ""
+  },
+  {
+   "id": 64,
+   "nombre": "Pasillas Flores Jose Carlos",
+   "puesto": "Ayudante de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-14",
+   "ingreso": "2018-09-11",
+   "foto": ""
+  },
+  {
+   "id": 65,
+   "nombre": "Martinez Rodriguez Bulmaro",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-05",
+   "ingreso": "2018-09-30",
+   "foto": ""
+  },
+  {
+   "id": 66,
+   "nombre": "Alvarez Esquivel Martha Delia",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "01-10",
+   "ingreso": "2018-10-28",
+   "foto": ""
+  },
+  {
+   "id": 68,
+   "nombre": "Molina Mancinas Oscar Alberto",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-06",
+   "ingreso": "2018-11-11",
+   "foto": ""
+  },
+  {
+   "id": 69,
+   "nombre": "Avila Heredia Leobardo",
+   "puesto": "Operador de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-18",
+   "ingreso": "2023-09-13",
+   "foto": ""
+  },
+  {
+   "id": 70,
+   "nombre": "Beltran Rodriguez Ruben",
+   "puesto": "Operador de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-26",
+   "ingreso": "2018-11-11",
+   "foto": ""
+  },
+  {
+   "id": 73,
+   "nombre": "Gonzalez Garcia Epigmenio",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-17",
+   "ingreso": "2019-03-29",
+   "foto": ""
+  },
+  {
+   "id": 74,
+   "nombre": "Sabines Pascual Hugolino",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-10",
+   "ingreso": "2019-04-16",
+   "foto": ""
+  },
+  {
+   "id": 75,
+   "nombre": "Martinez Lopez Jose Luis",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-28",
+   "ingreso": "2019-04-25",
+   "foto": ""
+  },
+  {
+   "id": 76,
+   "nombre": "Cabrera Ortiz Jose Alejandro",
+   "puesto": "Ayudante de Voladuras",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-17",
+   "ingreso": "2025-05-02",
+   "foto": ""
+  },
+  {
+   "id": 77,
+   "nombre": "Carcamo Rosales Rito Reyes",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-16",
+   "ingreso": "2023-02-09",
+   "foto": ""
+  },
+  {
+   "id": 78,
+   "nombre": "Aleman Vazquez Francisco Azael",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-27",
+   "ingreso": "2021-11-11",
+   "foto": ""
+  },
+  {
+   "id": 79,
+   "nombre": "Gamez Quiroz Alejandro",
+   "puesto": "Ayudante de Polvorero",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-24",
+   "ingreso": "2019-06-07",
+   "foto": ""
+  },
+  {
+   "id": 80,
+   "nombre": "Luna de la Rosa Irene",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "04-09",
+   "ingreso": "2024-02-19",
+   "foto": ""
+  },
+  {
+   "id": 81,
+   "nombre": "Granados Leon Felix Aaron",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-25",
+   "ingreso": "2022-01-05",
+   "foto": ""
+  },
+  {
+   "id": 82,
+   "nombre": "Rodriguez Ernesto",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-03",
+   "ingreso": "2019-09-27",
+   "foto": ""
+  },
+  {
+   "id": 83,
+   "nombre": "Martinez Lucio Angel",
+   "puesto": "Ayudante de Polvorero",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-11",
+   "ingreso": "2019-09-27",
+   "foto": ""
+  },
+  {
+   "id": 84,
+   "nombre": "Valdez Barcenas Miguel Eduardo",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-15",
+   "ingreso": "2019-09-27",
+   "foto": ""
+  },
+  {
+   "id": 85,
+   "nombre": "Salas Rascon Jorge",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-01",
+   "ingreso": "2019-10-25",
+   "foto": ""
+  },
+  {
+   "id": 86,
+   "nombre": "Favela Gomez Enrique",
+   "puesto": "Mecanico de Camionetas",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-30",
+   "ingreso": "2019-11-22",
+   "foto": ""
+  },
+  {
+   "id": 87,
+   "nombre": "Lujan Garcia Francisco Javier",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-19",
+   "ingreso": "2019-11-22",
+   "foto": ""
+  },
+  {
+   "id": 88,
+   "nombre": "Montelongo Macias Ramiro",
+   "puesto": "Chofer de Personal",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "06-10",
+   "ingreso": "2020-01-17",
+   "foto": ""
+  },
+  {
+   "id": 89,
+   "nombre": "Pinela Sosa Luis Javier",
+   "puesto": "Oficial de Inyeccion",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-16",
+   "ingreso": "2020-01-24",
+   "foto": ""
+  },
+  {
+   "id": 90,
+   "nombre": "Lira Camacho Hernan",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-13",
+   "ingreso": "2020-03-26",
+   "foto": ""
+  },
+  {
+   "id": 92,
+   "nombre": "Garcia Lopez Cesar Jeronimo",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-26",
+   "ingreso": "2020-11-13",
+   "foto": ""
+  },
+  {
+   "id": 93,
+   "nombre": "Chavez Ibarra Jesus Manuel",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-12",
+   "ingreso": "2020-08-16",
+   "foto": ""
+  },
+  {
+   "id": 94,
+   "nombre": "Orduño Arguelles Pablo",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-30",
+   "ingreso": "2025-09-10",
+   "foto": ""
+  },
+  {
+   "id": 95,
+   "nombre": "Delgado Iglesas Oscar",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-15",
+   "ingreso": "2021-09-01",
+   "foto": ""
+  },
+  {
+   "id": 96,
+   "nombre": "Uresti Perez Maria Victoria",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "12-23",
+   "ingreso": "2020-09-19",
+   "foto": ""
+  },
+  {
+   "id": 97,
+   "nombre": "Laredo Zamora Jose de Jesus",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-29",
+   "ingreso": "2020-10-14",
+   "foto": ""
+  },
+  {
+   "id": 98,
+   "nombre": "Hernandez Trejo Eduardo",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-04",
+   "ingreso": "2020-10-14",
+   "foto": ""
+  },
+  {
+   "id": 99,
+   "nombre": "Luna Barraza Jose Maria",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-24",
+   "ingreso": "2020-10-31",
+   "foto": ""
+  },
+  {
+   "id": 100,
+   "nombre": "Escareño Villagrana Jose Manuel",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-01",
+   "ingreso": "2025-10-03",
+   "foto": ""
+  },
+  {
+   "id": 101,
+   "nombre": "Valdez Borrego J Juan",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-12",
+   "ingreso": "2020-11-06",
+   "foto": ""
+  },
+  {
+   "id": 102,
+   "nombre": "Saucedo Hernandez Christian",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-31",
+   "ingreso": "2020-11-20",
+   "foto": ""
+  },
+  {
+   "id": 103,
+   "nombre": "Aguilar Zavala Jose Luis",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-19",
+   "ingreso": "2020-11-22",
+   "foto": ""
+  },
+  {
+   "id": 104,
+   "nombre": "Gutierrez Castañeda Carlos",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-18",
+   "ingreso": "2021-01-14",
+   "foto": ""
+  },
+  {
+   "id": 105,
+   "nombre": "Verdin Arango Fortino",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-27",
+   "ingreso": "2024-12-13",
+   "foto": ""
+  },
+  {
+   "id": 106,
+   "nombre": "Lopez Campos Javier Jonathan",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-21",
+   "ingreso": "2021-02-26",
+   "foto": ""
+  },
+  {
+   "id": 107,
+   "nombre": "Hernandez Garcia Emilio",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "",
+   "ingreso": "2021-03-26",
+   "foto": ""
+  },
+  {
+   "id": 108,
+   "nombre": "Lara Gomez Juan",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-24",
+   "ingreso": "2021-04-22",
+   "foto": ""
+  },
+  {
+   "id": 109,
+   "nombre": "De Lira Amiz Eduardo",
+   "puesto": "Ayudante de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-03",
+   "ingreso": "2021-04-30",
+   "foto": ""
+  },
+  {
+   "id": 110,
+   "nombre": "Contreras Lozano Edgar",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-18",
+   "ingreso": "2021-11-15",
+   "foto": ""
+  },
+  {
+   "id": 111,
+   "nombre": "Rodriguez Lopez Jose Antonio",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-05",
+   "ingreso": "2021-05-13",
+   "foto": ""
+  },
+  {
+   "id": 112,
+   "nombre": "Salas Rodriguez Armando",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-26",
+   "ingreso": "2021-07-26",
+   "foto": ""
+  },
+  {
+   "id": 114,
+   "nombre": "Garza Rivera Aram Enaim",
+   "puesto": "Ayudante de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-15",
+   "ingreso": "2021-08-02",
+   "foto": ""
+  },
+  {
+   "id": 115,
+   "nombre": "Cervantes Nuñez Otoniel Ricardo",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-05",
+   "ingreso": "2024-09-19",
+   "foto": ""
+  },
+  {
+   "id": 116,
+   "nombre": "Garcia Fragoso Jesus Manuel",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-11",
+   "ingreso": "2021-08-02",
+   "foto": ""
+  },
+  {
+   "id": 117,
+   "nombre": "Davila Vazquez Juan Manuel",
+   "puesto": "Ayudante de Topografo",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-24",
+   "ingreso": "2021-08-06",
+   "foto": ""
+  },
+  {
+   "id": 118,
+   "nombre": "Ortiz Gonzalez Ruben",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-30",
+   "ingreso": "2021-09-15",
+   "foto": ""
+  },
+  {
+   "id": 119,
+   "nombre": "Gonzalez Garcia Adrian Micael",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-09",
+   "ingreso": "2021-09-15",
+   "foto": ""
+  },
+  {
+   "id": 120,
+   "nombre": "Rivera Castro Ivan Armando",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-05",
+   "ingreso": "2025-09-23",
+   "foto": ""
+  },
+  {
+   "id": 121,
+   "nombre": "Saucedo Hernandez Brayan Guadalupe",
+   "puesto": "Ayudante de Inyeccion",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-16",
+   "ingreso": "2024-10-02",
+   "foto": ""
+  },
+  {
+   "id": 122,
+   "nombre": "Garcia Requenes Alfredo",
+   "puesto": "Ayudante General",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-17",
+   "ingreso": "2026-04-24",
+   "foto": ""
+  },
+  {
+   "id": 123,
+   "nombre": "Hernandez Villarreal Oscar Yazmany",
+   "puesto": "Ayudante de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-15",
+   "ingreso": "2021-10-14",
+   "foto": ""
+  },
+  {
+   "id": 124,
+   "nombre": "Jimenez Rodriguez Rigoberto Guadalupe",
+   "puesto": "Oficial de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-16",
+   "ingreso": "2021-11-11",
+   "foto": ""
+  },
+  {
+   "id": 125,
+   "nombre": "Garcia Chavez Alberto Adolfo",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "01-02",
+   "ingreso": "2021-11-11",
+   "foto": ""
+  },
+  {
+   "id": 126,
+   "nombre": "Hernandez Escobedo Jesus Manuel",
+   "puesto": "Ayudante de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-06",
+   "ingreso": "2021-11-11",
+   "foto": ""
+  },
+  {
+   "id": 127,
+   "nombre": "Martinez Reyes Luis Angel",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-10",
+   "ingreso": "2021-11-11",
+   "foto": ""
+  },
+  {
+   "id": 128,
+   "nombre": "Sarmiento Loza Jose de Jesus",
+   "puesto": "Oficial de Inyeccion",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-02",
+   "ingreso": "2021-10-28",
+   "foto": ""
+  },
+  {
+   "id": 129,
+   "nombre": "Torres Estrada Noel Alberto",
+   "puesto": "Ayudante de Voladuras Bl",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-21",
+   "ingreso": "2021-10-28",
+   "foto": ""
+  },
+  {
+   "id": 130,
+   "nombre": "De Alba de Anda Guillermo",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "01-21",
+   "ingreso": "2026-02-27",
+   "foto": ""
+  },
+  {
+   "id": 131,
+   "nombre": "Guerrero Martinez Jaime Armando",
+   "puesto": "Supervisor de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "10-12",
+   "ingreso": "2021-11-01",
+   "foto": ""
+  },
+  {
+   "id": 132,
+   "nombre": "Bernal de Jesus Yovani",
+   "puesto": "Albañil",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "12-26",
+   "ingreso": "2021-11-10",
+   "foto": ""
+  },
+  {
+   "id": 133,
+   "nombre": "Alvarez Gonzalez Dagoberto",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-14",
+   "ingreso": "2025-01-24",
+   "foto": ""
+  },
+  {
+   "id": 134,
+   "nombre": "Trujillo Franco Yeison",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-07",
+   "ingreso": "2022-01-06",
+   "foto": ""
+  },
+  {
+   "id": 135,
+   "nombre": "Gomez Vazquez Oscar",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-11",
+   "ingreso": "2022-01-23",
+   "foto": ""
+  },
+  {
+   "id": 136,
+   "nombre": "Arellano Castro Martin Eduardo",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "11-21",
+   "ingreso": "2022-01-27",
+   "foto": ""
+  },
+  {
+   "id": 138,
+   "nombre": "Castañeda Maldonado Jesus Ignacio",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "01-07",
+   "ingreso": "2022-03-03",
+   "foto": ""
+  },
+  {
+   "id": 139,
+   "nombre": "Torres Anguiano Miguel Angel",
+   "puesto": "Mecanico de Retro",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-23",
+   "ingreso": "2022-04-07",
+   "foto": ""
+  },
+  {
+   "id": 140,
+   "nombre": "Colunga Jaramillo Mario Gerardo",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-16",
+   "ingreso": "2022-04-20",
+   "foto": ""
+  },
+  {
+   "id": 141,
+   "nombre": "Garcia Mendoza Manuel",
+   "puesto": "Ayudante de Voladuras Des",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-24",
+   "ingreso": "2022-04-25",
+   "foto": ""
+  },
+  {
+   "id": 142,
+   "nombre": "Orenday Garcia Jorge Alberto",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-23",
+   "ingreso": "2022-05-12",
+   "foto": ""
+  },
+  {
+   "id": 143,
+   "nombre": "Camarillo Ramirez Carlos Uriel",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-22",
+   "ingreso": "2022-05-26",
+   "foto": ""
+  },
+  {
+   "id": 144,
+   "nombre": "Celestino Patiño Jose Angel",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-30",
+   "ingreso": "2022-05-25",
+   "foto": ""
+  },
+  {
+   "id": 145,
+   "nombre": "Ruiz Quiroz Roberto",
+   "puesto": "Ayudante de Inyeccion",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-27",
+   "ingreso": "2022-05-25",
+   "foto": ""
+  },
+  {
+   "id": 146,
+   "nombre": "Vallejo Frias Jan Carlos",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-20",
+   "ingreso": "2022-05-25",
+   "foto": ""
+  },
+  {
+   "id": 147,
+   "nombre": "Felix Guzman Jesus Yahir",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-30",
+   "ingreso": "2022-06-16",
+   "foto": ""
+  },
+  {
+   "id": 148,
+   "nombre": "Romero Rios Cristian Darinel",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-12",
+   "ingreso": "2022-07-06",
+   "foto": ""
+  },
+  {
+   "id": 149,
+   "nombre": "Martinez Gamboa Jose",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-19",
+   "ingreso": "2022-07-14",
+   "foto": ""
+  },
+  {
+   "id": 151,
+   "nombre": "Cepeda Oranday Hector",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-01",
+   "ingreso": "2022-09-22",
+   "foto": ""
+  },
+  {
+   "id": 152,
+   "nombre": "Martinez Camarillo Juan Jose",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-25",
+   "ingreso": "2022-11-03",
+   "foto": ""
+  },
+  {
+   "id": 153,
+   "nombre": "Frias Aleman Einner Ubaldo",
+   "puesto": "Operador de Telehandler",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-21",
+   "ingreso": "2025-02-20",
+   "foto": ""
+  },
+  {
+   "id": 155,
+   "nombre": "Rodriguez Mejia Nestor Daniel",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-05",
+   "ingreso": "2024-12-11",
+   "foto": ""
+  },
+  {
+   "id": 156,
+   "nombre": "Castañeda Orocio Orlando",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-07",
+   "ingreso": "2022-10-27",
+   "foto": ""
+  },
+  {
+   "id": 157,
+   "nombre": "Rodriguez Vazquez Jose Antonio",
+   "puesto": "Operador de Tijera",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-23",
+   "ingreso": "2022-11-03",
+   "foto": ""
+  },
+  {
+   "id": 158,
+   "nombre": "Barboza Gamon Roberto Esau",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-25",
+   "ingreso": "2023-01-04",
+   "foto": ""
+  },
+  {
+   "id": 159,
+   "nombre": "Torres Mendoza Roberto",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-19",
+   "ingreso": "2024-11-14",
+   "foto": ""
+  },
+  {
+   "id": 161,
+   "nombre": "Escareño Vazquez Miguel Angel",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-19",
+   "ingreso": "2023-02-09",
+   "foto": ""
+  },
+  {
+   "id": 162,
+   "nombre": "Rodriguez Silva Cesar",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-15",
+   "ingreso": "2023-02-11",
+   "foto": ""
+  },
+  {
+   "id": 163,
+   "nombre": "Gil Alvarado Esteban Edgardo",
+   "puesto": "Oficial de Voladuras",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-07",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 164,
+   "nombre": "Colunga Ramirez Gerardo Fabian",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-14",
+   "ingreso": "2023-02-23",
+   "foto": ""
+  },
+  {
+   "id": 166,
+   "nombre": "Lozano Rodriguez Leonel",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-18",
+   "ingreso": "2023-03-08",
+   "foto": ""
+  },
+  {
+   "id": 167,
+   "nombre": "Aleman Moreno Jose Ruben",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-22",
+   "ingreso": "2023-03-31",
+   "foto": ""
+  },
+  {
+   "id": 168,
+   "nombre": "Briseño Alvarado Manuel de Jesus",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-08",
+   "ingreso": "2023-03-31",
+   "foto": ""
+  },
+  {
+   "id": 169,
+   "nombre": "Verastegui Rodriguez Juan Jesus",
+   "puesto": "Operador de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-29",
+   "ingreso": "2023-04-19",
+   "foto": ""
+  },
+  {
+   "id": 170,
+   "nombre": "Ochoa Acevedo Noe Ivan",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-14",
+   "ingreso": "2023-06-01",
+   "foto": ""
+  },
+  {
+   "id": 171,
+   "nombre": "Garcia Olivares Roberto Carlos",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-20",
+   "ingreso": "2023-06-07",
+   "foto": ""
+  },
+  {
+   "id": 172,
+   "nombre": "Garcia Torres Fermin Alejandro",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-24",
+   "ingreso": "2023-06-28",
+   "foto": ""
+  },
+  {
+   "id": 173,
+   "nombre": "Rangel Salas Luis Fernando",
+   "puesto": "Ayudante de Topografo",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-28",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 174,
+   "nombre": "Silva Garcia Alvaro",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-28",
+   "ingreso": "2023-11-21",
+   "foto": ""
+  },
+  {
+   "id": 175,
+   "nombre": "De la Rosa Jimenez Mario Alberto",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-29",
+   "ingreso": "2023-08-02",
+   "foto": ""
+  },
+  {
+   "id": 176,
+   "nombre": "Jaramillo Trejo Maribel",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "08-17",
+   "ingreso": "2023-08-09",
+   "foto": ""
+  },
+  {
+   "id": 177,
+   "nombre": "Arreguin Chia Jesus Eduardo",
+   "puesto": "Chofer de Polvorera",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-24",
+   "ingreso": "2023-08-23",
+   "foto": ""
+  },
+  {
+   "id": 178,
+   "nombre": "Mancinas Deras Javier Edil",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-10",
+   "ingreso": "2023-08-30",
+   "foto": ""
+  },
+  {
+   "id": 179,
+   "nombre": "Hernandez Perez Manuel de Jesus",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-24",
+   "ingreso": "2023-10-18",
+   "foto": ""
+  },
+  {
+   "id": 180,
+   "nombre": "Camacho Delgado Jose Carlos",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-03",
+   "ingreso": "2023-11-22",
+   "foto": ""
+  },
+  {
+   "id": 181,
+   "nombre": "Lugo de la Rosa Sergio",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "02-13",
+   "ingreso": "2026-01-08",
+   "foto": ""
+  },
+  {
+   "id": 182,
+   "nombre": "Delgado Diaz J. Natividad",
+   "puesto": "Operador de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-08",
+   "ingreso": "2024-01-24",
+   "foto": ""
+  },
+  {
+   "id": 184,
+   "nombre": "Gallegos Escobedo Ismael",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-02",
+   "ingreso": "2024-02-14",
+   "foto": ""
+  },
+  {
+   "id": 186,
+   "nombre": "Morales Gutierrez Miguel",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-21",
+   "ingreso": "2024-02-14",
+   "foto": ""
+  },
+  {
+   "id": 187,
+   "nombre": "Escobedo Lopez Pablo",
+   "puesto": "Ayudante de Voladuras",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-05",
+   "ingreso": "2024-02-19",
+   "foto": ""
+  },
+  {
+   "id": 188,
+   "nombre": "Cardenas Solis Juan Enrique",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-25",
+   "ingreso": "2024-02-19",
+   "foto": ""
+  },
+  {
+   "id": 189,
+   "nombre": "Martinez Moreno Aaron",
+   "puesto": "Mecanico de Camionetas",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-30",
+   "ingreso": "2024-02-29",
+   "foto": ""
+  },
+  {
+   "id": 190,
+   "nombre": "Garcia Rodriguez Jorge Guadalupe",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-25",
+   "ingreso": "2024-02-29",
+   "foto": ""
+  },
+  {
+   "id": 191,
+   "nombre": "Lares Lares Jorge Luis",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-29",
+   "ingreso": "2026-07-14",
+   "foto": ""
+  },
+  {
+   "id": 192,
+   "nombre": "Gandara Lopez Juan Rafael",
+   "puesto": "Mantenimiento Campamento",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "01-27",
+   "ingreso": "2024-03-13",
+   "foto": ""
+  },
+  {
+   "id": 194,
+   "nombre": "Urrutia Garcia Jorge Armando",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-24",
+   "ingreso": "2024-06-06",
+   "foto": ""
+  },
+  {
+   "id": 195,
+   "nombre": "Rivera Ortiz Juan Josafat",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-24",
+   "ingreso": "2024-06-06",
+   "foto": ""
+  },
+  {
+   "id": 196,
+   "nombre": "Chavez Vazquez Jose Alberto",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-12",
+   "ingreso": "2024-07-17",
+   "foto": ""
+  },
+  {
+   "id": 197,
+   "nombre": "Luna Montejano Ana Laura",
+   "puesto": "Limpieza",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "11-22",
+   "ingreso": "2024-07-26",
+   "foto": ""
+  },
+  {
+   "id": 198,
+   "nombre": "Medina Ontiveros Ruben",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-29",
+   "ingreso": "2025-08-12",
+   "foto": ""
+  },
+  {
+   "id": 199,
+   "nombre": "Arenas Macias Victor Hugo",
+   "puesto": "Soldador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-23",
+   "ingreso": "2024-08-14",
+   "foto": ""
+  },
+  {
+   "id": 200,
+   "nombre": "Camarillo Ramirez Christian Eduardo",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-10",
+   "ingreso": "2024-08-28",
+   "foto": ""
+  },
+  {
+   "id": 201,
+   "nombre": "Requenes Hernandez Ma Virginia",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "05-20",
+   "ingreso": "2024-09-05",
+   "foto": ""
+  },
+  {
+   "id": 202,
+   "nombre": "Juarez Serna Orlando Enrique",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-15",
+   "ingreso": "2024-10-16",
+   "foto": ""
+  },
+  {
+   "id": 203,
+   "nombre": "Torres Mendoza Andres",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-28",
+   "ingreso": "2024-10-16",
+   "foto": ""
+  },
+  {
+   "id": 204,
+   "nombre": "Gutierrez Rico Jose Gerardo",
+   "puesto": "Ayudante de Voladuras",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-10",
+   "ingreso": "2024-10-29",
+   "foto": ""
+  },
+  {
+   "id": 205,
+   "nombre": "Acevedo Samaniego Eduardo",
+   "puesto": "Ayudante Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-10",
+   "ingreso": "2024-10-31",
+   "foto": ""
+  },
+  {
+   "id": 206,
+   "nombre": "Ibarra Cano Josthyn Renato",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-13",
+   "ingreso": "2024-10-31",
+   "foto": ""
+  },
+  {
+   "id": 208,
+   "nombre": "Pinales Ubario Jesus Alfredo",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-25",
+   "ingreso": "2024-11-14",
+   "foto": ""
+  },
+  {
+   "id": 209,
+   "nombre": "Perez Dominguez Rodolfo",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-28",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 210,
+   "nombre": "Cepeda Coronado Ivan",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-24",
+   "ingreso": "2024-12-13",
+   "foto": ""
+  },
+  {
+   "id": 211,
+   "nombre": "Nuñez de la Rosa Juan Gregorio",
+   "puesto": "Ayudante Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-21",
+   "ingreso": "2024-12-13",
+   "foto": ""
+  },
+  {
+   "id": 212,
+   "nombre": "Aguilar Lopez Francisco",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-02",
+   "ingreso": "2025-01-09",
+   "foto": ""
+  },
+  {
+   "id": 213,
+   "nombre": "Resendiz Ramirez Jacinto",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-11",
+   "ingreso": "2025-01-24",
+   "foto": ""
+  },
+  {
+   "id": 214,
+   "nombre": "Murillo Garcia Luis Enrique",
+   "puesto": "Supervisor de Medio Ambiente",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-12",
+   "ingreso": "2025-02-07",
+   "foto": ""
+  },
+  {
+   "id": 215,
+   "nombre": "Silva Martinez Eduardo Abel",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "11-11",
+   "ingreso": "2025-02-20",
+   "foto": ""
+  },
+  {
+   "id": 217,
+   "nombre": "Lazalde Cordova Diego",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-20",
+   "ingreso": "2025-03-07",
+   "foto": ""
+  },
+  {
+   "id": 218,
+   "nombre": "Badillo Lopez Mario Alberto",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-27",
+   "ingreso": "2025-03-18",
+   "foto": ""
+  },
+  {
+   "id": 219,
+   "nombre": "Lozoya Munguia Osvaldo Antonio",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-07",
+   "ingreso": "2025-03-18",
+   "foto": ""
+  },
+  {
+   "id": 220,
+   "nombre": "Mendoza Campos Manuel",
+   "puesto": "Oficial de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-31",
+   "ingreso": "2025-03-21",
+   "foto": ""
+  },
+  {
+   "id": 221,
+   "nombre": "Rodriguez Avila Francisco Javier",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-02",
+   "ingreso": "2025-03-21",
+   "foto": ""
+  },
+  {
+   "id": 222,
+   "nombre": "Esquivel Machado Cesar Omar",
+   "puesto": "Operador de Telehandler",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-14",
+   "ingreso": "2025-04-04",
+   "foto": ""
+  },
+  {
+   "id": 223,
+   "nombre": "Aguilar Ochoa Eliud Alejandro",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-19",
+   "ingreso": "2026-03-27",
+   "foto": ""
+  },
+  {
+   "id": 224,
+   "nombre": "Alvarado Ramirez Miguel",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-23",
+   "ingreso": "2025-04-18",
+   "foto": ""
+  },
+  {
+   "id": 225,
+   "nombre": "Alvarez Rojas Adolfo de Jesus",
+   "puesto": "Ayudante Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-12",
+   "ingreso": "2025-04-18",
+   "foto": ""
+  },
+  {
+   "id": 227,
+   "nombre": "Cabrera Gamez Alejandra",
+   "puesto": "Limpieza",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-17",
+   "ingreso": "2025-05-02",
+   "foto": ""
+  },
+  {
+   "id": 228,
+   "nombre": "Guevara Sauceda Jose",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-29",
+   "ingreso": "2025-05-02",
+   "foto": ""
+  },
+  {
+   "id": 230,
+   "nombre": "Hernandez Resendiz Diego",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-08",
+   "ingreso": "2025-05-16",
+   "foto": ""
+  },
+  {
+   "id": 232,
+   "nombre": "Vazquez Parra Cirilo",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-28",
+   "ingreso": "2025-05-16",
+   "foto": ""
+  },
+  {
+   "id": 233,
+   "nombre": "Alvarado Gonzalez Rodrigo",
+   "puesto": "Operador de Minicargador",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-19",
+   "ingreso": "2025-05-22",
+   "foto": ""
+  },
+  {
+   "id": 234,
+   "nombre": "Mata Velazquez Jesus",
+   "puesto": "Soldador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-21",
+   "ingreso": "2025-05-22",
+   "foto": ""
+  },
+  {
+   "id": 235,
+   "nombre": "Basoco Salcido Manuel Guerrero",
+   "puesto": "Ayudante de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-21",
+   "ingreso": "2025-06-20",
+   "foto": ""
+  },
+  {
+   "id": 236,
+   "nombre": "Alonso Caudillo Elpidio Orlando",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-20",
+   "ingreso": "2025-06-20",
+   "foto": ""
+  },
+  {
+   "id": 237,
+   "nombre": "Gamez Lopez Juan Jose",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-08",
+   "ingreso": "2025-06-20",
+   "foto": ""
+  },
+  {
+   "id": 238,
+   "nombre": "Espinoza Mayorga Raymundo",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-19",
+   "ingreso": "2025-06-20",
+   "foto": ""
+  },
+  {
+   "id": 239,
+   "nombre": "Arriaga Candia Jose Gerardo",
+   "puesto": "Ayudante Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-21",
+   "ingreso": "2025-06-20",
+   "foto": ""
+  },
+  {
+   "id": 240,
+   "nombre": "Menchaca Castro Osiel Ricardo",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "02-16",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 241,
+   "nombre": "Anguiano Ochoa Ivan Erubiel",
+   "puesto": "Soldador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-30",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 242,
+   "nombre": "Corona Casillas Cristian",
+   "puesto": "Ayudante de Minicargador",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-02",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 243,
+   "nombre": "Vera Avila Juan Carlos",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-22",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 244,
+   "nombre": "Martinez Guerrero Rosendo Alejandro",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-01",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 245,
+   "nombre": "Sauceda Lopez Jose Luis",
+   "puesto": "Ayudante de Voladuras Bl",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-05",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 246,
+   "nombre": "Larguero Quezada Jesus Fidel",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-03",
+   "ingreso": "2025-08-01",
+   "foto": ""
+  },
+  {
+   "id": 247,
+   "nombre": "Lopez Rivas Oscar Enrique",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-29",
+   "ingreso": "2025-08-01",
+   "foto": ""
+  },
+  {
+   "id": 248,
+   "nombre": "Sanchez Francisco Javier",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-02",
+   "ingreso": "2025-08-14",
+   "foto": ""
+  },
+  {
+   "id": 249,
+   "nombre": "Flores Martinez Armando",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-04",
+   "ingreso": "2025-08-14",
+   "foto": ""
+  },
+  {
+   "id": 250,
+   "nombre": "Blanco Valenzuela Omar Alejandro",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-09",
+   "ingreso": "2025-08-29",
+   "foto": ""
+  },
+  {
+   "id": 251,
+   "nombre": "Salas Ontiveros Oscar Josue",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-24",
+   "ingreso": "2025-08-29",
+   "foto": ""
+  },
+  {
+   "id": 252,
+   "nombre": "Cabrera Escalante Benjamin",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-02",
+   "ingreso": "2025-08-29",
+   "foto": ""
+  },
+  {
+   "id": 253,
+   "nombre": "Morales Vargas Mario Gustavo",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "02-20",
+   "ingreso": "2025-08-29",
+   "foto": ""
+  },
+  {
+   "id": 254,
+   "nombre": "Gaytan de la Rosa Jose Antonio",
+   "puesto": "Operador de Tijera",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-14",
+   "ingreso": "2025-08-29",
+   "foto": ""
+  },
+  {
+   "id": 255,
+   "nombre": "Degollado Sanchez Mauricio",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-01",
+   "ingreso": "2025-09-10",
+   "foto": ""
+  },
+  {
+   "id": 256,
+   "nombre": "Puente Delgado Brayan",
+   "puesto": "Mecanico de Retro",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-06",
+   "ingreso": "2025-09-10",
+   "foto": ""
+  },
+  {
+   "id": 258,
+   "nombre": "Ayala Castro Salvador Angel",
+   "puesto": "Ayudante de Alpha",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-30",
+   "ingreso": "2025-09-23",
+   "foto": ""
+  },
+  {
+   "id": 259,
+   "nombre": "Castañeda Castro Eleuterio",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-14",
+   "ingreso": "2025-09-23",
+   "foto": ""
+  },
+  {
+   "id": 261,
+   "nombre": "Quintana Pardo Ana Isabel",
+   "puesto": "Coordinador de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "11-17",
+   "ingreso": "2025-09-29",
+   "foto": ""
+  },
+  {
+   "id": 262,
+   "nombre": "Rodriguez Torres Juan Manuel",
+   "puesto": "Operador de Pipa Agua",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-16",
+   "ingreso": "2025-10-03",
+   "foto": ""
+  },
+  {
+   "id": 263,
+   "nombre": "Aldava Diaz Fernando Tomas",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-08",
+   "ingreso": "2025-10-03",
+   "foto": ""
+  },
+  {
+   "id": 264,
+   "nombre": "Nolasco Castelan Juan Carlos",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-07",
+   "ingreso": "2025-10-03",
+   "foto": ""
+  },
+  {
+   "id": 265,
+   "nombre": "Ambriz Esparza Hector Manuel",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-08",
+   "ingreso": "2025-10-03",
+   "foto": ""
+  },
+  {
+   "id": 266,
+   "nombre": "Cabrera Gamez Juana",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "09-13",
+   "ingreso": "2025-10-16",
+   "foto": ""
+  },
+  {
+   "id": 267,
+   "nombre": "Ramirez Salas Norberto",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-06",
+   "ingreso": "2025-10-21",
+   "foto": ""
+  },
+  {
+   "id": 268,
+   "nombre": "Magno Sandate Erick Alejandro",
+   "puesto": "Ayudante General",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-31",
+   "ingreso": "2025-11-14",
+   "foto": ""
+  },
+  {
+   "id": 269,
+   "nombre": "Ferniza Hernandez Gerardo Ulises",
+   "puesto": "Ayudante de Minicargador",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-29",
+   "ingreso": "2025-12-01",
+   "foto": ""
+  },
+  {
+   "id": 270,
+   "nombre": "Eguia Ortiz Daniel David",
+   "puesto": "Chofer de Personal",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-26",
+   "ingreso": "2025-11-28",
+   "foto": ""
+  },
+  {
+   "id": 271,
+   "nombre": "Rodriguez Galvan Diego Misael",
+   "puesto": "Perforista Maquina de Pierna",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-13",
+   "ingreso": "2025-12-01",
+   "foto": ""
+  },
+  {
+   "id": 272,
+   "nombre": "Ferrel Gallegos Jose Gabino",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-23",
+   "ingreso": "2025-12-30",
+   "foto": ""
+  },
+  {
+   "id": 273,
+   "nombre": "Briones Ledezma Pedro Antonio",
+   "puesto": "Ayudante de Voladuras",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-09",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 274,
+   "nombre": "Rodriguez Melendez Benjamin de Jesus",
+   "puesto": "Ayudante de Minicargador",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-08",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 275,
+   "nombre": "Gurrola Jesus Roberto",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-02",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 276,
+   "nombre": "Mendoza Muñoz Luis Javier",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-07",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 277,
+   "nombre": "Nevarez Chaidez Francisco Javier",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-16",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 278,
+   "nombre": "Ramirez Rivera Daniel",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-29",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 279,
+   "nombre": "Sanchez Lumbreras Carmen Berenice",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "09-10",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 280,
+   "nombre": "Ortiz Melendez Janelicia",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "06-23",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 281,
+   "nombre": "Mendez Canizalez Jacinto",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-05",
+   "ingreso": "2026-01-31",
+   "foto": ""
+  },
+  {
+   "id": 283,
+   "nombre": "Torres Serna Uri Jahaziel",
+   "puesto": "Ayudante de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-15",
+   "ingreso": "2026-01-29",
+   "foto": ""
+  },
+  {
+   "id": 284,
+   "nombre": "Campa Lopez Cruz Refugio",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-03",
+   "ingreso": "2026-01-31",
+   "foto": ""
+  },
+  {
+   "id": 285,
+   "nombre": "Bernal Contreras Adan",
+   "puesto": "Operador de Payloader",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-24",
+   "ingreso": "2026-01-31",
+   "foto": ""
+  },
+  {
+   "id": 286,
+   "nombre": "Garcia Gutierrez Andres",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-22",
+   "ingreso": "2026-01-31",
+   "foto": ""
+  },
+  {
+   "id": 287,
+   "nombre": "Delgado Banda Jose Luis",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-27",
+   "ingreso": "2026-02-13",
+   "foto": ""
+  },
+  {
+   "id": 288,
+   "nombre": "Gurrola de la Torre Jorge Luis",
+   "puesto": "Soldador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-17",
+   "ingreso": "2026-02-13",
+   "foto": ""
+  },
+  {
+   "id": 289,
+   "nombre": "Quezada Polvon Flor Isela",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-28",
+   "ingreso": "2026-02-13",
+   "foto": ""
+  },
+  {
+   "id": 290,
+   "nombre": "Ortega Dominguez Myrna Magdalena",
+   "puesto": "Operador de Camion de Bajo Perfil",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-08",
+   "ingreso": "2026-02-13",
+   "foto": ""
+  },
+  {
+   "id": 291,
+   "nombre": "Monrreal Diaz Jonathan German",
+   "puesto": "Oficial de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-24",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 292,
+   "nombre": "Contreras Robledo Luis Angel",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-02",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 293,
+   "nombre": "Martinez Sandate Jose Valente",
+   "puesto": "Operador de Trompo",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-25",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 294,
+   "nombre": "Hernandez Acevedo Salma Guadalupe",
+   "puesto": "Auxiliar de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "12-16",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 295,
+   "nombre": "Chaparro Lozano Raul Alexis",
+   "puesto": "Operador de Camion de Volteo",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-28",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 296,
+   "nombre": "Alvarez Armendariz Jose Antonio",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-28",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 297,
+   "nombre": "Zavala Leyva Jorge Rene",
+   "puesto": "Operador de Retroexcavadora",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-13",
+   "ingreso": "2026-03-13",
+   "foto": ""
+  },
+  {
+   "id": 301,
+   "nombre": "Melendez Briones Leonardo Martin",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-29",
+   "ingreso": "2026-04-09",
+   "foto": ""
+  },
+  {
+   "id": 302,
+   "nombre": "Escobedo Gomez Carlos Daniel",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-27",
+   "ingreso": "2026-04-09",
+   "foto": ""
+  },
+  {
+   "id": 304,
+   "nombre": "Espinoza Rosales Jesus Maria",
+   "puesto": "Operador Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-04",
+   "ingreso": "2026-04-09",
+   "foto": ""
+  },
+  {
+   "id": 305,
+   "nombre": "Botello Andrade Ivan Alejandro",
+   "puesto": "Ayudante de Operador Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-08",
+   "ingreso": "2026-04-09",
+   "foto": ""
+  },
+  {
+   "id": 306,
+   "nombre": "Escobedo Garcia Ricardo",
+   "puesto": "Ayudante de Operador Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-25",
+   "ingreso": "2026-04-09",
+   "foto": ""
+  },
+  {
+   "id": 307,
+   "nombre": "Ortega Martinez Roberto",
+   "puesto": "Operador Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-09",
+   "ingreso": "2026-04-09",
+   "foto": ""
+  },
+  {
+   "id": 308,
+   "nombre": "Jacquez Loera Rodolfo",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "01-06",
+   "ingreso": "2026-04-23",
+   "foto": ""
+  },
+  {
+   "id": 311,
+   "nombre": "Diaz Peralta Vicente",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-28",
+   "ingreso": "2026-05-07",
+   "foto": ""
+  },
+  {
+   "id": 312,
+   "nombre": "Loya Morales Joan Alonso",
+   "puesto": "Operador de Scoop Tram",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-24",
+   "ingreso": "2026-05-07",
+   "foto": ""
+  },
+  {
+   "id": 313,
+   "nombre": "Tovias Rodriguez Mario Alberto",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-09",
+   "ingreso": "2026-05-07",
+   "foto": ""
+  },
+  {
+   "id": 314,
+   "nombre": "Delgado Carreon Gabriel",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-20",
+   "ingreso": "2026-05-07",
+   "foto": ""
+  },
+  {
+   "id": 315,
+   "nombre": "De la Fuente Ramirez Gonzalo",
+   "puesto": "Mecanico de Camiones",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-25",
+   "ingreso": "2026-05-14",
+   "foto": ""
+  },
+  {
+   "id": 316,
+   "nombre": "Garcia de la Rosa Jesus Esteban",
+   "puesto": "Ayudante de Minicargador",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-25",
+   "ingreso": "2026-06-04",
+   "foto": ""
+  },
+  {
+   "id": 317,
+   "nombre": "Guerrero Barraza Alonso",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-19",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 318,
+   "nombre": "Sandoval Torres David",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-30",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 319,
+   "nombre": "Vazquez Vazquez Manuel",
+   "puesto": "Ayudante de Simba",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-13",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 321,
+   "nombre": "De Leon Martinez Edgar Adan",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-28",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 322,
+   "nombre": "Gonzalez Diaz Ivan de Jesus",
+   "puesto": "Ayudante de Minicargador",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-18",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 323,
+   "nombre": "Aldava Diaz Martin",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-01",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 324,
+   "nombre": "Bartolo Ramirez Jesus Antonio",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-06",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 326,
+   "nombre": "Sanchez Torres Pablo Tristan",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-20",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 327,
+   "nombre": "Pereyra Burgos Jesus Alberto",
+   "puesto": "Oficial de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-18",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 328,
+   "nombre": "De la Rosa Molina Ivan",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-27",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 330,
+   "nombre": "Davila Hernandez Jose Manuel",
+   "puesto": "Ayudante General",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-30",
+   "ingreso": "2026-07-17",
+   "foto": ""
+  },
+  {
+   "id": 333,
+   "nombre": "Medero Macedo Martin",
+   "puesto": "Operador de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-29",
+   "ingreso": "2022-02-10",
+   "foto": ""
+  },
+  {
+   "id": 335,
+   "nombre": "Olmos Hurtado Alejandro de Martin",
+   "puesto": "Supervisor de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "08-20",
+   "ingreso": "2017-02-01",
+   "foto": ""
+  },
+  {
+   "id": 337,
+   "nombre": "Lamadrid Carmona Israel",
+   "puesto": "Residente",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-19",
+   "ingreso": "2014-05-01",
+   "foto": ""
+  },
+  {
+   "id": 338,
+   "nombre": "Hernandez Trejo Martin",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-30",
+   "ingreso": "2017-08-26",
+   "foto": ""
+  },
+  {
+   "id": 339,
+   "nombre": "Torreblanca Luna Carlos Eduardo",
+   "puesto": "Jefe de Recursos Humanos",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "09-10",
+   "ingreso": "2020-11-19",
+   "foto": ""
+  },
+  {
+   "id": 340,
+   "nombre": "Salas Rojas Martin Modesto",
+   "puesto": "Programador de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-15",
+   "ingreso": "2022-08-01",
+   "foto": ""
+  },
+  {
+   "id": 342,
+   "nombre": "Robles Landavazo Martin Octavio",
+   "puesto": "Capitan de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-16",
+   "ingreso": "2026-06-25",
+   "foto": ""
+  },
+  {
+   "id": 343,
+   "nombre": "Hernandez Reynoso Jesus Ernesto",
+   "puesto": "Instructor Tecnico",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "11-07",
+   "ingreso": "2020-03-27",
+   "foto": ""
+  },
+  {
+   "id": 344,
+   "nombre": "Roman Cruz Ricardo Emmanuel",
+   "puesto": "Supervisor de Acarreo",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-14",
+   "ingreso": "2016-09-25",
+   "foto": ""
+  },
+  {
+   "id": 345,
+   "nombre": "Villegas Rodriguez Melissa Itzel",
+   "puesto": "Coordinador de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "11-26",
+   "ingreso": "2018-12-16",
+   "foto": ""
+  },
+  {
+   "id": 347,
+   "nombre": "Garcia Nuñez Jose Refugio",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "07-04",
+   "ingreso": "2018-02-05",
+   "foto": ""
+  },
+  {
+   "id": 348,
+   "nombre": "Fonseca Rangel Roberto Adrian",
+   "puesto": "Instructor Tecnico",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "11-27",
+   "ingreso": "2018-03-05",
+   "foto": ""
+  },
+  {
+   "id": 349,
+   "nombre": "Ramirez Bueno Angel",
+   "puesto": "Supervisor Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-01",
+   "ingreso": "2018-05-15",
+   "foto": ""
+  },
+  {
+   "id": 351,
+   "nombre": "Bernal Montoya Jose Cruz",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-18",
+   "ingreso": "2026-02-26",
+   "foto": ""
+  },
+  {
+   "id": 352,
+   "nombre": "De la Rosa Ruiz Juan Armando",
+   "puesto": "Jefe de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-20",
+   "ingreso": "2021-08-05",
+   "foto": ""
+  },
+  {
+   "id": 353,
+   "nombre": "Vallejo Garcia Hugo",
+   "puesto": "Supervisor Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "10-16",
+   "ingreso": "2019-04-16",
+   "foto": ""
+  },
+  {
+   "id": 354,
+   "nombre": "Sanchez Rivera Nohely Danay",
+   "puesto": "Coordinador de Recursos Humanos",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "12-13",
+   "ingreso": "2022-03-03",
+   "foto": ""
+  },
+  {
+   "id": 357,
+   "nombre": "Zavala Garcia J Jesus Evaristo",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "01-04",
+   "ingreso": "2019-03-10",
+   "foto": ""
+  },
+  {
+   "id": 358,
+   "nombre": "Trejo Iracheta Jorge Armando",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-09",
+   "ingreso": "2019-03-22",
+   "foto": ""
+  },
+  {
+   "id": 359,
+   "nombre": "Odreman Lezama Freddy Rafael",
+   "puesto": "Coordinador Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-19",
+   "ingreso": "2019-07-22",
+   "foto": ""
+  },
+  {
+   "id": 360,
+   "nombre": "Rocha Vielma Rosa Velia",
+   "puesto": "Enfermera",
+   "unidad": "Seguridad",
+   "cumpleanos": "01-09",
+   "ingreso": "2020-06-08",
+   "foto": ""
+  },
+  {
+   "id": 361,
+   "nombre": "Cruz Rivera Rogelio",
+   "puesto": "Supervisor de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-20",
+   "ingreso": "2020-09-23",
+   "foto": ""
+  },
+  {
+   "id": 362,
+   "nombre": "Rodriguez Martinez Angel Refugio",
+   "puesto": "Residente",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-04",
+   "ingreso": "2026-01-09",
+   "foto": ""
+  },
+  {
+   "id": 363,
+   "nombre": "Perez Martinez Carlos Eduardo",
+   "puesto": "Supervisor Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-05",
+   "ingreso": "2021-01-13",
+   "foto": ""
+  },
+  {
+   "id": 364,
+   "nombre": "Elias Ramirez Jose de Jesus",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-26",
+   "ingreso": "2024-04-22",
+   "foto": ""
+  },
+  {
+   "id": 365,
+   "nombre": "Corral Rios Manuel Antonio",
+   "puesto": "Supervisor de Acarreo",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-10",
+   "ingreso": "2023-02-02",
+   "foto": ""
+  },
+  {
+   "id": 366,
+   "nombre": "Anguiano Lugo Rene",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-29",
+   "ingreso": "2021-10-28",
+   "foto": ""
+  },
+  {
+   "id": 367,
+   "nombre": "Letechipia Ramirez Gregorio",
+   "puesto": "Supervisor de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "04-03",
+   "ingreso": "2022-05-13",
+   "foto": ""
+  },
+  {
+   "id": 369,
+   "nombre": "Arredondo Estrada Jesus Humberto",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-25",
+   "ingreso": "2022-12-23",
+   "foto": ""
+  },
+  {
+   "id": 370,
+   "nombre": "Monreal Sanchez Emmanuel",
+   "puesto": "Supervisor de Procesos",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-14",
+   "ingreso": "2023-01-06",
+   "foto": ""
+  },
+  {
+   "id": 371,
+   "nombre": "Ovalle Galicia Juan",
+   "puesto": "Capacitador",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "12-07",
+   "ingreso": "2023-05-02",
+   "foto": ""
+  },
+  {
+   "id": 372,
+   "nombre": "Castorena Collazo Emanuel",
+   "puesto": "Almacenista",
+   "unidad": "Almacen",
+   "cumpleanos": "06-16",
+   "ingreso": "2023-09-01",
+   "foto": ""
+  },
+  {
+   "id": 373,
+   "nombre": "Sanchez Galindo Jose Manuel",
+   "puesto": "Capitan Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-10",
+   "ingreso": "2023-08-31",
+   "foto": ""
+  },
+  {
+   "id": 374,
+   "nombre": "Rincon Mendez Adrian",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-10",
+   "ingreso": "2023-11-06",
+   "foto": ""
+  },
+  {
+   "id": 375,
+   "nombre": "Alcantar Corral Jesus Armando",
+   "puesto": "Almacenista",
+   "unidad": "Almacen",
+   "cumpleanos": "05-27",
+   "ingreso": "2024-07-05",
+   "foto": ""
+  },
+  {
+   "id": 377,
+   "nombre": "Hernandez Lopez Martin Everardo",
+   "puesto": "Almacenista",
+   "unidad": "Almacen",
+   "cumpleanos": "06-26",
+   "ingreso": "2024-08-28",
+   "foto": ""
+  },
+  {
+   "id": 378,
+   "nombre": "Ramos Martinez Briseida Naomi",
+   "puesto": "Programador de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "03-14",
+   "ingreso": "2024-10-02",
+   "foto": ""
+  },
+  {
+   "id": 379,
+   "nombre": "Torres Rodriguez Yoshebel Estefany",
+   "puesto": "Auxiliar de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "05-11",
+   "ingreso": "2024-11-20",
+   "foto": ""
+  },
+  {
+   "id": 381,
+   "nombre": "Velez Chavez Karen Adanel",
+   "puesto": "Auxiliar Administrativo",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "07-15",
+   "ingreso": "2024-12-20",
+   "foto": ""
+  },
+  {
+   "id": 382,
+   "nombre": "Montejano Gonzalez Miriam Valeria",
+   "puesto": "Programador de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-17",
+   "ingreso": "2025-04-04",
+   "foto": ""
+  },
+  {
+   "id": 383,
+   "nombre": "Arias Hernandez Paola Metzere",
+   "puesto": "Auxiliar Administrativo",
+   "unidad": "Calidad",
+   "cumpleanos": "10-10",
+   "ingreso": "2025-04-18",
+   "foto": ""
+  },
+  {
+   "id": 384,
+   "nombre": "Garcia Muñoz Juan Jesus",
+   "puesto": "Almacenista",
+   "unidad": "Almacen",
+   "cumpleanos": "02-07",
+   "ingreso": "2025-05-02",
+   "foto": ""
+  },
+  {
+   "id": 385,
+   "nombre": "Colmenero Zarate Alberto",
+   "puesto": "Supervisor de Mecanica de Rocas",
+   "unidad": "Calidad",
+   "cumpleanos": "09-22",
+   "ingreso": "2026-04-23",
+   "foto": ""
+  },
+  {
+   "id": 386,
+   "nombre": "Guerra Fraga Uriel Alejandro",
+   "puesto": "Capitan de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-30",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 387,
+   "nombre": "Barrera Hernandez Elvis",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "06-14",
+   "ingreso": "2025-07-04",
+   "foto": ""
+  },
+  {
+   "id": 388,
+   "nombre": "Dimas Coronado Marco Solin",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "04-25",
+   "ingreso": "2025-08-01",
+   "foto": ""
+  },
+  {
+   "id": 389,
+   "nombre": "Garcia Mejia Jose Francisco",
+   "puesto": "Superintendente de Seguridad Industrial",
+   "unidad": "Seguridad",
+   "cumpleanos": "02-10",
+   "ingreso": "2025-08-18",
+   "foto": ""
+  },
+  {
+   "id": 390,
+   "nombre": "Dueñas Guadalupe Juan Carlos",
+   "puesto": "Supervisor de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-22",
+   "ingreso": "2025-08-14",
+   "foto": ""
+  },
+  {
+   "id": 392,
+   "nombre": "Lazarin Castañeda Gloria Alejandra",
+   "puesto": "Auxiliar de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "11-16",
+   "ingreso": "2025-10-03",
+   "foto": ""
+  },
+  {
+   "id": 393,
+   "nombre": "Martinez Villanueva Juan Nieves",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "01-20",
+   "ingreso": "2025-10-21",
+   "foto": ""
+  },
+  {
+   "id": 395,
+   "nombre": "Mendoza Marquez Jesus Antonio",
+   "puesto": "Gerente de Recursos Humanos",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "01-25",
+   "ingreso": "2026-07-16",
+   "foto": ""
+  },
+  {
+   "id": 396,
+   "nombre": "Arellano Godina Saul Alejandro",
+   "puesto": "Auxiliar de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "03-17",
+   "ingreso": "2026-03-02",
+   "foto": ""
+  },
+  {
+   "id": 397,
+   "nombre": "Muñoz Gutierrez Yan Carlos",
+   "puesto": "Supervisor de Calidad",
+   "unidad": "Calidad",
+   "cumpleanos": "07-06",
+   "ingreso": "2026-04-06",
+   "foto": ""
+  },
+  {
+   "id": 399,
+   "nombre": "Flores Morin Emilio",
+   "puesto": "Supervisor Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-14",
+   "ingreso": "2026-04-16",
+   "foto": ""
+  },
+  {
+   "id": 400,
+   "nombre": "Tiscareño Campos Mario Alberto",
+   "puesto": "Comprador",
+   "unidad": "Almacen",
+   "cumpleanos": "08-08",
+   "ingreso": "2026-04-23",
+   "foto": ""
+  },
+  {
+   "id": 401,
+   "nombre": "Osuna Rosas Juan Ricardo",
+   "puesto": "Supervisor Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-27",
+   "ingreso": "2026-04-24",
+   "foto": ""
+  },
+  {
+   "id": 402,
+   "nombre": "Neto de Oliveira Alexandro",
+   "puesto": "Gerente de Proyectos",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-26",
+   "ingreso": "2026-05-15",
+   "foto": ""
+  },
+  {
+   "id": 403,
+   "nombre": "Martinez Mendoza Claudia Jacqueline",
+   "puesto": "Medico",
+   "unidad": "Seguridad",
+   "cumpleanos": "05-19",
+   "ingreso": "2026-06-03",
+   "foto": ""
+  },
+  {
+   "id": 404,
+   "nombre": "Ceniceros Meza Angelica",
+   "puesto": "Paramedico",
+   "unidad": "Seguridad",
+   "cumpleanos": "09-22",
+   "ingreso": "2026-06-04",
+   "foto": ""
+  },
+  {
+   "id": 406,
+   "nombre": "Espinoza Galindo Mario Abiel",
+   "puesto": "Jefe de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-07",
+   "ingreso": "2026-07-03",
+   "foto": ""
+  },
+  {
+   "id": 408,
+   "nombre": "Acosta Ortega Noe Ivan",
+   "puesto": "Residente",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-21",
+   "ingreso": "2026-07-17",
+   "foto": ""
+  },
+  {
+   "id": 409,
+   "nombre": "Barcenas Gomez Raul",
+   "puesto": "Supervisor de Almacen",
+   "unidad": "Almacen",
+   "cumpleanos": "",
+   "ingreso": "2026-07-17",
+   "foto": ""
+  },
+  {
+   "id": 410,
+   "nombre": "Ibarra Valdez Cosme Damian",
+   "puesto": "Gerente de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "",
+   "ingreso": "2026-07-17",
+   "foto": ""
+  },
+  {
+   "id": 411,
+   "nombre": "Cruz Martinez Mario Alberto",
+   "puesto": "Operador Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-20",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 412,
+   "nombre": "Turrubiartes Leos Carlos Arturo",
+   "puesto": "Operador Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-22",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 413,
+   "nombre": "Aguilera Mendez Edgar Manuel",
+   "puesto": "Oficial de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-12",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 416,
+   "nombre": "Morales Moreno Oscar Guillermo",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-24",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 417,
+   "nombre": "Saenz Rosales Raul Fernando",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-20",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 418,
+   "nombre": "Rodriguez Gonzalez Daniel",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-30",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 421,
+   "nombre": "Moreno Valdez Javier",
+   "puesto": "Almacenista",
+   "unidad": "Almacen",
+   "cumpleanos": "04-12",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 422,
+   "nombre": "Garcia Samudio Adriana",
+   "puesto": "Almacenista",
+   "unidad": "Almacen",
+   "cumpleanos": "07-08",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 425,
+   "nombre": "Vidaña Meza Jose Domingo",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-04",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 426,
+   "nombre": "Rodriguez Martinez Gerardo",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "10-03",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 427,
+   "nombre": "Ochoa Hernandez Gibran",
+   "puesto": "Supervisor de Procesos",
+   "unidad": "Operaciones",
+   "cumpleanos": "04-22",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 428,
+   "nombre": "Cardenas Razo Jesus",
+   "puesto": "Tecnico Mecanica de Rocas",
+   "unidad": "Calidad",
+   "cumpleanos": "07-20",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 430,
+   "nombre": "Lopez Correa Uriel",
+   "puesto": "Soldador",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-09",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 431,
+   "nombre": "Reyna Martinez Yael Carlos",
+   "puesto": "Lampistero",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-26",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 432,
+   "nombre": "Nuñez Calderon Edith",
+   "puesto": "Herramentista",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-12",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 433,
+   "nombre": "Anguiano Garcia Perla Yajaira",
+   "puesto": "Herramentista",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-24",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 434,
+   "nombre": "Pecina Montes Brayan Javier",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-04",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 435,
+   "nombre": "Pinales Avila Eduardo Adolfo",
+   "puesto": "Operador de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-18",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 436,
+   "nombre": "Gomez Hernandez Hector Antonio",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-19",
+   "ingreso": "2026-08-14",
+   "foto": ""
+  },
+  {
+   "id": 439,
+   "nombre": "Rosales Juarez Ana Maria",
+   "puesto": "Auxiliar de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "05-30",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 440,
+   "nombre": "Hau Casanova Yerli Militza",
+   "puesto": "Lampistero",
+   "unidad": "Seguridad",
+   "cumpleanos": "04-06",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 441,
+   "nombre": "Quevedo Cordova Mauricio",
+   "puesto": "Ayudante de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "03-20",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 442,
+   "nombre": "Ortega Rosales Israel",
+   "puesto": "Ayudante de Simba",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-05",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 443,
+   "nombre": "Guerra Fraga Mariana Michell",
+   "puesto": "Programador de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-20",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 444,
+   "nombre": "Walldo Rangel Anayelli",
+   "puesto": "Topografo",
+   "unidad": "Calidad",
+   "cumpleanos": "08-15",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 445,
+   "nombre": "Bistrain Flores Leticia",
+   "puesto": "Coordinador de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "07-20",
+   "ingreso": "2026-08-27",
+   "foto": ""
+  },
+  {
+   "id": 446,
+   "nombre": "Ferrel Silva Omar de Jesus",
+   "puesto": "Mecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-25",
+   "ingreso": "2026-09-10",
+   "foto": ""
+  },
+  {
+   "id": 447,
+   "nombre": "Jaramillo Granados Luis Enrique",
+   "puesto": "Capitan de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "07-15",
+   "ingreso": "2026-09-10",
+   "foto": ""
+  },
+  {
+   "id": 448,
+   "nombre": "Almanza Salas Fernando",
+   "puesto": "Superviosr de Barrenacion Larga",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-02",
+   "ingreso": "2026-09-10",
+   "foto": ""
+  },
+  {
+   "id": 449,
+   "nombre": "Castañeda Cervantes Luis Alberto",
+   "puesto": "Supervisor de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "02-01",
+   "ingreso": "2026-09-10",
+   "foto": ""
+  },
+  {
+   "id": 450,
+   "nombre": "Rodriguez Zamora Alexis Jesus",
+   "puesto": "Supervisor de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "12-21",
+   "ingreso": "2026-09-11",
+   "foto": ""
+  },
+  {
+   "id": 451,
+   "nombre": "Mejia Rangel German",
+   "puesto": "Capitan de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-31",
+   "ingreso": "2026-09-18",
+   "foto": ""
+  },
+  {
+   "id": 452,
+   "nombre": "Rodriguez Angelino Rodrigo",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-04",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 453,
+   "nombre": "Rios Espinoza Jesus David",
+   "puesto": "Oficial de Servicios",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-01",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 454,
+   "nombre": "Pulido Gonzalez Dimas",
+   "puesto": "Electrico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "05-27",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 455,
+   "nombre": "Martinez Josec David",
+   "puesto": "Lampistero",
+   "unidad": "Seguridad",
+   "cumpleanos": "04-21",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 456,
+   "nombre": "Carrillo Barron Jose Angel",
+   "puesto": "Supervisor de Minero Continuo",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-02",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 457,
+   "nombre": "Ramirez Ramos Josue Daniel",
+   "puesto": "Tecnico de Mecánica de Rocas",
+   "unidad": "Calidad",
+   "cumpleanos": "09-12",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 458,
+   "nombre": "Baca Mendivil Sandra Yarely",
+   "puesto": "Auxiliar de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-19",
+   "ingreso": "2026-09-24",
+   "foto": ""
+  },
+  {
+   "id": 459,
+   "nombre": "Cepeda Cardona Patricia",
+   "puesto": "Limpieza",
+   "unidad": "Recursos Humanos",
+   "cumpleanos": "05-05",
+   "ingreso": "2026-10-02",
+   "foto": ""
+  },
+  {
+   "id": 460,
+   "nombre": "Romero Ruiz Paulo Arturo",
+   "puesto": "Paramedico",
+   "unidad": "Seguridad",
+   "cumpleanos": "06-12",
+   "ingreso": "2026-10-06",
+   "foto": ""
+  },
+  {
+   "id": 461,
+   "nombre": "Martinez Hernandez Juan Daniel",
+   "puesto": "Supervisor de Seguridad",
+   "unidad": "Seguridad",
+   "cumpleanos": "07-06",
+   "ingreso": "2026-10-06",
+   "foto": ""
+  },
+  {
+   "id": 462,
+   "nombre": "Esparza Hernandez Mauro Isidoro",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "06-03",
+   "ingreso": "2026-10-08",
+   "foto": ""
+  },
+  {
+   "id": 463,
+   "nombre": "Chavez Dominguez Osiris",
+   "puesto": "Ayudante de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "01-29",
+   "ingreso": "2026-10-08",
+   "foto": ""
+  },
+  {
+   "id": 464,
+   "nombre": "Ramos Martinez Sayuri Selenia",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "11-18",
+   "ingreso": "2026-10-08",
+   "foto": ""
+  },
+  {
+   "id": 465,
+   "nombre": "Ochoa Avalos Miguel Angel",
+   "puesto": "Soldador",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-02",
+   "ingreso": "2026-10-08",
+   "foto": ""
+  },
+  {
+   "id": 466,
+   "nombre": "Guevara Gaona Miguel",
+   "puesto": "Supervisor de Mantenimiento",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "08-08",
+   "ingreso": "2026-10-08",
+   "foto": ""
+  }
+ ],
+ "eventosFotos": [
+  {
+   "id": "turnooct18-0",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct181.jpg",
+   "foto": 1,
+   "fotosEvento": 7
+  },
+  {
+   "id": "turnooct18-1",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct182.jpg",
+   "foto": 2,
+   "fotosEvento": 7
+  },
+  {
+   "id": "turnooct18-2",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct183.jpg",
+   "foto": 3,
+   "fotosEvento": 7
+  },
+  {
+   "id": "turnooct18-3",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct184.jpg",
+   "foto": 4,
+   "fotosEvento": 7
+  },
+  {
+   "id": "habilidades2-0",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade8.jpg",
+   "foto": 1,
+   "fotosEvento": 14
+  },
+  {
+   "id": "habilidades2-1",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade9.jpg",
+   "foto": 2,
+   "fotosEvento": 14
+  },
+  {
+   "id": "habilidades2-2",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade10.jpg",
+   "foto": 3,
+   "fotosEvento": 14
+  },
+  {
+   "id": "habilidades2-3",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade11.jpg",
+   "foto": 4,
+   "fotosEvento": 14
+  },
+  {
+   "id": "mesrosa-0",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa1.jpg",
+   "foto": 1,
+   "fotosEvento": 10
+  },
+  {
+   "id": "mesrosa-1",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa2.jpg",
+   "foto": 2,
+   "fotosEvento": 10
+  },
+  {
+   "id": "mesrosa-2",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa3.jpg",
+   "foto": 3,
+   "fotosEvento": 10
+  },
+  {
+   "id": "mesrosa-3",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa4.jpg",
+   "foto": 4,
+   "fotosEvento": 10
+  }
+ ],
+ "avisosTicker": [
+  "¡Atención equipo! Uso obligatorio de barbiquejo en zonas de coladas.",
+  "Felicidades a la Unidad Cabrestante por superar su meta semanal de avance.",
+  "Antes de entrar a una labor revisa ventilación, ademe y desate de rocas.",
+  "RH: la entrega de despensas de octubre será el viernes 30 en el comedor, de 12:00 a 16:00.",
+  "Octubre, mes de la detección oportuna del cáncer de mama. Agenda tu revisión con Servicio Médico.",
+  "Reporta toda condición insegura a tu supervisor o en el buzón de seguridad."
+ ],
+ "clima": {
+  "lugar": "Concepción del Oro",
+  "actualizado": "2026-10-21 08:00",
+  "dias": [
+   {
+    "fecha": "2026-10-21",
+    "max": 24.8,
+    "min": 11.0,
+    "lluvia": 0
+   },
+   {
+    "fecha": "2026-10-22",
+    "max": 24.4,
+    "min": 10.6,
+    "lluvia": 0
+   },
+   {
+    "fecha": "2026-10-23",
+    "max": 22.9,
+    "min": 10.9,
+    "lluvia": 0
+   },
+   {
+    "fecha": "2026-10-24",
+    "max": 22.0,
+    "min": 10.9,
+    "lluvia": 10
+   },
+   {
+    "fecha": "2026-10-25",
+    "max": 19.4,
+    "min": 11.0,
+    "lluvia": 10
+   },
+   {
+    "fecha": "2026-10-26",
+    "max": 19.5,
+    "min": 10.6,
+    "lluvia": 15
+   },
+   {
+    "fecha": "2026-10-27",
+    "max": 18.4,
+    "min": 10.8,
+    "lluvia": 35
+   },
+   {
+    "fecha": "2026-10-28",
+    "max": 18.7,
+    "min": 11.1,
+    "lluvia": 45
+   }
+  ]
+ },
+ "cultura": [
+  {
+   "titulo": "Misión",
+   "icono": "pickaxe",
+   "texto": "Somos una empresa constructora especializada en infraestructura minera, dedicada a ofrecer **soluciones seguras, eficientes y sustentables**. Nuestro compromiso está arraigado en la excelencia operativa, la innovación tecnológica y la responsabilidad social, impulsando el crecimiento de la industria minera mientras mejoramos el bienestar de las comunidades donde operamos."
+  },
+  {
+   "titulo": "Visión",
+   "icono": "mountain",
+   "texto": "Ser reconocidos como **líderes globales en la construcción de infraestructura minera**, estableciendo nuevos estándares en seguridad, eficiencia y sustentabilidad. Buscamos transformar la industria mediante la innovación constante y contribuir al desarrollo económico y social de las regiones donde operamos, preservando el medio ambiente para las futuras generaciones."
+  },
+  {
+   "titulo": "Ética",
+   "icono": "shield",
+   "texto": "En CoMinVi, **la conducta ética es la base de una empresa confiable y sustentable**. Guiados por el Pacto Mundial de las Naciones Unidas y la Constitución Mexicana, promovemos la integridad en todos los niveles y aplicamos políticas estrictas en materia de anticorrupción, derechos humanos y conducta profesional. Nuestro objetivo es ir más allá del cumplimiento normativo y liderar con el ejemplo en la minería responsable en México."
+  }
+ ]
+}
