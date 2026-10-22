@@ -5,11 +5,11 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-22 15:23",
+  "actualizado": "2026-10-22 17:48",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1792541833005,
-   "csvh": "43b9b8857112"
+   "baseDatos": 1792693060050,
+   "csvh": "611d12add4ff"
   },
   "tema": "oct"
  },
@@ -3713,6 +3713,69 @@
    "unidad": "Mantenimiento",
    "cumpleanos": "08-08",
    "ingreso": "2026-10-08",
+   "foto": ""
+  },
+  {
+   "id": 467,
+   "nombre": "Moreno Velasco Edgar Rogelio",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-07",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 468,
+   "nombre": "Serafin Pintor Hallyer de Rene",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-04",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 469,
+   "nombre": "Muñoz Gutierrez Jose de Jesus",
+   "puesto": "Operador de Scooptram",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-10",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 470,
+   "nombre": "Garay Alvarado Brandon Joel",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-05",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 471,
+   "nombre": "Zambrano de la Torre Edgar Omar",
+   "puesto": "Topografo",
+   "unidad": "Calidad",
+   "cumpleanos": "08-24",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 472,
+   "nombre": "Hernandez Magallanes Misael",
+   "puesto": "Ingeniero En Desarrollo",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-29",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 473,
+   "nombre": "Acosta Esquivel Adolfo",
+   "puesto": "Ingeniero En Desarrollo",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-16",
+   "ingreso": "2026-10-22",
    "foto": ""
   }
  ],
