@@ -847,7 +847,7 @@ function Ticker({ items }) {
   </footer>`;
 }
 
-function Settings({ cfg, set, close, autoTheme, meta }) {
+function Settings({ cfg, set, close, autoTheme, meta, themeId }) {
   const fs = () => { const d = document.documentElement; try { const r = (d.requestFullscreen || d.webkitRequestFullscreen || function(){}).call(d); if (r && r.catch) r.catch(() => {}); } catch (e) {} close(); };
   const pantallas = ['Mina', 'Comedor', 'RH', 'Oficinas'];
   return html`<${React.Fragment}>
@@ -856,10 +856,11 @@ function Settings({ cfg, set, close, autoTheme, meta }) {
       <div className="cfg-head"><h2>Ajustes</h2><button className="iconbtn" id="cfg-close" onClick=${close} aria-label="Cerrar ajustes"><${Icon} name="x" size=${20}/></button></div>
       <div className="cfg-sec">
         <h3>Tema del mes</h3>
-        <label className="switch"><input type="checkbox" id="cfg-auto" checked=${cfg.auto} onChange=${e => set({ auto: e.target.checked })}/>Cambiar solo según el mes en curso</label>
+        <label className="switch"><input type="checkbox" id="cfg-auto" checked=${cfg.auto} onChange=${e => set({ auto: e.target.checked, override: true })}/>Cambiar solo según el mes en curso</label>
+        ${cfg.override && html`<button className="btn" id="cfg-tema-central" onClick=${() => set({ override: false })}>Usar el tema programado del tablero</button>`}
         <div className="themes">${THEMES.map(t => {
-          const on = cfg.auto ? t.id === autoTheme.id : t.id === cfg.themeId;
-          return html`<button key=${t.id} id=${'th-' + t.id} className="th" aria-pressed=${on} onClick=${() => set({ themeId: t.id, auto: false })}>
+          const on = t.id === themeId;
+          return html`<button key=${t.id} id=${'th-' + t.id} className="th" aria-pressed=${on} onClick=${() => set({ themeId: t.id, auto: false, override: true })}>
             <span className="sw"><i style=${{ background: t.acc }}></i><i style=${{ background: t.acc2 }}></i><i style=${{ background: t.deep }}></i></span>
             <span><b>${t.nombre}</b><span>${t.meses}</span></span>
             ${t.id === autoTheme.id && t.id !== 'core' ? html`<span className="now">Este mes</span>` : html`<span></span>`}
@@ -900,7 +901,10 @@ function App() {
   const tick = useNow(30000);
   const today = partsInTZ(tick, meta.zonaHoraria);
   const autoTheme = themeForMonth(today.m);
-  const theme = cfg.auto ? autoTheme : (THEMES.find(t => t.id === cfg.themeId) || THEMES[0]);
+  const byId = id => THEMES.find(t => t.id === id);
+  const theme = cfg.override
+    ? (cfg.auto ? autoTheme : (byId(cfg.themeId) || THEMES[0]))
+    : (meta.tema === 'auto' ? autoTheme : (byId(meta.tema) || THEMES[0]));
 
   /* Datos: data.json publicado junto a la página */
   useEffect(() => {
@@ -978,7 +982,7 @@ function App() {
       </div>
     </div>
     <button className=${'fab' + (active || open ? '' : ' hide')} id="fab-ajustes" onClick=${() => setOpen(true)} aria-label="Abrir ajustes del tablero"><${Icon} name="sliders" size=${24}/></button>
-    ${open && html`<${Settings} cfg=${cfg} set=${set} close=${() => setOpen(false)} autoTheme=${autoTheme} meta=${meta}/>`}
+    ${open && html`<${Settings} cfg=${cfg} set=${set} close=${() => setOpen(false)} autoTheme=${autoTheme} meta=${meta} themeId=${theme.id}/>`}
   <//>`;
 }
 

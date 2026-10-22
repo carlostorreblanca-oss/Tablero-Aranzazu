@@ -5,12 +5,13 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "20 oct 2026, 21:00",
+  "actualizado": "2026-10-22 15:23",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1792541833005,
-   "sincronizado": "2026-10-21 07:32"
-  }
+   "csvh": "43b9b8857112"
+  },
+  "tema": "oct"
  },
  "seguridad": {
   "fechaUltimoAccidente": "2026-01-06",
@@ -3862,12 +3863,11 @@
   }
  ],
  "avisosTicker": [
-  "¡Atención equipo! Uso obligatorio de barbiquejo en zonas de coladas.",
-  "Felicidades a la Unidad Cabrestante por superar su meta semanal de avance.",
-  "Antes de entrar a una labor revisa ventilación, ademe y desate de rocas.",
-  "RH: la entrega de despensas de octubre será el viernes 30 en el comedor, de 12:00 a 16:00.",
-  "Octubre, mes de la detección oportuna del cáncer de mama. Agenda tu revisión con Servicio Médico.",
-  "Reporta toda condición insegura a tu supervisor o en el buzón de seguridad."
+  "No olvides registrar tu chequeo de entrada y salida",
+  "Domingos Campaña de Amacize",
+  "Realiza tu llenado correcto de Pueble",
+  "Importante Acudir a la platica de seguridad diaria",
+  "Deja Limpio tu equipo al final de turno"
  ],
  "clima": {
   "lugar": "Concepción del Oro",

@@ -28,6 +28,20 @@ Cada cambio en la rama `main` ejecuta `.github/workflows/pages.yml`, que reconst
 
 Activación (una sola vez): **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
+## Actualización automática
+
+Una tarea programada corre a las **6:45, 7:25 y 17:45** (hora del centro de México) y publica solo si algo cambió:
+
+| Sección | Fuente |
+|---|---|
+| Resultados operativos | `Reporte_<Mes>_DesaProd <año>.xlsx`, hoja **Resumen** |
+| Eventos (3 más recientes) | Tablero RH Aranzazu, módulo Eventos |
+| Cumpleaños del mes | Tablero RH Aranzazu, módulo Base de datos |
+| Avisos | `Tablero/Avisos.xlsx`, columna **B** (solo celdas con texto) |
+| Tema del mes | Calendario de temas (octubre rosa, noviembre Día de Muertos, etc.) |
+
+Los pasos están en `herramientas/ACTUALIZACION.md` y el cálculo en `herramientas/actualizar.py`.
+
 ## Herramientas (`herramientas/`)
 
 - `template.html`: diseño del tablero.
