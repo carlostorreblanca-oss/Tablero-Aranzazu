@@ -1,6 +1,6 @@
 # Tablero Informativo Aranzazu · CoMinVi
 
-Cartelera digital para las pantallas de la Unidad Aranzazu (Mina, Comedor, RH y Oficinas).
+Cartelera digital para las pantallas de la Unidad Aranzazu (Informativa, Mina, RH y Oficinas).
 
 | Página | Para qué |
 |---|---|
@@ -35,7 +35,7 @@ Una tarea programada corre a las **6:45, 7:25 y 17:45** (hora del centro de Méx
 | Sección | Fuente |
 |---|---|
 | Resultados operativos | `Reporte_<Mes>_DesaProd <año>.xlsx`, hoja **Resumen** |
-| Eventos (3 más recientes) | Tablero RH Aranzazu, módulo Eventos |
+| Eventos (3 más recientes, máx. 8 fotos c/u) | Tablero RH Aranzazu, módulo Eventos |
 | Cumpleaños del mes | Tablero RH Aranzazu, módulo Base de datos |
 | Avisos | `Tablero/Avisos.xlsx`, columna **B** (solo celdas con texto) |
 | Tema del mes | Calendario de temas (octubre rosa, noviembre Día de Muertos, etc.) |

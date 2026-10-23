@@ -54,7 +54,7 @@ for e in recent:
     if len(desc) > 150:
         desc = desc[:147].rsplit(" ", 1)[0] + "…"
     fotos = e.get("fotos") or []
-    for k, f in enumerate(fotos[:4]):
+    for k, f in enumerate(fotos[:8]):
         path = f"eventos/{f}.jpg"
         files[path] = {"artifact": RH_URL, "path": path}
         slides.append({
@@ -67,7 +67,7 @@ for e in recent:
             "descripcion": desc,
             "imagen": path,
             "foto": k + 1,
-            "fotosEvento": len(fotos),
+            "fotosEvento": min(len(fotos), 8),
         })
 
 data = json.load(open(data_path, encoding="utf-8"))

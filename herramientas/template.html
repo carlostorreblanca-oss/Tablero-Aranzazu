@@ -549,8 +549,8 @@ function tone(p) { return p >= 100 ? 'ok' : p >= 90 ? 'warn' : 'bad'; }
 
 /* ---------- Ajustes por pantalla (se guardan en el navegador de cada TV) ---------- */
 const CFG_KEY = 'cominvi-tablero-aranzazu';
-const CFG_DEF = { themeId:'core', auto:false, mode:'dark', interval:10, pantalla:'Comedor' };
-function loadCfg() { try { const j = JSON.parse(localStorage.getItem(CFG_KEY) || 'null'); return Object.assign({}, CFG_DEF, j || {}); } catch (e) { return Object.assign({}, CFG_DEF); } }
+const CFG_DEF = { themeId:'core', auto:false, mode:'dark', interval:10, pantalla:'Informativa' };
+function loadCfg() { try { const j = JSON.parse(localStorage.getItem(CFG_KEY) || 'null'); const c = Object.assign({}, CFG_DEF, j || {}); if (c.pantalla === 'Comedor') c.pantalla = 'Informativa'; return c; } catch (e) { return Object.assign({}, CFG_DEF); } }
 function saveCfg(c) { try { localStorage.setItem(CFG_KEY, JSON.stringify(c)); } catch (e) {} }
 
 function useNow(ms) { const [n, setN] = useState(() => Date.now()); useEffect(() => { const id = setInterval(() => setN(Date.now()), ms); return () => clearInterval(id); }, [ms]); return n; }
@@ -686,6 +686,7 @@ function Carousel({ items, interval }) {
   }, [i, n, interval]);
   if (!n) return html`<section className="panel carousel"><div className="ph"></div></section>`;
   const cur = Math.min(i, n - 1);
+  const porEvento = {}; items.forEach(x => { porEvento[x.evento] = (porEvento[x.evento] || 0) + 1; });
   return html`<section className="panel carousel" aria-label="Eventos" style=${{ '--iv': interval + 's', '--kb': (interval + 1.5) + 's' }}>
     ${items.map((e, k) => {
       const cls = 'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
@@ -700,7 +701,7 @@ function Carousel({ items, interval }) {
           ${e.lugar && html`<span className="cap-loc"><${Icon} name="pin" size=${15}/>${e.lugar}</span>`}
           ${e.descripcion && e.foto === 1 && html`<p>${e.descripcion}</p>`}
         </div>
-        ${e.fotosEvento > 1 && html`<span className="cnt num">${e.foto}/${Math.min(e.fotosEvento, 4)}</span>`}
+        ${(porEvento[e.evento] || 0) > 1 && html`<span className="cnt num">${e.foto}/${porEvento[e.evento]}</span>`}
       </div>`;
     })}
     ${n <= 12
@@ -851,7 +852,7 @@ function Ticker({ items }) {
 
 function Settings({ cfg, set, close, autoTheme, meta, themeId }) {
   const fs = () => { const d = document.documentElement; try { const r = (d.requestFullscreen || d.webkitRequestFullscreen || function(){}).call(d); if (r && r.catch) r.catch(() => {}); } catch (e) {} close(); };
-  const pantallas = ['Mina', 'Comedor', 'RH', 'Oficinas'];
+  const pantallas = ['Informativa', 'Mina', 'RH', 'Oficinas'];
   return html`<${React.Fragment}>
     <div className="cfg-back" onClick=${close}></div>
     <aside className="cfg" role="dialog" aria-modal="true" aria-label="Ajustes del tablero">

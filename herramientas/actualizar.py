@@ -125,10 +125,10 @@ def eventos_desde(events):
         if len(desc) > 150:
             desc = desc[:147].rsplit(" ", 1)[0] + "…"
         fotos = e.get("fotos") or []
-        for k, f in enumerate(fotos[:4]):
+        for k, f in enumerate(fotos[:8]):
             slides.append({"id": f"{e['id']}-{k}", "evento": e["id"], "categoria": e.get("cat", ""), "titulo": e["t"],
                            "fecha": f"{d} {MES3[mo-1]}", "lugar": e.get("lugar", ""), "descripcion": desc,
-                           "imagen": f"eventos/{f}.jpg", "foto": k + 1, "fotosEvento": len(fotos)})
+                           "imagen": f"eventos/{f}.jpg", "foto": k + 1, "fotosEvento": min(len(fotos), 8)})
     return slides
 
 

@@ -3839,6 +3839,42 @@
    "fotosEvento": 7
   },
   {
+   "id": "turnooct18-4",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct185.jpg",
+   "foto": 5,
+   "fotosEvento": 7
+  },
+  {
+   "id": "turnooct18-5",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct186.jpg",
+   "foto": 6,
+   "fotosEvento": 7
+  },
+  {
+   "id": "turnooct18-6",
+   "evento": "turnooct18",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · quesabirrias",
+   "fecha": "18 oct",
+   "lugar": "Comedor del Campamento Cabrestante",
+   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
+   "imagen": "eventos/turnooct187.jpg",
+   "foto": 7,
+   "fotosEvento": 7
+  },
+  {
    "id": "habilidades2-0",
    "evento": "habilidades2",
    "categoria": "Capacitación",
@@ -3848,7 +3884,7 @@
    "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
    "imagen": "eventos/habilidade8.jpg",
    "foto": 1,
-   "fotosEvento": 14
+   "fotosEvento": 8
   },
   {
    "id": "habilidades2-1",
@@ -3860,7 +3896,7 @@
    "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
    "imagen": "eventos/habilidade9.jpg",
    "foto": 2,
-   "fotosEvento": 14
+   "fotosEvento": 8
   },
   {
    "id": "habilidades2-2",
@@ -3872,7 +3908,7 @@
    "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
    "imagen": "eventos/habilidade10.jpg",
    "foto": 3,
-   "fotosEvento": 14
+   "fotosEvento": 8
   },
   {
    "id": "habilidades2-3",
@@ -3884,7 +3920,55 @@
    "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
    "imagen": "eventos/habilidade11.jpg",
    "foto": 4,
-   "fotosEvento": 14
+   "fotosEvento": 8
+  },
+  {
+   "id": "habilidades2-4",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade12.jpg",
+   "foto": 5,
+   "fotosEvento": 8
+  },
+  {
+   "id": "habilidades2-5",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade13.jpg",
+   "foto": 6,
+   "fotosEvento": 8
+  },
+  {
+   "id": "habilidades2-6",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade14.jpg",
+   "foto": 7,
+   "fotosEvento": 8
+  },
+  {
+   "id": "habilidades2-7",
+   "evento": "habilidades2",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: habilidades blandas · sesión 2",
+   "fecha": "18 oct",
+   "lugar": "Sala de capacitación",
+   "descripcion": "Segunda sesión del programa «Líderes de alto desempeño», impartido por Intelecto, con trabajo en equipos, cuadernillo de la 2.ª sesión y…",
+   "imagen": "eventos/habilidade15.jpg",
+   "foto": 8,
+   "fotosEvento": 8
   },
   {
    "id": "mesrosa-0",
@@ -3896,7 +3980,7 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa1.jpg",
    "foto": 1,
-   "fotosEvento": 11
+   "fotosEvento": 8
   },
   {
    "id": "mesrosa-1",
@@ -3908,7 +3992,7 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa2.jpg",
    "foto": 2,
-   "fotosEvento": 11
+   "fotosEvento": 8
   },
   {
    "id": "mesrosa-2",
@@ -3920,7 +4004,7 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa3.jpg",
    "foto": 3,
-   "fotosEvento": 11
+   "fotosEvento": 8
   },
   {
    "id": "mesrosa-3",
@@ -3932,7 +4016,55 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa4.jpg",
    "foto": 4,
-   "fotosEvento": 11
+   "fotosEvento": 8
+  },
+  {
+   "id": "mesrosa-4",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa5.jpg",
+   "foto": 5,
+   "fotosEvento": 8
+  },
+  {
+   "id": "mesrosa-5",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa6.jpg",
+   "foto": 6,
+   "fotosEvento": 8
+  },
+  {
+   "id": "mesrosa-6",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa7.jpg",
+   "foto": 7,
+   "fotosEvento": 8
+  },
+  {
+   "id": "mesrosa-7",
+   "evento": "mesrosa",
+   "categoria": "Capacitación",
+   "titulo": "Octubre Rosa: sensibilización sobre el cáncer de mama",
+   "fecha": "15 oct",
+   "lugar": "Sala Pueble",
+   "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
+   "imagen": "eventos/mesrosa8.jpg",
+   "foto": 8,
+   "fotosEvento": 8
   }
  ],
  "avisosTicker": [
