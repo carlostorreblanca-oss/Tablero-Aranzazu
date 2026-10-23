@@ -27,6 +27,7 @@ Para cada ruta de `fotos` que no exista en `$REPO/eventos/`, descárgala con Art
 ## 4. Publicar en GitHub (sitio web)
 ```
 python3 herramientas/build.py
+python3 herramientas/build_artefactos.py
 git add -A
 git commit -m "Actualización automática <HOY HH:MM>: <cambios>"
 git push origin main
@@ -34,9 +35,16 @@ git push origin main
 GitHub Pages se publica solo en 1–2 minutos: https://carlostorreblanca-oss.github.io/Tablero-Aranzazu/
 
 ## 5. Publicar en los tableros de claude.ai (solo si `cambios` no está vacía)
-Para cada artefacto — TV `https://claude.ai/artifact/1bXCkxbXbZb3BX752mhAn5` y celular `https://claude.ai/artifact/7AfrvoektHiDxuq8UwgiSs`:
-1. Artifact `read` del `url` (te dice el archivo local de la página).
-2. Artifact `publish` con ese `url`, `file_path` = el archivo de la página que guardó el read (sin cambiarlo), y `files`:
+Primero genera las páginas limpias: `python3 herramientas/build_artefactos.py` (crea `herramientas/artefactos/tv.html` y `movil.html`; inclúyelas en el commit del paso 4).
+
+| Tablero | url | file_path |
+|---|---|---|
+| TV | `https://claude.ai/artifact/1bXCkxbXbZb3BX752mhAn5` | `<REPO>/herramientas/artefactos/tv.html` |
+| Celular | `https://claude.ai/artifact/7AfrvoektHiDxuq8UwgiSs` | `<REPO>/herramientas/artefactos/movil.html` |
+
+Para cada uno:
+1. Artifact `read` del `url` (sin `path`) para que cuente como leído.
+2. Artifact `publish` con ese `url`, el `file_path` de la tabla (**nunca** el archivo que guarda el read: ese trae la envoltura del visor y se duplicaría) y `files`:
    - `"data.json": "<REPO>/data.json"`
    - por cada foto nueva: `"eventos/x.jpg": {"artifact": "https://claude.ai/artifact/N15fPuqdapJp7YvSRH2Nxb", "path": "eventos/x.jpg"}`
    - por cada ruta de `fotos_quitar`: `null`
