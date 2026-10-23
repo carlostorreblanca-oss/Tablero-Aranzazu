@@ -64,8 +64,8 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": null,
-   "extraccionHumedas": 0.0,
+   "extraccionSecas": 4355.63,
+   "extraccionHumedas": 4584.87,
    "planExtraccion": 3766.98,
    "desarrollo": 26.9,
    "planDesarrollo": 24.5,
@@ -73,13 +73,13 @@
    "disparosPlan": 12.0,
    "rellenoRF": 0.0,
    "rellenoCRF": 0.0,
-   "extraccionPendiente": true
+   "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 64911.12,
-   "extraccionHumedas": 68327.49,
+   "extraccionSecas": 69266.74,
+   "extraccionHumedas": 72912.36,
    "planExtraccion": 80134.5,
-   "desarrollo": 485.0,
+   "desarrollo": 483.6,
    "planDesarrollo": 557.9,
    "rellenoRF": 135.0,
    "rellenoCRF": 0.0
