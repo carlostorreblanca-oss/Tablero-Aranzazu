@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-22 17:48",
+  "actualizado": "2026-10-22 18:46",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1792693060050,
+   "baseDatos": 1792714683871,
    "csvh": "611d12add4ff"
   },
   "tema": "oct"
@@ -1418,6 +1418,15 @@
    "unidad": "Mantenimiento",
    "cumpleanos": "07-14",
    "ingreso": "2023-02-23",
+   "foto": ""
+  },
+  {
+   "id": 165,
+   "nombre": "Herrera Nuñez Jonathan de Jesus",
+   "puesto": "Electromecanico",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "11-01",
+   "ingreso": "2026-10-15",
    "foto": ""
   },
   {
@@ -3886,7 +3895,7 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa1.jpg",
    "foto": 1,
-   "fotosEvento": 10
+   "fotosEvento": 11
   },
   {
    "id": "mesrosa-1",
@@ -3898,7 +3907,7 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa2.jpg",
    "foto": 2,
-   "fotosEvento": 10
+   "fotosEvento": 11
   },
   {
    "id": "mesrosa-2",
@@ -3910,7 +3919,7 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa3.jpg",
    "foto": 3,
-   "fotosEvento": 10
+   "fotosEvento": 11
   },
   {
    "id": "mesrosa-3",
@@ -3922,12 +3931,13 @@
    "descripcion": "Plática de sensibilización sobre el cáncer de mama con las compañeras del proyecto, con chalecos rosas, globos y presentación de Octubre Rosa.",
    "imagen": "eventos/mesrosa4.jpg",
    "foto": 4,
-   "fotosEvento": 10
+   "fotosEvento": 11
   }
  ],
  "avisosTicker": [
   "No olvides registrar tu chequeo de entrada y salida",
-  "Domingos Campaña de Amacize",
+  "Recuerda Horario de salida de Campamento: 21:00hrs",
+  "¡Campaña de Amazice Los días Domingos!!",
   "Realiza tu llenado correcto de Pueble",
   "Importante Acudir a la platica de seguridad diaria",
   "Deja Limpio tu equipo al final de turno"
