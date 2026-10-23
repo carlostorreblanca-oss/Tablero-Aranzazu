@@ -147,6 +147,8 @@ def main():
     if a.libro:
         mes, dia, res = leer_resumen(a.libro)
         r0 = data.get("resultados", {})
+        dd = res["dia"]
+        dd["extraccionPendiente"] = bool(dd.get("extraccionSecas") is None and not dd.get("extraccionHumedas"))
         nuevo = dict(res, corte=f"{dia} {MES3[mes-1]} {hoy.year}", diaReporte=dia,
                      fuente=f"{a.archivo_libro or 'Reporte DesaProd'} · hoja Resumen")
         if r0.get("diaReporte") != dia or r0.get("corte", "").split(" ")[1:2] != [MES3[mes-1]] or r0.get("dia") != nuevo["dia"] or r0.get("mes") != nuevo["mes"]:

@@ -307,6 +307,7 @@ button{font:inherit;color:inherit}
 .rt-v b{font:800 28px/0.9 var(--f-display);white-space:nowrap}
 .rt-v b small{font-size:18px;margin-left:3px;color:var(--muted)}
 .rt-p{font:800 19px/1 var(--f-display)}
+.rt-p.pend{font:700 13px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:99px;padding:5px 9px}
 .rt-p.ok{color:var(--ok-ink)}.rt-p.warn{color:var(--warn-ink)}.rt-p.bad{color:var(--bad-ink)}
 .rt .bar{height:9px}.rt .bar .pace{top:-4px;bottom:-4px}
 .rt-m{font:500 13px/1.25 var(--f-body);color:var(--muted)}
@@ -715,11 +716,12 @@ function Results({ res, today }) {
   const sg = n => (n > 0 ? '+' : n < 0 ? '−' : '') ;
   const diaN = (res.corte || '').split(' ')[0] || '';
   const mesN = cap1(MESES[today.m - 1]);
-  const T = (k, v, u, real, plan, sub, per) => { const p = pctOf(real, plan); return { k, v, u, p, t: tone(p), sub, per }; };
+  const T = (k, v, u, real, plan, sub, per, pend) => { const p = pctOf(real, plan); return pend ? { k, v: '—', u: '', p: 0, t: 'pend', sub, per, pend: true } : { k, v, u, p, t: tone(p), sub, per }; };
+  const extPend = d.extraccionSecas == null || (d.extraccionPendiente === true);
   const tiles = [
-    T('Extracción', f0(d.extraccionSecas), 't', d.extraccionSecas, d.planExtraccion, `Plan ${f0(d.planExtraccion)} t · húmedas ${f0(d.extraccionHumedas)} t`, 'Día ' + diaN),
+    T('Extracción', f0(d.extraccionSecas), 't', d.extraccionSecas, d.planExtraccion, extPend ? `Pendiente de captura · plan ${f0(d.planExtraccion)} t` : `Plan ${f0(d.planExtraccion)} t · húmedas ${f0(d.extraccionHumedas)} t`, 'Día ' + diaN, extPend),
     T('Desarrollo', f1(d.desarrollo), 'm', d.desarrollo, d.planDesarrollo, `Plan ${f1(d.planDesarrollo)} m`, 'Día ' + diaN),
-    T('Extracción', f0(m.extraccionSecas), 't', m.extraccionSecas, m.planExtraccion, `Plan ${f0(m.planExtraccion)} t · ${sg(m.extraccionSecas - m.planExtraccion)}${f0(Math.abs(m.extraccionSecas - m.planExtraccion))} t`, mesN + ' acumulado'),
+    T('Extracción', f0(m.extraccionSecas), 't', m.extraccionSecas, m.planExtraccion, `Plan ${f0(m.planExtraccion)} t · ${sg(m.extraccionSecas - m.planExtraccion)}${f0(Math.abs(m.extraccionSecas - m.planExtraccion))} t${extPend ? ' · sin extracción del día ' + diaN : ''}`, mesN + ' acumulado'),
     T('Desarrollo', f1(m.desarrollo), 'm', m.desarrollo, m.planDesarrollo, `Plan ${f1(m.planDesarrollo)} m · ${sg(m.desarrollo - m.planDesarrollo)}${f1(Math.abs(m.desarrollo - m.planDesarrollo))} m`, mesN + ' acumulado'),
     d.disparosPlan ? T('Disparos', `${d.disparos} de ${d.disparosPlan}`, '', d.disparos, d.disparosPlan, `Relleno RF día ${f0(d.rellenoRF)} · mes ${f0(m.rellenoRF)} m³${(d.rellenoCRF || m.rellenoCRF) ? ' · CRF ' + f0(m.rellenoCRF) + ' m³' : ''}`, 'Día ' + diaN) : null
   ].filter(Boolean);
@@ -727,7 +729,7 @@ function Results({ res, today }) {
     <div className="res-head"><div className="eyebrow"><${Icon} name="pickaxe" size=${20}/>Resultados operativos</div><span className="corte num">${res.corte ? 'Corte al ' + res.corte + ' · toneladas secas · acumulado contra plan al día' : ''}</span></div>
     <div className="res-tiles">${tiles.map(x => html`<div className="rt" key=${x.k}>
       <span className="rt-k"><i>${x.per}</i>${x.k}</span>
-      <div className="rt-v"><b className="num">${x.v}${x.u && html`<small>${x.u}</small>`}</b><span className=${'rt-p num ' + x.t}>${x.p.toFixed(1)}%</span></div>
+      <div className="rt-v"><b className="num">${x.v}${x.u && html`<small>${x.u}</small>`}</b>${x.pend ? html`<span className="rt-p pend">Pendiente</span>` : html`<span className=${'rt-p num ' + x.t}>${x.p.toFixed(1)}%</span>`}</div>
       <${Bar} pct=${x.p} cls=${x.t}/>
       <span className="rt-m num">${x.sub}</span>
     </div>`)}</div>
