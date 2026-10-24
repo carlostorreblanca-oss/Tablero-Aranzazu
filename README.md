@@ -34,7 +34,7 @@ Una tarea programada corre a las **6:45, 9:25 y 18:15** (hora del centro de Méx
 
 | Sección | Fuente |
 |---|---|
-| Resultados operativos | **En pausa** (se actualizan a mano en `data.json`) |
+| Resultados operativos | `Reporte_<Mes>_DesaProd <año>.xlsx` (OneDrive de Gibrán Ochoa, `Desarrollo`), hoja **Resumen** |
 | Eventos (3 más recientes, máx. 8 fotos c/u) | Tablero RH Aranzazu, módulo Eventos |
 | Cumpleaños del mes | Tablero RH Aranzazu, módulo Base de datos |
 | Avisos | `Tablero/Avisos.xlsx`, columna **B** (solo celdas con texto) |

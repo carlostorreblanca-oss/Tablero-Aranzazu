@@ -50,6 +50,11 @@ def num(s):
 # ---------------- Resultados operativos (hoja Resumen) ----------------
 def leer_resumen(path):
     txt = open(path, encoding="utf-8").read()
+    if txt.lstrip().startswith("{"):
+        try:
+            txt = "\n".join(c.get("text", "") for c in json.loads(txt).get("contents", []))
+        except ValueError:
+            pass
     m = re.search(r"## Sheet: Resumen[^\n]*\n(.*?)(?:\nFormulas:|\n## Sheet:)", txt, re.S)
     if not m:
         raise SystemExit("No encontré la hoja Resumen en el libro.")

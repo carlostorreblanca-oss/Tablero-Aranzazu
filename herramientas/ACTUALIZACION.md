@@ -10,7 +10,7 @@ La tarea programada (6:45, 9:25 y 18:15, hora del centro de México) sigue estos
 - Fecha de hoy en America/Mexico_City → `HOY` (AAAA-MM-DD).
 
 ## 1. Descargar fuentes (solo lectura, nunca modificar los originales)
-1. **Resultados operativos: EN PAUSA** (desde el 23 oct 2026, por indicación de Carlos). No busques ni leas el reporte DesaProd y **no uses `--libro`**: los resultados se quedan como están en `data.json`.
+1. **Resultados operativos**: `read_resource` **sin** startPage/endPage de `file:///b!FZeGuCKJckKNup0XdY6V_vvupZKY1mZGlNF7ZrWKU2FwEEfxXPYCSKRZgxtDJIGm/0177JFFEYI5GXXE226T5AJQUSOOJ32XKEQ` (`Reporte_Octubre_DesaProd 2026.xlsx`, OneDrive de Gibrán Ochoa, carpeta `Desarrollo`; dirección vigente desde el 24 oct 2026). El resultado es grande: si se guardó solo en un archivo, usa esa ruta como `--libro` (el script acepta el JSON tal cual); si llega en línea, guárdalo en `$FUENTES/libro.txt`. Solo se usa la hoja **Resumen**. Al cambiar de mes, busca con `sharepoint_search` `Reporte_<Mes>_DesaProd <año>` (xlsx) y toma el del mes en curso. Si no se puede leer, omite `--libro`, deja los resultados como están y repórtalo.
 2. **Avisos**: `read_resource` de `file:///b!Bza5sahU602uuqM08-zTWI6bkkAClr1GrNJV-zb2vLRGO5ByzSSyRrQAsRh48i1m/Tablero/Avisos.xlsx`. Guarda el texto tal cual en `$FUENTES/avisos.txt`. Solo cuenta la **columna B** con texto.
 3. **CCRM** (reporte diario de verificaciones): `read_resource` de `file:///b!8JKnVbHVc0u3Dfvfx4FcYDtc1j0CEhxBrLlkuBjmDAvlPLT6dF6vRI6-v5wwGbFt/01WRBESYQQPNFOIM6BHVF3LQYG4VRFGSKG` (`CCRM DIARIO (OCTUBRE 2026).xlsx`, OneDrive de Luis Murillo) con `startPage=1` y `endPage=1` (solo la hoja **CCRM**). Guarda el texto tal cual en `$FUENTES/ccrm.txt` (si el resultado se guardó solo en un archivo, usa esa ruta). Al cambiar de mes el libro se llama `CCRM DIARIO (<MES> <AÑO>).xlsx`: si el de octubre ya no tiene el mes en curso o no se encuentra, búscalo con `sharepoint_search` (`CCRM DIARIO <MES> <AÑO>`, xlsx) y toma el del mes actual. El script toma el bloque **"CCRM AL DIA N DE <MES> <AÑO>"** más reciente que ya tenga verificaciones y revisa que gerentes + supervisores + operadores sumen el total.
 4. **Tablero RH** (eventos y base de datos): Artifact `read` de `https://claude.ai/artifact/N15fPuqdapJp7YvSRH2Nxb`. El resultado indica el archivo local donde guardó la página completa: úsalo como `--rh`.
@@ -18,7 +18,7 @@ La tarea programada (6:45, 9:25 y 18:15, hora del centro de México) sigue estos
 ## 2. Calcular cambios
 ```
 cd $REPO
-python3 herramientas/actualizar.py --rh <rh.html> --avisos $FUENTES/avisos.txt --ccrm $FUENTES/ccrm.txt --hoy $HOY
+python3 herramientas/actualizar.py --rh <rh.html> --libro <libro> --archivo-libro "Reporte_Octubre_DesaProd 2026.xlsx" --avisos $FUENTES/avisos.txt --ccrm $FUENTES/ccrm.txt --hoy $HOY
 ```
 Lee el informe (`herramientas/_informe.json`):
 - Si `necesita_nombres` es `true`: la base de datos del Tablero RH cambió. Lee `file:///b!Bza5sahU602uuqM08-zTWI6bkkAClr1GrNJV-zb2vLRGO5ByzSSyRrQAsRh48i1m/Tablero RH temporal/base-personal-nombres.csv` con `read_resource`, guarda el texto exacto en `$FUENTES/nombres.csv` y vuelve a correr el comando agregando `--nombres $FUENTES/nombres.csv`.
