@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-24 11:53",
+  "actualizado": "2026-10-24 11:54",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1792800525980,
@@ -22,8 +22,8 @@
    "total": {
     "dia": 125,
     "acum": 2521,
-    "meta": 3740,
-    "plan": 2775,
+    "meta": 3692,
+    "plan": 2739,
     "pctProgramado": 74
    },
    "niveles": [
@@ -31,15 +31,15 @@
      "nombre": "Gerentes",
      "dia": 1,
      "acum": 90,
-     "meta": 144,
-     "plan": 107
+     "meta": 136,
+     "plan": 101
     },
     {
      "nombre": "Supervisores",
      "dia": 6,
      "acum": 343,
-     "meta": 620,
-     "plan": 460
+     "meta": 580,
+     "plan": 430
     },
     {
      "nombre": "Operadores",
