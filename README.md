@@ -38,6 +38,7 @@ Una tarea programada corre a las **6:45, 9:25 y 18:15** (hora del centro de Méx
 | Eventos (3 más recientes, máx. 8 fotos c/u) | Tablero RH Aranzazu, módulo Eventos |
 | Cumpleaños del mes | Tablero RH Aranzazu, módulo Base de datos |
 | Avisos | `Tablero/Avisos.xlsx`, columna **B** (solo celdas con texto) |
+| CCRM | `CCRM DIARIO (<MES> <AÑO>).xlsx`, hoja **CCRM**, bloque "CCRM AL DIA" más reciente |
 | Tema del mes | Calendario de temas (octubre rosa, noviembre Día de Muertos, etc.) |
 
 Los pasos están en `herramientas/ACTUALIZACION.md` y el cálculo en `herramientas/actualizar.py`.

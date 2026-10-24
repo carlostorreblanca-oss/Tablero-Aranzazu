@@ -8,6 +8,7 @@ Uso:
       [--nombres <base-personal-nombres.csv>]  (solo si el informe pide nombres)
       [--libro <texto del libro DesaProd>]     (read_resource del .xlsx, hoja Resumen)
       [--avisos <avisos.txt>]                  (read_resource de Avisos.xlsx)
+      [--ccrm <ccrm.txt>]                      (read_resource de CCRM DIARIO (<MES> <AÑO>).xlsx, hoja CCRM)
       [--hoy AAAA-MM-DD]
 
 Escribe data.json (si hubo cambios) y deja un informe en herramientas/_informe.json:
@@ -92,6 +93,55 @@ def leer_avisos(path):
     return out
 
 
+# ---------------- CCRM (hoja CCRM del libro "CCRM DIARIO (<MES> <AÑO>).xlsx") ----------------
+def leer_ccrm(path):
+    """Devuelve el bloque "CCRM AL DIA N DE <MES> <AÑO>" más reciente que ya tenga verificaciones."""
+    raw = open(path, encoding="utf-8").read()
+    if raw.lstrip().startswith("{"):
+        try:
+            j = json.loads(raw)
+            raw = "\n".join(c.get("text", "") for c in j.get("contents", []))
+        except ValueError:
+            pass
+    m = re.search(r"## Sheet: CCRM\b[^\n]*\n(.*?)(?:\n## Sheet:|\Z)", raw, re.S)
+    if not m:
+        raise SystemExit("No encontré la hoja CCRM.")
+    rows = [r.split("\t") for r in m.group(1).split("\n")]
+    cell = lambda r, c: rows[r][c].strip() if r < len(rows) and c < len(rows[r]) else ""
+    ent = lambda v: int(round(num(v))) if num(v) is not None else 0
+    bloques = []
+    for i, r in enumerate(rows):
+        for c, v in enumerate(r):
+            t = re.match(r"CCRM AL D[IÍ]A (\d{1,2}) DE ([A-ZÁÉÍÓÚ]+) (\d{4})", v.strip().upper())
+            if not t:
+                continue
+            dia, mes_txt, anio = int(t.group(1)), t.group(2).lower(), int(t.group(3))
+            if mes_txt not in MESES:
+                continue
+            b = {"dia": dia, "mes": MESES.index(mes_txt) + 1, "anio": anio, "dias": None, "filas": {}}
+            for k in range(i + 1, min(i + 10, len(rows))):
+                lab = cell(k, c).upper()
+                if lab.startswith("CCRM AL D"):
+                    break
+                if lab.startswith("DIAS ACUMULADOS"):
+                    b["dias"] = ent(cell(k + 1, c))
+                for key, pat in (("total", "TOTAL"), ("Gerentes", "GERENTES"), ("Supervisores", "SUPERVISORES"), ("Operadores", "OPERADORES")):
+                    if pat in lab and key not in b["filas"]:
+                        b["filas"][key] = {"dia": ent(cell(k, c + 2)), "acum": ent(cell(k, c + 3)), "meta": ent(cell(k, c + 4)),
+                                           "plan": ent(cell(k, c + 6)), "pctProgramado": ent(cell(k, c + 7))}
+            bloques.append(b)
+    validos = [b for b in bloques if b["filas"].get("total", {}).get("acum", 0) > 0 and len(b["filas"]) == 4]
+    if not validos:
+        raise SystemExit("No encontré un bloque de CCRM con verificaciones.")
+    b = max(validos, key=lambda x: (x["anio"], x["mes"], x["dia"]))
+    tot = b["filas"]["total"]
+    niveles = [dict(nombre=n, **{k: b["filas"][n][k] for k in ("dia", "acum", "meta", "plan")}) for n in ("Gerentes", "Supervisores", "Operadores")]
+    if sum(n["acum"] for n in niveles) != tot["acum"] or sum(n["meta"] for n in niveles) != tot["meta"]:
+        raise SystemExit("El CCRM no cuadra: la suma de niveles no coincide con el total.")
+    return {"corte": f"{b['dia']} {MES3[b['mes']-1]} {b['anio']}", "diasAcumulados": b["dias"],
+            "total": tot, "niveles": niveles}
+
+
 # ---------------- Tablero RH: base de datos y eventos ----------------
 def leer_rh(path):
     src = open(path, encoding="utf-8").read()
@@ -135,7 +185,7 @@ def eventos_desde(events):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--rh"); ap.add_argument("--nombres"); ap.add_argument("--libro"); ap.add_argument("--avisos")
+    ap.add_argument("--rh"); ap.add_argument("--nombres"); ap.add_argument("--libro"); ap.add_argument("--avisos"); ap.add_argument("--ccrm")
     ap.add_argument("--archivo-libro", default="")
     ap.add_argument("--hoy", default=datetime.date.today().isoformat())
     a = ap.parse_args()
@@ -161,6 +211,15 @@ def main():
         if av and av != data.get("avisosTicker"):
             data["avisosTicker"] = av
             cambios.append(f"avisos ({len(av)})")
+
+    if a.ccrm:
+        cc = leer_ccrm(a.ccrm)
+        seg = data.setdefault("seguridad", {})
+        c0 = seg.get("ccrm") or {}
+        nuevo = dict(c0, **cc)
+        if nuevo != c0:
+            seg["ccrm"] = nuevo
+            cambios.append(f"CCRM → {cc['corte']} ({cc['total']['acum']} de {cc['total']['meta']})")
 
     if a.rh:
         bd, events = leer_rh(a.rh)
