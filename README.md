@@ -30,7 +30,7 @@ Activación (una sola vez): **Settings → Pages → Build and deployment → So
 
 ## Actualización automática
 
-Una tarea programada corre a las **6:45, 7:25 y 17:45** (hora del centro de México) y publica solo si algo cambió:
+Una tarea programada corre a las **6:45, 9:25 y 17:45** (hora del centro de México) y publica solo si algo cambió:
 
 | Sección | Fuente |
 |---|---|
