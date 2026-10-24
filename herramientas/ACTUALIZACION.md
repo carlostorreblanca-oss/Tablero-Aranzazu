@@ -37,6 +37,8 @@ git push origin main
 ```
 GitHub Pages se publica solo en 1–2 minutos: https://carlostorreblanca-oss.github.io/Tablero-Aranzazu/
 
+**Confirma el push antes de seguir:** corre `git fetch origin main && git status -sb`; la primera línea **no** debe decir `ahead`. Si el push falló (por ejemplo, porque otra persona subió cambios), haz `git pull --rebase origin main`, vuelve a correr `build.py` y `build_artefactos.py`, y repite el push. **No publiques en el tablero de TV hasta que el push haya llegado**: la web y el tablero de TV deben quedar siempre con el mismo `data.json`.
+
 ## 5. Publicar en los tableros de claude.ai (solo si `cambios` no está vacía)
 Primero genera las páginas limpias: `python3 herramientas/build_artefactos.py` (crea `herramientas/artefactos/tv.html` y `movil.html`; inclúyelas en el commit del paso 4).
 
