@@ -1,6 +1,6 @@
 # Actualización automática del tablero
 
-La tarea programada (6:45, 9:25 y 17:45, hora del centro de México) sigue estos pasos. **Solo publica cuando algo cambió.**
+La tarea programada (6:45, 9:25 y 18:15, hora del centro de México) sigue estos pasos. **Solo publica cuando algo cambió.**
 
 > **Regla de oro:** cada fuente es independiente. Si una no se puede leer (archivo movido, sin permiso, error), **sigue con las demás**: corre `actualizar.py` sin el argumento de esa fuente, publica lo que sí cambió y en el informe final di qué fuente falló y por qué. Nunca detengas toda la actualización por una sola fuente.
 
@@ -10,14 +10,14 @@ La tarea programada (6:45, 9:25 y 17:45, hora del centro de México) sigue estos
 - Fecha de hoy en America/Mexico_City → `HOY` (AAAA-MM-DD).
 
 ## 1. Descargar fuentes (solo lectura, nunca modificar los originales)
-1. **Resultados operativos**: con Microsoft 365 `sharepoint_search` busca `DesaProd` (xlsx) y toma el `Reporte_<Mes>_DesaProd <año>.xlsx` modificado más recientemente. Si la búsqueda no lo encuentra, prueba la última ubicación conocida (`file:///b!FZeGuCKJckKNup0XdY6V_vvupZKY1mZGlNF7ZrWKU2FwEEfxXPYCSKRZgxtDJIGm/0177JFFE3AW357ZH22DFA3HCXX4SRDWLLW`; dejó de existir el 23 oct 2026). Si tampoco está, **omite `--libro`**, deja los resultados como están y repórtalo como "Resultados: reporte DesaProd no accesible". Léelo completo con `read_resource` **sin** startPage/endPage: el resultado es grande y se guarda en un archivo; usa esa ruta como `--libro`. Si el resultado llega en línea, guárdalo tal cual en `$FUENTES/libro.txt` (debe incluir el bloque `## Sheet: Resumen`). Solo se usa la hoja **Resumen**.
+1. **Resultados operativos: EN PAUSA** (desde el 23 oct 2026, por indicación de Carlos). No busques ni leas el reporte DesaProd y **no uses `--libro`**: los resultados se quedan como están en `data.json`.
 2. **Avisos**: `read_resource` de `file:///b!Bza5sahU602uuqM08-zTWI6bkkAClr1GrNJV-zb2vLRGO5ByzSSyRrQAsRh48i1m/Tablero/Avisos.xlsx`. Guarda el texto tal cual en `$FUENTES/avisos.txt`. Solo cuenta la **columna B** con texto.
 3. **Tablero RH** (eventos y base de datos): Artifact `read` de `https://claude.ai/artifact/N15fPuqdapJp7YvSRH2Nxb`. El resultado indica el archivo local donde guardó la página completa: úsalo como `--rh`.
 
 ## 2. Calcular cambios
 ```
 cd $REPO
-python3 herramientas/actualizar.py --rh <rh.html> --libro <libro.txt> --archivo-libro "<nombre del xlsx>" --avisos $FUENTES/avisos.txt --hoy $HOY
+python3 herramientas/actualizar.py --rh <rh.html> --avisos $FUENTES/avisos.txt --hoy $HOY
 ```
 Lee el informe (`herramientas/_informe.json`):
 - Si `necesita_nombres` es `true`: la base de datos del Tablero RH cambió. Lee `file:///b!Bza5sahU602uuqM08-zTWI6bkkAClr1GrNJV-zb2vLRGO5ByzSSyRrQAsRh48i1m/Tablero RH temporal/base-personal-nombres.csv` con `read_resource`, guarda el texto exacto en `$FUENTES/nombres.csv` y vuelve a correr el comando agregando `--nombres $FUENTES/nombres.csv`.

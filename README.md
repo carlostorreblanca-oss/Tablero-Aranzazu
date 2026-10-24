@@ -30,11 +30,11 @@ Activación (una sola vez): **Settings → Pages → Build and deployment → So
 
 ## Actualización automática
 
-Una tarea programada corre a las **6:45, 9:25 y 17:45** (hora del centro de México) y publica solo si algo cambió:
+Una tarea programada corre a las **6:45, 9:25 y 18:15** (hora del centro de México) y publica solo si algo cambió:
 
 | Sección | Fuente |
 |---|---|
-| Resultados operativos | `Reporte_<Mes>_DesaProd <año>.xlsx`, hoja **Resumen** |
+| Resultados operativos | **En pausa** (se actualizan a mano en `data.json`) |
 | Eventos (3 más recientes, máx. 8 fotos c/u) | Tablero RH Aranzazu, módulo Eventos |
 | Cumpleaños del mes | Tablero RH Aranzazu, módulo Base de datos |
 | Avisos | `Tablero/Avisos.xlsx`, columna **B** (solo celdas con texto) |
