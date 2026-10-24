@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-23 08:51",
+  "actualizado": "2026-10-23 18:28",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1792714683871,
+   "baseDatos": 1792800525980,
    "csvh": "611d12add4ff"
   },
   "tema": "oct"
@@ -2376,15 +2376,6 @@
    "foto": ""
   },
   {
-   "id": 281,
-   "nombre": "Mendez Canizalez Jacinto",
-   "puesto": "Operador de Trompo",
-   "unidad": "Operaciones",
-   "cumpleanos": "05-05",
-   "ingreso": "2026-01-31",
-   "foto": ""
-  },
-  {
    "id": 283,
    "nombre": "Torres Serna Uri Jahaziel",
    "puesto": "Ayudante de Alpha",
@@ -4068,12 +4059,14 @@
   }
  ],
  "avisosTicker": [
-  "No olvides registrar tu chequeo de entrada y salida",
+  "No olvides registrar tu chequeo de entrada y salida en mina",
   "Recuerda Horario de entrada de Campamento: 21:00hrs",
-  "¡Campaña de Amazice Los días Domingos!!",
-  "Realiza tu llenado correcto de Pueble",
-  "Importante Acudir a la platica de seguridad diaria",
-  "Deja Limpio tu equipo al final de turno"
+  "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
+  "Calidad en cada avance: cada frente se entrega conforme a proyecto, bien barrenado y bien cargado",
+  "Seguridad en cada sostenimiento: ningún avance sin el soporte completo; respeta anclaje, malla y zarpeo",
+  "Confianza en cada metro: un trabajo bien hecho a la primera evita retrabajos y riesgos",
+  "Juntos Construimos un Futuro mas seguro",
+  "¡Campaña de Amazice Los días Domingos!!"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
