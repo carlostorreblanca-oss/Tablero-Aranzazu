@@ -1040,6 +1040,12 @@ function Weather({ clima, p }) {
   </div>`;
 }
 
+function fmtActualizado(v) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{1,2}):(\d{2})/.exec(String(v || ''));
+  if (!m) return v || '—';
+  const h = +m[4], ap = h < 12 ? 'a. m.' : 'p. m.', h12 = h % 12 || 12;
+  return `${+m[3]} ${MESES[+m[2] - 1].slice(0, 3)} ${m[1]} · ${h12}:${m[5]} ${ap}`;
+}
 function Header({ meta, theme, pantalla, clima }) {
   const now = useNow(1000);
   const tz = meta.zonaHoraria;
@@ -1060,7 +1066,7 @@ function Header({ meta, theme, pantalla, clima }) {
     <div className="clock">
       <div className="time num" aria-label="Hora">${pad(p.h)}:${pad(p.mi)}<span className="sec">${pad(p.s)}</span></div>
       <div className="date">${fecha}</div>
-      <div className="loc"><${Icon} name="monitor" size=${16}/>Pantalla ${pantalla}</div>
+      <div className="loc num" title="Última actualización de los datos"><${Icon} name="clock" size=${16}/>Actualizado: ${fmtActualizado(meta.actualizado)}</div>
     </div>
   </header>`;
 }

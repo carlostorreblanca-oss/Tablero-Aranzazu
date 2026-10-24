@@ -14,6 +14,7 @@ Escribe data.json (si hubo cambios) y deja un informe en herramientas/_informe.j
   {"cambios": [...], "necesita_nombres": bool, "fotos": [rutas eventos/*.jpg], "fotos_quitar": [...]}
 """
 import argparse, datetime, json, os, re, sys
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -191,7 +192,7 @@ def main():
     despues = json.dumps(data, sort_keys=True, ensure_ascii=False)
     if despues != antes:
         if cambios:
-            meta["actualizado"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+            meta["actualizado"] = datetime.datetime.now(ZoneInfo("America/Mexico_City")).strftime("%Y-%m-%d %H:%M")
         json.dump(data, open(DATA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     informe["cambios"] = cambios
     json.dump(informe, open(os.path.join(HERE, "_informe.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
