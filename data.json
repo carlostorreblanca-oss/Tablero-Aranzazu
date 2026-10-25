@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-24 11:54",
+  "actualizado": "2026-10-24 18:49",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1792800525980,
+   "baseDatos": 1792865733395,
    "csvh": "611d12add4ff"
   },
   "tema": "oct"
@@ -3267,20 +3267,11 @@
    "foto": ""
   },
   {
-   "id": 408,
-   "nombre": "Acosta Ortega Noe Ivan",
-   "puesto": "Residente",
-   "unidad": "Operaciones",
-   "cumpleanos": "07-21",
-   "ingreso": "2026-07-17",
-   "foto": ""
-  },
-  {
    "id": 409,
    "nombre": "Barcenas Gomez Raul",
    "puesto": "Supervisor de Almacen",
    "unidad": "Almacen",
-   "cumpleanos": "",
+   "cumpleanos": "03-12",
    "ingreso": "2026-07-17",
    "foto": ""
   },
@@ -3289,7 +3280,7 @@
    "nombre": "Ibarra Valdez Cosme Damian",
    "puesto": "Gerente de Mantenimiento",
    "unidad": "Mantenimiento",
-   "cumpleanos": "",
+   "cumpleanos": "06-26",
    "ingreso": "2026-07-17",
    "foto": ""
   },
@@ -4062,9 +4053,7 @@
   "No olvides registrar tu chequeo de entrada y salida en mina",
   "Recuerda Horario de entrada de Campamento: 21:00hrs",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "Calidad en cada avance: cada frente se entrega conforme a proyecto, bien barrenado y bien cargado",
-  "Seguridad en cada sostenimiento: ningún avance sin el soporte completo; respeta anclaje, malla y zarpeo",
-  "Confianza en cada metro: un trabajo bien hecho a la primera evita retrabajos y riesgos",
+  "Charla de seguridad: “Antes de bajar, deja el equipo muerto”",
   "Juntos Construimos un Futuro mas seguro",
   "¡Campaña de Amazice Los días Domingos!!"
  ],
