@@ -25,6 +25,7 @@ python3 herramientas/actualizar.py --rh <rh.html> --libro <libro> --archivo-libr
 ```
 Lee el informe (`herramientas/_informe.json`):
 - Si `necesita_nombres` es `true`: la base de datos del Tablero RH cambió. Lee `file:///b!Bza5sahU602uuqM08-zTWI6bkkAClr1GrNJV-zb2vLRGO5ByzSSyRrQAsRh48i1m/Tablero RH temporal/base-personal-nombres.csv` con `read_resource`, guarda el texto exacto en `$FUENTES/nombres.csv` y vuelve a correr el comando agregando `--nombres $FUENTES/nombres.csv`.
+- `omitidos`: fuentes que traían un corte **más viejo** que el publicado (por ejemplo, porque alguien cargó el dato a mano antes de que se guardara el archivo). El script no retrocede el tablero; menciónalos en el informe final.
 - `cambios`: lista de lo que cambió. Si está vacía y `git status --porcelain` no muestra cambios, **termina**: informa "Sin cambios" y no publiques nada.
 
 ## 3. Fotos de eventos

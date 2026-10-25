@@ -47,6 +47,14 @@ def num(s):
         return None
 
 
+def clave_corte(txt):
+    """'24 oct 2026' -> (2026, 10, 24); None si no se puede leer."""
+    m = re.match(r"\s*(\d{1,2})\s+([a-záéíóú]{3})\w*\s+(\d{4})", str(txt or "").lower())
+    if not m or m.group(2) not in MES3:
+        return None
+    return (int(m.group(3)), MES3.index(m.group(2)) + 1, int(m.group(1)))
+
+
 # ---------------- Resultados operativos (hoja Resumen) ----------------
 def leer_resumen(path):
     txt = open(path, encoding="utf-8").read()
@@ -207,7 +215,10 @@ def main():
         dd["extraccionPendiente"] = bool(dd.get("extraccionSecas") is None and not dd.get("extraccionHumedas"))
         nuevo = dict(res, corte=f"{dia} {MES3[mes-1]} {hoy.year}", diaReporte=dia,
                      fuente=f"{a.archivo_libro or 'Reporte DesaProd'} · hoja Resumen")
-        if r0.get("diaReporte") != dia or r0.get("corte", "").split(" ")[1:2] != [MES3[mes-1]] or r0.get("dia") != nuevo["dia"] or r0.get("mes") != nuevo["mes"]:
+        viejo, llega = clave_corte(r0.get("corte")), clave_corte(nuevo["corte"])
+        if viejo and llega and llega < viejo:
+            informe.setdefault("omitidos", []).append(f"resultados: el reporte trae el corte {nuevo['corte']}, más viejo que el publicado ({r0.get('corte')}); no se retrocede")
+        elif r0.get("diaReporte") != dia or r0.get("corte", "").split(" ")[1:2] != [MES3[mes-1]] or r0.get("dia") != nuevo["dia"] or r0.get("mes") != nuevo["mes"]:
             data["resultados"] = nuevo
             cambios.append(f"resultados → día {dia} {MES3[mes-1]}")
 
@@ -222,7 +233,10 @@ def main():
         seg = data.setdefault("seguridad", {})
         c0 = seg.get("ccrm") or {}
         nuevo = dict(c0, **cc)
-        if nuevo != c0:
+        viejo, llega = clave_corte(c0.get("corte")), clave_corte(cc["corte"])
+        if viejo and llega and llega < viejo:
+            informe.setdefault("omitidos", []).append(f"CCRM: el archivo trae el corte {cc['corte']}, más viejo que el publicado ({c0.get('corte')}); no se retrocede")
+        elif nuevo != c0:
             seg["ccrm"] = nuevo
             cambios.append(f"CCRM → {cc['corte']} ({cc['total']['acum']} de {cc['total']['meta']})")
 
