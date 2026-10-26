@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-26 06:49",
+  "actualizado": "2026-10-26 08:47",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1792952060361,
@@ -64,29 +64,29 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": 3712.1,
-   "extraccionHumedas": 3907.47,
-   "planExtraccion": 3882.52,
-   "desarrollo": 34.9,
+   "extraccionSecas": null,
+   "extraccionHumedas": 0.0,
+   "planExtraccion": 3522.11,
+   "desarrollo": 23.9,
    "planDesarrollo": 25.8,
-   "disparos": 9.0,
-   "disparosPlan": 10.0,
+   "disparos": 7.0,
+   "disparosPlan": 9.0,
    "rellenoRF": 0.0,
    "rellenoCRF": 0.0,
-   "extraccionPendiente": false
+   "extraccionPendiente": true
   },
   "mes": {
    "extraccionSecas": 76296.75,
    "extraccionHumedas": 80312.37,
-   "planExtraccion": 87500.92,
-   "desarrollo": 545.0,
-   "planDesarrollo": 621.8,
+   "planExtraccion": 91023.02,
+   "desarrollo": 568.9,
+   "planDesarrollo": 647.6,
    "rellenoRF": 135.0,
    "rellenoCRF": 0.0
   },
-  "corte": "24 oct 2026",
-  "diaReporte": 24,
-  "fuente": "Reporte_Octubre_DesaProd 2026-ZAC-ARA-ACOSTOS.xlsx · hoja Resumen"
+  "corte": "25 oct 2026",
+  "diaReporte": 25,
+  "fuente": "Reporte_Octubre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
   {
