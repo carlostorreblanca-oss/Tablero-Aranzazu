@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-25 20:38",
+  "actualizado": "2026-10-26 06:49",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1792952060361,
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "25 oct 2026",
-   "diasAcumulados": 24,
+   "corte": "26 oct 2026",
+   "diasAcumulados": 25,
    "total": {
-    "dia": 73,
-    "acum": 2613,
+    "dia": 76,
+    "acum": 2694,
     "meta": 3692,
-    "plan": 2858,
-    "pctProgramado": 77
+    "plan": 2977,
+    "pctProgramado": 81
    },
    "niveles": [
     {
      "nombre": "Gerentes",
      "dia": 2,
-     "acum": 92,
+     "acum": 96,
      "meta": 136,
-     "plan": 105
+     "plan": 110
     },
     {
      "nombre": "Supervisores",
-     "dia": 5,
-     "acum": 350,
+     "dia": 9,
+     "acum": 360,
      "meta": 580,
-     "plan": 449
+     "plan": 468
     },
     {
      "nombre": "Operadores",
-     "dia": 66,
-     "acum": 2171,
+     "dia": 65,
+     "acum": 2238,
      "meta": 2976,
-     "plan": 2304
+     "plan": 2400
     }
    ],
    "toleranciaAmarillo": 5
@@ -79,14 +79,14 @@
    "extraccionSecas": 76296.75,
    "extraccionHumedas": 80312.37,
    "planExtraccion": 87500.92,
-   "desarrollo": 535.9,
+   "desarrollo": 545.0,
    "planDesarrollo": 621.8,
    "rellenoRF": 135.0,
    "rellenoCRF": 0.0
   },
   "corte": "24 oct 2026",
   "diaReporte": 24,
-  "fuente": "Reporte_Octubre_DesaProd 2026.xlsx · hoja Resumen"
+  "fuente": "Reporte_Octubre_DesaProd 2026-ZAC-ARA-ACOSTOS.xlsx · hoja Resumen"
  },
  "personal": [
   {
@@ -4071,7 +4071,7 @@
   "No olvides registrar tu chequeo de entrada y salida en mina",
   "Recuerda Horario de entrada de Campamento: 21:00hrs",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "Charla de seguridad: “Antes de bajar, deja el equipo muerto”",
+  "Charla de seguridad: “Nuestra fortaleza es nuestra gente”",
   "Juntos Construimos un Futuro mas seguro",
   "¡Campaña de Amazice Los días Domingos!!"
  ],
