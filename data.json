@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-25 11:17",
+  "actualizado": "2026-10-25 18:48",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1792865733395,
+   "baseDatos": 1792952060361,
    "csvh": "611d12add4ff"
   },
   "tema": "oct"
@@ -3573,15 +3573,6 @@
    "foto": ""
   },
   {
-   "id": 452,
-   "nombre": "Rodriguez Angelino Rodrigo",
-   "puesto": "Operador de Jumbo Anclador",
-   "unidad": "Operaciones",
-   "cumpleanos": "01-04",
-   "ingreso": "2026-09-24",
-   "foto": ""
-  },
-  {
    "id": 453,
    "nombre": "Rios Espinoza Jesus David",
    "puesto": "Oficial de Servicios",
@@ -3713,15 +3704,6 @@
    "puesto": "Mecanico Diesel",
    "unidad": "Mantenimiento",
    "cumpleanos": "09-07",
-   "ingreso": "2026-10-22",
-   "foto": ""
-  },
-  {
-   "id": 468,
-   "nombre": "Serafin Pintor Hallyer de Rene",
-   "puesto": "Operador de Jumbo Anclador",
-   "unidad": "Operaciones",
-   "cumpleanos": "05-04",
    "ingreso": "2026-10-22",
    "foto": ""
   },
