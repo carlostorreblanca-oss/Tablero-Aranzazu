@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-25 18:48",
+  "actualizado": "2026-10-25 20:38",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1792952060361,
@@ -4029,6 +4029,42 @@
    "imagen": "eventos/mesrosa8.jpg",
    "foto": 8,
    "fotosEvento": 8
+  },
+  {
+   "id": "turnooct-0",
+   "evento": "turnooct",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · octubre",
+   "fecha": "9 oct",
+   "lugar": "Comedor",
+   "descripcion": "Comida para recibir el cambio de turno de octubre en el comedor, ya decorado para la temporada de Día de Muertos.",
+   "imagen": "eventos/turnooct1.jpg",
+   "foto": 1,
+   "fotosEvento": 3
+  },
+  {
+   "id": "turnooct-1",
+   "evento": "turnooct",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · octubre",
+   "fecha": "9 oct",
+   "lugar": "Comedor",
+   "descripcion": "Comida para recibir el cambio de turno de octubre en el comedor, ya decorado para la temporada de Día de Muertos.",
+   "imagen": "eventos/turnooct2.jpg",
+   "foto": 2,
+   "fotosEvento": 3
+  },
+  {
+   "id": "turnooct-2",
+   "evento": "turnooct",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · octubre",
+   "fecha": "9 oct",
+   "lugar": "Comedor",
+   "descripcion": "Comida para recibir el cambio de turno de octubre en el comedor, ya decorado para la temporada de Día de Muertos.",
+   "imagen": "eventos/turnooct3.jpg",
+   "foto": 3,
+   "fotosEvento": 3
   }
  ],
  "avisosTicker": [

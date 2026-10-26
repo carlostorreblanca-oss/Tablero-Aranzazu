@@ -181,7 +181,7 @@ def personal_desde(bd, names_csv):
 
 
 def eventos_desde(events):
-    events = sorted(events, key=lambda e: e["d"], reverse=True)[:3]
+    events = sorted(events, key=lambda e: e["d"], reverse=True)[:4]
     slides = []
     for e in events:
         y, mo, d = map(int, e["d"].split("-"))

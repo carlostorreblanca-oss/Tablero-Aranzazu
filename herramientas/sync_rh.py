@@ -46,7 +46,7 @@ events.sort(key=lambda e: e["d"], reverse=True)
 MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 today = datetime.date.today()
 cut = today - datetime.timedelta(days=75)
-recent = events[:3]
+recent = events[:4]
 slides, files = [], {}
 for e in recent:
     y, mo, d = map(int, e["d"].split("-"))
