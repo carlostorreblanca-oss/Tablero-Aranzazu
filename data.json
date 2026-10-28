@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-27 09:12",
+  "actualizado": "2026-10-27 18:49",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1793060327756,
+   "baseDatos": 1793146548786,
    "csvh": "611d12add4ff"
   },
   "tema": "oct"
@@ -79,7 +79,7 @@
    "extraccionSecas": 82966.47,
    "extraccionHumedas": 87333.12,
    "planExtraccion": 95322.48,
-   "desarrollo": 591.1,
+   "desarrollo": 590.0,
    "planDesarrollo": 673.4,
    "rellenoRF": 171.0,
    "rellenoCRF": 0.0
