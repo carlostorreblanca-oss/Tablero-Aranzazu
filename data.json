@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-28 06:56",
+  "actualizado": "2026-10-28 08:51",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1793146548786,
@@ -64,28 +64,28 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": 3681.96,
-   "extraccionHumedas": 3875.75,
-   "planExtraccion": 4299.45,
-   "desarrollo": 16.2,
+   "extraccionSecas": 3799.44,
+   "extraccionHumedas": 3999.41,
+   "planExtraccion": 3830.68,
+   "desarrollo": 16.9,
    "planDesarrollo": 25.8,
    "disparos": 5.0,
-   "disparosPlan": 8.0,
-   "rellenoRF": 36.0,
+   "disparosPlan": 10.0,
+   "rellenoRF": 0.0,
    "rellenoCRF": 0.0,
    "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 82966.47,
-   "extraccionHumedas": 87333.12,
-   "planExtraccion": 95322.48,
-   "desarrollo": 590.0,
-   "planDesarrollo": 673.4,
+   "extraccionSecas": 86765.91,
+   "extraccionHumedas": 91332.53,
+   "planExtraccion": 99153.15,
+   "desarrollo": 617.8,
+   "planDesarrollo": 699.1,
    "rellenoRF": 171.0,
    "rellenoCRF": 0.0
   },
-  "corte": "26 oct 2026",
-  "diaReporte": 26,
+  "corte": "27 oct 2026",
+  "diaReporte": 27,
   "fuente": "Reporte_Octubre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
@@ -4044,12 +4044,10 @@
   }
  ],
  "avisosTicker": [
-  "No olvides registrar tu chequeo de entrada y salida en mina",
+  "¡Hoy Evento de Cambio de turno!!",
   "Recuerda Horario de entrada de Campamento: 21:00hrs",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "Charla de seguridad: “Nuestra fortaleza es nuestra gente”",
-  "Juntos Construimos un Futuro mas seguro",
-  "¡Campaña de Amazice Los días Domingos!!"
+  "¡Encuentra el Rojo y Corrige!"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
