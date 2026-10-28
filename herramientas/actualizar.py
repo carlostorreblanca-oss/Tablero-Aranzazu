@@ -9,6 +9,7 @@ Uso:
       [--libro <texto del libro DesaProd>]     (read_resource del .xlsx, hoja Resumen)
       [--avisos <avisos.txt>]                  (read_resource de Avisos.xlsx)
       [--ccrm <ccrm.txt>]                      (read_resource de CCRM DIARIO (<MES> <AÑO>).xlsx, hoja CCRM)
+      [--capacitacion <cap.txt> --archivo-cap AAAAMMDD.xlsx]  (read_resource del archivo más nuevo de Capacitacion/Habilidades por Vencer Tablero)
       [--hoy AAAA-MM-DD]
 
 Escribe data.json (si hubo cambios) y deja un informe en herramientas/_informe.json:
@@ -155,6 +156,156 @@ def leer_ccrm(path):
             "total": tot, "niveles": niveles}
 
 
+# ---------------- Capacitación: "Habilidades por Vencer Tablero/<AAAAMMDD>.xlsx" ----------------
+import unicodedata
+def _sa(s):
+    return "".join(c for c in unicodedata.normalize("NFD", str(s or "")) if unicodedata.category(c) != "Mn").upper().strip()
+
+# Acentos de nombres y apellidos frecuentes (la base de personal los guarda sin acento)
+ACENTOS = {w.upper().translate(str.maketrans("ÁÉÍÓÚÑ", "AEIOUN")): w for w in (
+    "José Jesús Martín Ramón Rubén Raúl Andrés Hernán Tomás Sebastián Joaquín Julián Germán Adrián Damián Efraín Simón Agustín Fermín Ángel Héctor Óscar Iván Víctor "
+    "Martínez González Hernández García Méndez Rodríguez López Pérez Sánchez Ramírez Gómez Díaz Jiménez Gutiérrez Fernández Domínguez Vázquez Velázquez "
+    "Juárez Suárez Núñez Ibáñez Muñoz Peña Alemán Durán Guzmán Beltrán Chávez Álvarez Benítez Cortés Galván Ordóñez Márquez Téllez Rosalío Báez Valdés").split()}
+
+def nombre_bonito(base):
+    return " ".join(ACENTOS.get(_sa(w), w) for w in base.split())
+
+# Habilidades: frases conocidas y arreglos de abreviaturas / ortografía
+HAB_FRASES = {
+    "INSTALAC. ELECTRICAS": "Instalaciones eléctricas", "INSTALACIONES ELECTRICAS": "Instalaciones eléctricas",
+    "BLOQUEO ENERGIA": "Bloqueo de energía", "BLOQUEO DE ENERGIA": "Bloqueo de energía",
+    "OP. TELEHANDER": "Operación de telehandler", "OP. TELEHANDLER": "Operación de telehandler",
+    "TRABAJO EN ALTURA": "Trabajo en altura", "TRABAJOS EN ALTURA": "Trabajos en altura",
+    "MANEJO DE EXPLOSIVOS": "Manejo de explosivos", "SUSTANCIAS QUIMICAS": "Sustancias químicas",
+}
+PALABRAS = {"ELECTRICAS": "eléctricas", "ELECTRICO": "eléctrico", "ELECTRICA": "eléctrica", "ENERGIA": "energía", "QUIMICAS": "químicas",
+            "MECANICO": "mecánico", "MECANICA": "mecánica", "HIDRAULICA": "hidráulica", "BARRENACION": "barrenación", "OPERACION": "operación",
+            "VOLADURA": "voladura", "TELEHANDER": "telehandler", "INYECCION": "inyección", "EXTRACCION": "extracción", "ALMACEN": "almacén",
+            "CAMION": "camión", "GRUA": "grúa", "ROBOTICO": "robótico", "LANZADO": "lanzado"}
+
+def _frase(s, pref_op):
+    s = re.sub(r"\s+", " ", str(s or "")).strip()
+    k = _sa(s)
+    if k in HAB_FRASES:
+        return HAB_FRASES[k], True
+    w = s.split()
+    out, conocido = [], True
+    for i, x in enumerate(w):
+        kx = _sa(x).rstrip(".")
+        if i == 0 and kx in ("OP", "OPER"):
+            out.append(pref_op); out.append("de"); continue
+        if i == 0 and kx in ("AYTE", "AYUD"):
+            out.append("Ayudante"); out.append("de"); continue
+        if kx == "L" and i == len(w) - 1 and i > 0:
+            out.append("larga"); continue
+        out.append(PALABRAS.get(kx, x.lower()))
+    r = " ".join(out)
+    r = re.sub(r"\bde de\b", "de", r)
+    return r[:1].upper() + r[1:], conocido
+
+DIAS_SEM = {"LUN": 0, "MAR": 1, "MIE": 2, "JUE": 3, "VIE": 4, "SAB": 5, "DOM": 6}
+
+def leer_capacitacion(path, archivo, personal, hoy):
+    raw = open(path, encoding="utf-8").read()
+    if raw.lstrip().startswith("{"):
+        try:
+            raw = "\n".join(c.get("text", "") for c in json.loads(raw).get("contents", []))
+        except ValueError:
+            pass
+    m = re.search(r"## Sheet: ([^\n]*)\n(.*?)(?:\n## Sheet:|\nFormulas:|\Z)", raw, re.S)
+    if not m:
+        raise SystemExit("Capacitación: no encontré la hoja.")
+    hoja, cuerpo = m.group(1), m.group(2)
+    mf = re.match(r"(\d{4})(\d{2})(\d{2})", os.path.basename(archivo or ""))
+    if not mf:
+        raise SystemExit(f"Capacitación: el nombre del archivo '{archivo}' no es AAAAMMDD.xlsx.")
+    f_arch = datetime.date(int(mf.group(1)), int(mf.group(2)), int(mf.group(3)))
+    base = {_sa(p["nombre"]): p for p in personal or []}
+    avisos, lista = [], []
+    lugar = capac = nota = ""
+    cuad, hora, fecha, cambia = None, "", None, False
+    for ln in cuerpo.split("\n"):
+        c = [x.strip() for x in ln.split("\t")]
+        while len(c) < 4:
+            c.append("")
+        k = _sa(c[0])
+        if not k or k.startswith("[") or k.startswith("C A P"):
+            continue
+        if k.startswith("LUGAR"):
+            lugar = c[0].split(":", 1)[1].strip(); continue
+        if k.startswith("CAPACITADORES"):
+            capac = c[0].split(":", 1)[1].strip(); continue
+        if k.startswith("NOTA"):
+            nota = c[0].split(":", 1)[1].strip(); continue
+        if k.startswith("PROGRAMA") or k.startswith("COLABORADOR"):
+            continue
+        if k.startswith("CUADRILLA"):
+            cuad = "noche" if "NOCHE" in k else "dia"
+            hs = re.findall(r"(\d{1,2}:\d{2})", c[0])
+            hora = "–".join(hs) if hs else ""
+            cambia = cuad == "noche" and bool(hs) and int(hs[0].split(":")[0]) < 12
+            fecha = None
+            continue
+        if not c[2]:
+            continue
+        if c[3]:
+            md = re.match(r"\s*([A-Za-zÁÉÍÓÚáéíóú]+)\.?\s+(\d{1,2})\s+([A-Za-z]{3})\w*[-/ ](\d{2,4})", c[3])
+            if not md:
+                raise SystemExit(f"Capacitación: no entiendo la fecha '{c[3]}'.")
+            mes = MES3.index(md.group(3).lower()) + 1
+            an = int(md.group(4)); an = an + 2000 if an < 100 else an
+            fecha = datetime.date(an, mes, int(md.group(2)))
+            ds = _sa(md.group(1))[:3]
+            if ds in DIAS_SEM and DIAS_SEM[ds] != fecha.weekday():
+                avisos.append(f"el día dice '{md.group(1)} {md.group(2)}' pero el {fecha.day} de {MESES[fecha.month-1]} de {fecha.year} es {['lunes','martes','miércoles','jueves','viernes','sábado','domingo'][fecha.weekday()]}; se usa la fecha")
+        if fecha is None:
+            raise SystemExit(f"Capacitación: '{c[0]}' no tiene día.")
+        p = base.get(_sa(c[0]))
+        if p:
+            nom = nombre_bonito(p["nombre"])
+        else:
+            nom = tc(c[0]); avisos.append(f"'{c[0]}' no está en la base de personal; se muestra como viene")
+        hab, _ = _frase(c[2], "Operación")
+        pue, _ = _frase(c[1], "Operador")
+        fs = fecha.isoformat()
+        prev = next((r for r in lista if r["nombre"] == nom and r["fecha"] == fs and r["cuadrilla"] == cuad), None)
+        if prev:
+            if hab not in prev["habilidades"]:
+                prev["habilidades"].append(hab)
+            continue
+        if p and _sa(pue) != _sa(p.get("puesto")):
+            avisos.append(f"{nom}: el programa dice '{pue}' y la base '{p.get('puesto')}'")
+        lista.append({"idBase": p["id"] if p else None, "nombre": nom, "puesto": pue, "habilidades": [hab],
+                      "cuadrilla": cuad or "dia", "fecha": fs, "hora": hora, "cambiaTurno": cambia})
+    if not lista:
+        raise SystemExit("Capacitación: el archivo no trae colaboradores.")
+    fechas = sorted({r["fecha"] for r in lista})
+    if fechas[0] < f_arch.isoformat():
+        raise SystemExit(f"Capacitación: el archivo {archivo} trae fechas ({fechas[0]}) anteriores a su propia fecha; no concuerda.")
+    if fechas[-1] > (f_arch + datetime.timedelta(days=31)).isoformat():
+        raise SystemExit(f"Capacitación: el archivo {archivo} trae fechas a más de un mes ({fechas[-1]}); no concuerda.")
+    mh = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{2,4})", hoja)
+    if mh:
+        an = int(mh.group(3)); an = an + 2000 if an < 100 else an
+        fh = datetime.date(an, int(mh.group(2)), int(mh.group(1))).isoformat()
+        if fh != fechas[0]:
+            avisos.append(f"la hoja se llama '{hoja.split(' — ')[0]}' pero la primera capacitación es el {fechas[0]}")
+    horas = [r["hora"] for r in lista if r["hora"]]
+    hora = max(set(horas), key=horas.count).split("–")[0] if horas else ""
+    for r in lista:
+        if r["hora"].split("–")[0] == hora:
+            r["hora"] = ""
+    capa = [tc(x) for x in re.split(r"\s+Y\s+|,", capac, flags=re.I) if x.strip()]
+    capa = [nombre_bonito(x) for x in capa]
+    lug = _frase(lugar.replace(" - ", " "), "Operación")[0] if lugar else ""
+    lug = re.sub(r"(?i)^sala capacitación", "Sala de Capacitación", lug.replace("capacitación", "Capacitación"))
+    lug = re.sub(r"(?i) a un costado de (almacén)", r", a un costado del \1", lug)
+    nota_txt = "¿Se te venció una habilidad o está por vencer y no estás en la lista? Acércate a Capacitación." if nota else ""
+    return {"activo": True, "archivo": os.path.basename(archivo), "titulo": "Programa de habilidades por vencer",
+            "lugar": lug, "hora": hora, "capacitadores": capa, "notaNoche": "Noche: cambia a turno de día",
+            "nota": nota_txt, "minCcrm": 10, "minCapacitacion": 4, "lista": lista}, avisos
+
+
 # ---------------- Tablero RH: base de datos y eventos ----------------
 def leer_rh(path):
     src = open(path, encoding="utf-8").read()
@@ -200,6 +351,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rh"); ap.add_argument("--nombres"); ap.add_argument("--libro"); ap.add_argument("--avisos"); ap.add_argument("--ccrm")
     ap.add_argument("--archivo-libro", default="")
+    ap.add_argument("--capacitacion"); ap.add_argument("--archivo-cap", default="")
     ap.add_argument("--hoy", default=datetime.date.today().isoformat())
     a = ap.parse_args()
     hoy = datetime.date.fromisoformat(a.hoy)
@@ -260,6 +412,18 @@ def main():
             cambios.append("eventos: " + ", ".join(dict.fromkeys(s["titulo"] for s in ev)))
         informe["fotos"] = nuevas
         informe["fotos_quitar"] = sorted(viejas - set(nuevas))
+
+    if a.capacitacion:
+        cap, av = leer_capacitacion(a.capacitacion, a.archivo_cap, data.get("personal"), hoy)
+        c0 = data.get("capacitacion") or {}
+        if c0.get("archivo") and c0["archivo"] > cap["archivo"]:
+            informe.setdefault("omitidos", []).append(f"capacitación: {cap['archivo']} es más viejo que el publicado ({c0['archivo']}); no se retrocede")
+        elif cap != c0:
+            data["capacitacion"] = cap
+            fs = sorted({r["fecha"] for r in cap["lista"]})
+            cambios.append(f"capacitación → {cap['archivo']} ({len(cap['lista'])} colaboradores, {fs[0][8:]}–{fs[-1][8:]} {MES3[int(fs[-1][5:7])-1]})")
+            if av:
+                informe["avisos_capacitacion"] = av
 
     tema = TEMAS.get(hoy.month, "core")
     if meta.get("tema") != tema:

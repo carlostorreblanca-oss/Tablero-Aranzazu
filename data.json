@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-28 08:51",
+  "actualizado": "2026-10-28 13:31",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1793146548786,
@@ -4119,5 +4119,131 @@
    "icono": "shield",
    "texto": "En CoMinVi, **la conducta ética es la base de una empresa confiable y sustentable**. Guiados por el Pacto Mundial de las Naciones Unidas y la Constitución Mexicana, promovemos la integridad en todos los niveles y aplicamos políticas estrictas en materia de anticorrupción, derechos humanos y conducta profesional. Nuestro objetivo es ir más allá del cumplimiento normativo y liderar con el ejemplo en la minería responsable en México."
   }
- ]
+ ],
+ "capacitacion": {
+  "activo": true,
+  "archivo": "20261028.xlsx",
+  "titulo": "Programa de habilidades por vencer",
+  "lugar": "Sala de Capacitación, a un costado del almacén",
+  "hora": "7:00",
+  "capacitadores": [
+   "Juan Ovalle",
+   "Ernesto Hernández"
+  ],
+  "notaNoche": "Noche: cambia a turno de día",
+  "nota": "¿Se te venció una habilidad o está por vencer y no estás en la lista? Acércate a Capacitación.",
+  "minCcrm": 10,
+  "minCapacitacion": 4,
+  "lista": [
+   {
+    "idBase": 149,
+    "nombre": "Martínez Gamboa José",
+    "puesto": "Eléctrico",
+    "habilidades": [
+     "Instalaciones eléctricas"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-10-29",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 8,
+    "nombre": "Mireles Candia José Juan",
+    "puesto": "Operador de jumbo anclador",
+    "habilidades": [
+     "Operación de jumbo anclador"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-10-29",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 208,
+    "nombre": "Pinales Ubario Jesús Alfredo",
+    "puesto": "Operador de retroexcavadora",
+    "habilidades": [
+     "Operación de retroexcavadora",
+     "Bloqueo de energía"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-10-30",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 353,
+    "nombre": "Vallejo García Hugo",
+    "puesto": "Supervisor eléctrico",
+    "habilidades": [
+     "Bloqueo de energía"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-10-30",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 126,
+    "nombre": "Hernández Escobedo Jesús Manuel",
+    "puesto": "Ayudante general",
+    "habilidades": [
+     "Manejo de explosivos"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-10-31",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 343,
+    "nombre": "Hernández Reynoso Jesús Ernesto",
+    "puesto": "Capacitador",
+    "habilidades": [
+     "Sustancias químicas"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-10-31",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 46,
+    "nombre": "Alvarado González Martín",
+    "puesto": "Operador de barrenación larga",
+    "habilidades": [
+     "Trabajo en altura"
+    ],
+    "cuadrilla": "noche",
+    "fecha": "2026-10-29",
+    "hora": "",
+    "cambiaTurno": true
+   },
+   {
+    "idBase": 40,
+    "nombre": "Alday Miranda José Miguel",
+    "puesto": "Ayudante de jumbo anclador",
+    "habilidades": [
+     "Operación de jumbo anclador"
+    ],
+    "cuadrilla": "noche",
+    "fecha": "2026-10-29",
+    "hora": "",
+    "cambiaTurno": true
+   },
+   {
+    "idBase": 12,
+    "nombre": "Méndez Zamacona Juan Eduardo",
+    "puesto": "Operador de retroexcavadora",
+    "habilidades": [
+     "Operación de telehandler"
+    ],
+    "cuadrilla": "noche",
+    "fecha": "2026-10-30",
+    "hora": "",
+    "cambiaTurno": true
+   }
+  ]
+ }
 }

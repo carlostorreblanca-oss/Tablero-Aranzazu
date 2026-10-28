@@ -428,6 +428,55 @@ button{font:inherit;color:inherit}
 .mrow2.hoy .dd{background:var(--acc);color:var(--on-acc)}
 .pill-hoy{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:99px;background:var(--acc);color:var(--on-acc);font:800 15px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase}
 @media (prefers-reduced-motion:reduce){.ms-track{animation-duration:calc(var(--ms,60s) * 2)}}
+
+/* Capacitación: alterna con CCRM y Misión/Visión/Ética */
+.fadein{animation:fadein .7s ease both}
+@keyframes fadein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.capa{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto minmax(0,1fr) auto;row-gap:12px;padding:16px 20px 14px 24px;border-color:var(--acc);
+  background:radial-gradient(120% 60% at 100% 0%,var(--acc-soft),transparent 60%),var(--surface)}
+.capa::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--stripe)}
+.capa-hd{display:grid;grid-template-columns:minmax(0,1fr);row-gap:7px}
+.capa-hd .eyebrow .count{display:flex;align-items:center;gap:6px;color:var(--muted)}
+.capa-hd .eyebrow .count b{color:var(--fg);font-variant-numeric:tabular-nums}
+.capa-hd h3{margin:0;white-space:nowrap;font:900 30px/0.92 var(--f-display);text-transform:uppercase;letter-spacing:.02em;color:var(--fg)}
+.capa-hd h3 span{color:var(--ink)}
+.capa-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font:600 15px/1.2 var(--f-body);color:var(--muted)}
+.capa-meta span{display:inline-flex;align-items:center;gap:6px}.capa-meta .ico{color:var(--ink)}
+.capa-tabs{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;column-gap:8px}
+.capa-tabs span{position:relative;display:grid;row-gap:3px;padding:8px 10px 7px;border-radius:8px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted);overflow:hidden}
+.capa-tabs span b{font:800 22px/1 var(--f-display);letter-spacing:.02em;color:inherit;white-space:nowrap}
+.capa-tabs span small{font:700 11px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase}
+.capa-tabs span.on{border-color:var(--acc);background:var(--acc-soft);color:var(--fg)}
+.capa-tabs span.on small{color:var(--ink)}
+.capa-tabs span i{position:absolute;left:0;bottom:0;height:3px;background:var(--acc);animation:seg var(--civ,30s) linear forwards}
+.capa-list{display:grid;align-content:start;row-gap:7px;min-height:0;overflow:hidden}
+.capa-row{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;align-items:center;padding:7px 10px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line)}
+.cu{width:40px;height:40px;border-radius:10px;display:grid;place-items:center}
+.cu.dia{background:rgba(245,182,11,.16);color:#FBBF24}.cu.noche{background:rgba(129,140,248,.18);color:#A5B4FC}
+:root[data-mode="light"] .cu.dia{color:#A16207}:root[data-mode="light"] .cu.noche{color:#4338CA}
+.capa-row .tx{display:grid;row-gap:5px;min-width:0}
+.capa-row .tx b{font:700 20px/1.1 var(--f-body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.capa-row .tx .l2{display:flex;align-items:center;gap:8px;min-width:0;overflow:hidden}.capa-row .tx .l2 span{font:500 14px/1.1 var(--f-body);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.habs{display:flex;gap:5px;flex:none}
+.habs em{font:700 13px/1 var(--f-body);font-style:normal;padding:4px 8px;white-space:nowrap;border-radius:99px;background:var(--acc-soft);color:var(--ink);border:1px solid var(--acc)}.habs.dos em{font-size:12px;padding:4px 7px}
+.capa-meta .capa-noche{color:#A5B4FC}.capa-meta .capa-noche .ico{color:#A5B4FC}
+:root[data-mode="light"] .capa-meta .capa-noche,:root[data-mode="light"] .capa-meta .capa-noche .ico{color:#4338CA}
+.capa-ft{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:12px;align-items:center;padding:11px 14px;border-radius:10px;background:var(--acc);color:var(--on-acc)}
+.capa-ft p{margin:0;font:700 15px/1.3 var(--f-body)}
+.capa-ft small{display:block;font:600 13px/1.2 var(--f-body);opacity:.8;margin-top:3px}
+.chip-prueba{font:800 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:5px 9px;border-radius:5px;border:1px dashed var(--warn-ink);color:var(--warn-ink)}
+@media (prefers-reduced-motion:reduce){.fadein,.capa-tabs span i{animation:none}}
+.capa-row .tx .hab{display:flex;flex-wrap:wrap;gap:0 8px;font:800 27px/1.02 var(--f-display);letter-spacing:.02em;text-transform:uppercase;color:var(--ink)}
+.capa-row .tx .hab i{font-style:normal;color:var(--muted);margin-right:8px}
+.capa-row .tx .who{display:flex;align-items:baseline;gap:8px;min-width:0}
+.capa-row .tx .who b{font:600 16.5px/1.15 var(--f-body);color:var(--fg);white-space:nowrap;flex:none}
+.capa-row .tx .who span{font:500 11.5px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.capa-hd .eyebrow .count{font-size:13px;letter-spacing:.06em}
+.capa-hd .eyebrow .count b{font-size:14px}
+.capa-row .tx b{font-size:22px}.capa-row{padding-top:6px;padding-bottom:6px}.capa-row .tx{row-gap:4px}.capa-list{row-gap:6px}
+.capa-row .tx .l2 span{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.habs em{background:var(--acc);color:var(--on-acc);border-color:var(--acc);font-size:14px;font-weight:800;padding:5px 10px;box-shadow:0 0 12px var(--acc-glow)}
+.habs.dos em{font-size:12.5px;padding:5px 8px}
 </style>
 
 <div id="app"></div>
@@ -629,7 +678,7 @@ function Bar({ pct, pace, cls = '' }) {
   </div>`;
 }
 
-function Safety({ seg, today }) {
+function Safety({ seg, today, soloContador }) {
   const t0 = utc(today.y, today.m, today.d);
   let dias = seg.diasSinIncidentes || 0;
   if (seg.fechaUltimoAccidente) { const [y, m, d] = seg.fechaUltimoAccidente.split('-').map(Number); dias = Math.max(0, Math.round((t0 - utc(y, m, d)) / DAY)); }
@@ -657,7 +706,7 @@ function Safety({ seg, today }) {
         <${Bar} pct=${pctOf(dias, record)}/>
       </div>`}
     </div>
-    <div className="ccrm">
+    ${!soloContador && html`<div className="ccrm fadein">
       <div className="eyebrow"><${Icon} name="hardhat" size=${22}/>CCRM<span className="count">${c.corte ? 'Al ' + c.corte : ''}</span></div>
       <div className="ccrm-body">
         <div className="semaforo" aria-label=${'Semáforo ' + estTxt}><i className=${'r' + (est === 'bad' ? ' on' : '')}></i><i className=${'y' + (est === 'warn' ? ' on' : '')}></i><i className=${'g' + (est === 'ok' ? ' on' : '')}></i></div>
@@ -676,7 +725,8 @@ function Safety({ seg, today }) {
         </div>`; })}
       </div>
       <div className="ccrm-foot num"><span>Hoy <b>${nf.format(tot.dia || 0)}</b> verificaciones</span><span>Día <b>${c.diasAcumulados || '–'}</b></span>${brecha > 0 ? html`<span>Faltan <b>${nf.format(brecha)}</b> para el plan</span>` : html`<span><b>Plan cumplido</b></span>`}</div>
-    </div>
+
+    </div>`}
   </section>`;
 }
 
@@ -897,6 +947,41 @@ function Settings({ cfg, set, close, autoTheme, meta, themeId }) {
   <//>`;
 }
 
+/* ---------- Capacitación: habilidades por vencer ---------- */
+function ymd(today) { return `${today.y}-${String(today.m).padStart(2,'0')}-${String(today.d).padStart(2,'0')}`; }
+function capPendientes(cap, today) { const h = ymd(today); return ((cap && cap.activo && cap.lista) || []).filter(r => r.fecha >= h); }
+function Capacitacion({ cap, today, fin }) {
+  const now = useNow(1000);
+  const hoy = ymd(today);
+  const dias = useMemo(() => { const g = {}; capPendientes(cap, today).forEach(r => { (g[r.fecha] = g[r.fecha] || []).push(r); }); return Object.keys(g).sort().map(f => ({ f, l: g[f] })); }, [cap, hoy]);
+  const n = dias.length;
+  const per = Math.max(20, Math.round((cap.minCapacitacion || 4) * 60 / Math.max(1, n)));
+  const [i, setI] = useState(0);
+  useEffect(() => { if (n < 2) return; const id = setTimeout(() => setI(x => (x + 1) % n), per * 1000); return () => clearTimeout(id); }, [i, n, per]);
+  if (!n) return null;
+  const k = Math.min(i, n - 1), dia = dias[k];
+  const t0 = utc(today.y, today.m, today.d);
+  const etiqueta = f => { const [y, m, d] = f.split('-').map(Number); const dd = Math.round((utc(y, m, d) - t0) / DAY); return dd === 0 ? 'Hoy' : dd === 1 ? 'Mañana' : ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'][new Date(utc(y, m, d)).getUTCDay()]; };
+  const corto = f => { const [y, m, d] = f.split('-').map(Number); return `${DIAS[new Date(utc(y, m, d)).getUTCDay()]} ${d}`; };
+  const rest = Math.max(0, Math.round((fin - now) / 1000));
+  const hayNoche = dia.l.some(r => r.cuadrilla === 'noche' && r.cambiaTurno !== false);
+  return html`<section className="panel capa fadein" aria-label="Capacitación: habilidades por vencer" style=${{ '--civ': per + 's' }}>
+    <div className="capa-hd">
+      <div className="eyebrow"><${Icon} name="cap" size=${22}/>Capacitación<span className="count">CCRM en <b>${Math.floor(rest / 60)}:${String(rest % 60).padStart(2, '0')}</b></span></div>
+      <h3>Habilidades <span>por vencer</span></h3>
+      <div className="capa-meta"><span><${Icon} name="pin" size=${16}/>${cap.lugar}</span><span><${Icon} name="clock" size=${16}/>${cap.hora} h</span>${hayNoche && cap.notaNoche && html`<span className="capa-noche"><${Icon} name="moon" size=${16}/>${cap.notaNoche}</span>`}</div>
+    </div>
+    <div className="capa-tabs" aria-hidden="true">${dias.map((x, j) => html`<span key=${x.f} className=${j === k ? 'on' : ''}><small>${etiqueta(x.f)}</small><b>${corto(x.f)} oct</b>${j === k && n > 1 && html`<i key=${'p' + i}></i>`}</span>`)}</div>
+    <div className="capa-list fadein" key=${dia.f}>
+      ${dia.l.map(r => html`<div className="capa-row" key=${r.nombre + r.fecha}>
+        <span className=${'cu ' + r.cuadrilla} title=${r.cuadrilla === 'noche' ? 'Cuadrilla de noche' : 'Cuadrilla de día'}><${Icon} name=${r.cuadrilla === 'noche' ? 'moon' : 'sun'} size=${24}/></span>
+        <div className="tx"><b>${r.nombre}</b><div className="l2"><div className=${"habs" + (r.habilidades.length > 1 ? " dos" : "")}>${r.habilidades.map(h => html`<em key=${h}>${h}</em>`)}</div>${r.habilidades.length < 2 && html`<span>${r.puesto}</span>`}${r.hora && html`<span>${r.hora} h</span>`}</div></div>
+      </div>`)}
+    </div>
+    <footer className="capa-ft"><${Icon} name="alert" size=${24}/><div><p>${cap.nota}</p><small>Capacitadores: ${(cap.capacitadores || []).join(' y ')}</small></div></footer>
+  </section>`;
+}
+
 /* =====================================================================
    APP
    ===================================================================== */
@@ -964,6 +1049,19 @@ function App() {
     return () => { ['mousemove', 'pointerdown', 'touchstart', 'keydown'].forEach(ev => window.removeEventListener(ev, wake)); window.removeEventListener('keydown', key); document.removeEventListener('visibilitychange', req); clearTimeout(t); };
   }, []);
 
+  /* Alternancia CCRM ↔ Capacitación (sincronizada con el reloj en todas las pantallas) */
+  const cap = data.capacitacion || null;
+  const tFase = useNow(1000);
+  const t0Carga = useRef(Date.now());
+  const [forzar, setForzar] = useState(null);
+  useEffect(() => { const k = e => { if (e.key === 'c' || e.key === 'C') setForzar(f => f === null ? 'cap' : f === 'cap' ? 'ccrm' : null); }; window.addEventListener('keydown', k); return () => window.removeEventListener('keydown', k); }, []);
+  const capHay = capPendientes(cap, today).length > 0;
+  const mC = ((cap && cap.minCcrm) || 10) * 60e3, mK = ((cap && cap.minCapacitacion) || 4) * 60e3, ciclo = mC + mK;
+  const ancla = cap && cap.prueba ? t0Carga.current - mC : 0;
+  const pos = ((tFase - ancla) % ciclo + ciclo) % ciclo;
+  const capOn = capHay && (forzar ? forzar === 'cap' : pos >= mC);
+  const capFin = tFase + (ciclo - pos);
+
   /* Cintilla: avisos + cumpleaños de hoy generados */
   const tickerItems = useMemo(() => {
     const t0 = utc(today.y, today.m, today.d);
@@ -979,7 +1077,7 @@ function App() {
         <div className="stage" style=${{ transform: `scale(${scale})` }}>
           <${Header} meta=${meta} theme=${theme} pantalla=${cfg.pantalla} clima=${data.clima}/>
           <main className="main">
-            <div className="col left"><${Safety} seg=${data.seguridad || {}} today=${today}/><${Cultura} items=${data.cultura || []}/></div>
+            <div className="col left"><${Safety} seg=${data.seguridad || {}} today=${today} soloContador=${capOn}/>${capOn ? html`<${Capacitacion} cap=${cap} today=${today} fin=${capFin}/>` : html`<${Cultura} items=${data.cultura || []}/>`}</div>
             <div className="col mid">
               <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval}/>
               <${Results} res=${data.resultados || {}} today=${today}/>
