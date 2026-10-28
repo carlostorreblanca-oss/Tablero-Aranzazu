@@ -1362,8 +1362,9 @@ function App() {
   const mC = ((cap && cap.minCcrm) || 10) * 60e3, mK = ((cap && cap.minCapacitacion) || 4) * 60e3, ciclo = mC + mK;
   const ancla = cap && cap.prueba ? t0Carga.current - mC : 0;
   const pos = ((tFase - ancla) % ciclo + ciclo) % ciclo;
-  const capOn = capHay && (forzar ? forzar === 'cap' : pos >= mC);
-  const capFin = tFase + (ciclo - pos);
+  const alAbrir = tFase - t0Carga.current < mK; /* al abrir la página se muestra primero Capacitación */
+  const capOn = capHay && (forzar ? forzar === 'cap' : (alAbrir || pos >= mC));
+  const capFin = alAbrir && pos < mC ? t0Carga.current + mK : tFase + (ciclo - pos);
 
   /* Cintilla: avisos + cumpleaños de hoy generados */
   const tickerItems = useMemo(() => {
