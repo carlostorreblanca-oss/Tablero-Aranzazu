@@ -1056,7 +1056,7 @@ function App() {
   const [forzar, setForzar] = useState(null);
   useEffect(() => { const k = e => { if (e.key === 'c' || e.key === 'C') setForzar(f => f === null ? 'cap' : f === 'cap' ? 'ccrm' : null); }; window.addEventListener('keydown', k); return () => window.removeEventListener('keydown', k); }, []);
   const capHay = capPendientes(cap, today).length > 0;
-  const mC = ((cap && cap.minCcrm) || 10) * 60e3, mK = ((cap && cap.minCapacitacion) || 4) * 60e3, ciclo = mC + mK;
+  const mC = ((cap && cap.minCcrm) || 5) * 60e3, mK = ((cap && cap.minCapacitacion) || 4) * 60e3, ciclo = mC + mK;
   const ancla = cap && cap.prueba ? t0Carga.current - mC : 0;
   const pos = ((tFase - ancla) % ciclo + ciclo) % ciclo;
   const alAbrir = tFase - t0Carga.current < mK; /* al abrir la página se muestra primero Capacitación */

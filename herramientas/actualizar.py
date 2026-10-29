@@ -303,7 +303,7 @@ def leer_capacitacion(path, archivo, personal, hoy):
     nota_txt = "¿Se te venció una habilidad o está por vencer y no estás en la lista? Acércate a Capacitación." if nota else ""
     return {"activo": True, "archivo": os.path.basename(archivo), "titulo": "Programa de habilidades por vencer",
             "lugar": lug, "hora": hora, "capacitadores": capa, "notaNoche": "Noche: cambia a turno de día",
-            "nota": nota_txt, "minCcrm": 10, "minCapacitacion": 4, "lista": lista}, avisos
+            "nota": nota_txt, "minCcrm": 5, "minCapacitacion": 4, "lista": lista}, avisos
 
 
 # ---------------- Tablero RH: base de datos y eventos ----------------

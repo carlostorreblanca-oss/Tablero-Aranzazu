@@ -3965,7 +3965,7 @@
   ],
   "notaNoche": "Noche: cambia a turno de día",
   "nota": "¿Se te venció una habilidad o está por vencer y no estás en la lista? Acércate a Capacitación.",
-  "minCcrm": 10,
+  "minCcrm": 5,
   "minCapacitacion": 4,
   "lista": [
    {
