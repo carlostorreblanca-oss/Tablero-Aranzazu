@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap">
 <style>
 /* Layout: lienzo fijo 1920×1080 escalado a la pantalla. Encabezado / 3 columnas (Seguridad · Fotos+Resultados · RH) / cintilla. */
 :root{
@@ -477,6 +477,28 @@ button{font:inherit;color:inherit}
 .capa-row .tx .l2 span{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
 .habs em{background:var(--acc);color:var(--on-acc);border-color:var(--acc);font-size:14px;font-weight:800;padding:5px 10px;box-shadow:0 0 12px var(--acc-glow)}
 .habs.dos em{font-size:12.5px;padding:5px 8px}
+
+/* Prueba: Scrapbook para eventos con muchas fotos (6 por página: 3 arriba, 3 abajo) */
+.slide.scrap{background:#cdb68e;background-image:radial-gradient(rgba(90,60,25,.16) 1px,transparent 1.6px),radial-gradient(rgba(255,245,220,.22) 1px,transparent 1.6px),linear-gradient(160deg,#dcc79f 0%,#c4a978 100%);background-size:11px 11px,17px 17px,100% 100%;background-position:0 0,5px 7px,0 0}
+.slide.scrap::after{display:none}
+.slide.scrap::before{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 90px rgba(70,45,15,.35)}
+.sb-grid{position:absolute;left:34px;right:34px;top:44px;bottom:28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:64px 30px}
+.sb-ph{position:relative;background:#FBF8F1;padding:9px 9px 32px;box-shadow:0 2px 3px rgba(60,40,15,.25),0 12px 26px rgba(60,40,15,.32);transform:rotate(var(--r,0deg));min-height:0}
+.sb-ph img{display:block;width:100%;height:100%;object-fit:cover;background:#2a2a2a}
+.sb-ph .sb-tp{position:absolute;top:-13px;left:50%;width:92px;height:26px;margin-left:-46px;background:rgba(255,238,170,.78);transform:rotate(var(--tr,-4deg));box-shadow:0 1px 2px rgba(0,0,0,.18);z-index:2}
+.sb-ph .sb-tp.c{top:-10px;left:-14px;margin-left:0;width:70px;transform:rotate(-38deg);background:rgba(190,225,240,.75)}
+.sb-ph .sb-n{position:absolute;right:12px;bottom:6px;font:700 20px/1 'Caveat',cursive;color:#5b4632}
+.slide.scrap.on .sb-ph{animation:sbin .75s cubic-bezier(.2,.8,.25,1.15) both;animation-delay:calc(var(--k) * 160ms)}
+@keyframes sbin{from{opacity:0;transform:translateY(-26px) rotate(calc(var(--r,0deg) * 3)) scale(1.06)}to{opacity:1;transform:rotate(var(--r,0deg))}}
+.sb-lab{position:absolute;z-index:5;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-2.5deg);width:max-content;max-width:52%;padding:10px 24px 11px;background:#FFF6B8;color:#2b2218;box-shadow:0 8px 22px rgba(50,30,10,.35);text-align:center;display:grid;row-gap:4px}
+.sb-lab::before,.sb-lab::after{content:"";position:absolute;top:-11px;width:64px;height:22px;background:rgba(255,255,255,.62);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.sb-lab::before{left:-18px;transform:rotate(-24deg)}.sb-lab::after{right:-18px;transform:rotate(22deg)}
+.sb-lab small{font:700 13px/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:#8a5a12;display:flex;justify-content:center;gap:10px}
+.sb-lab b{font:700 34px/.95 'Caveat',cursive;text-wrap:balance}
+.sb-lab span{font:600 15px/1.1 var(--f-body);color:#5b4632}
+.slide.scrap.on .sb-lab{animation:sblab .7s 1.05s cubic-bezier(.2,.8,.25,1.2) both}
+@keyframes sblab{from{opacity:0;transform:translate(-50%,-50%) rotate(-12deg) scale(.6)}to{opacity:1;transform:translate(-50%,-50%) rotate(-2.5deg)}}
+@media (prefers-reduced-motion:reduce){.slide.scrap.on .sb-ph,.slide.scrap.on .sb-lab{animation:none}}
 </style>
 
 <div id="app"></div>
@@ -730,24 +752,61 @@ function Safety({ seg, today, soloContador }) {
   </section>`;
 }
 
+const SCRAP_MIN = 6;
+const SB_ROT = ['-2.6deg', '1.8deg', '-1.2deg', '2.2deg', '-1.8deg', '1.4deg'];
+function armarDiapositivas(items) {
+  const grupos = []; const idx = {};
+  items.forEach(x => { const k = x.evento || x.id; if (!(k in idx)) { idx[k] = grupos.length; grupos.push([]); } grupos[idx[k]].push(x); });
+  const out = [];
+  grupos.forEach(g => {
+    if (g.length < SCRAP_MIN) { g.forEach(x => out.push({ tipo: 'foto', e: x, key: x.id })); return; }
+    const pags = Math.ceil(g.length / 6);
+    for (let p = 0; p < pags; p++) {
+      let f = g.slice(p * 6, p * 6 + 6);
+      if (f.length < 6) f = f.concat(g.slice(0, 6 - f.length));
+      out.push({ tipo: 'scrap', e: g[0], fotos: f, pag: p + 1, pags, total: g.length, key: (g[0].evento || g[0].id) + '-p' + p });
+    }
+  });
+  return out;
+}
 function Carousel({ items, interval }) {
+  const slides = useMemo(() => armarDiapositivas(items), [items]);
   const [i, setI] = useState(0);
   const prev = useRef(-1);
-  const n = items.length;
+  const n = slides.length;
+  const dur = s => (s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : interval);
   useEffect(() => { if (i >= n) setI(0); }, [n]);
   useEffect(() => {
     if (n < 2) return;
-    const id = setTimeout(() => { prev.current = i; setI(x => (x + 1) % n); }, interval * 1000);
+    const id = setTimeout(() => { prev.current = i; setI(x => (x + 1) % n); }, dur(slides[Math.min(i, n - 1)]) * 1000);
     return () => clearTimeout(id);
   }, [i, n, interval]);
   if (!n) return html`<section className="panel carousel"><div className="ph"></div></section>`;
   const cur = Math.min(i, n - 1);
+  const ivCur = dur(slides[cur]);
   const porEvento = {}; items.forEach(x => { porEvento[x.evento] = (porEvento[x.evento] || 0) + 1; });
-  return html`<section className="panel carousel" aria-label="Eventos" style=${{ '--iv': interval + 's', '--kb': (interval + 1.5) + 's' }}>
-    ${items.map((e, k) => {
-      const cls = 'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
+  return html`<section className="panel carousel" aria-label="Eventos" style=${{ '--iv': ivCur + 's', '--kb': (ivCur + 1.5) + 's' }}>
+    ${slides.map((s, k) => {
+      const e = s.e;
       const ic = CAT_ICON[e.categoria] || 'camera';
-      return html`<div key=${e.id || k} className=${cls} aria-hidden=${k !== cur}>
+      if (s.tipo === 'scrap') {
+        const cls = 'slide scrap' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
+        const desde = (s.pag - 1) * 6 + 1, hasta = Math.min(s.pag * 6, s.total);
+        return html`<div key=${s.key} className=${cls} aria-hidden=${k !== cur}>
+          <div className="sb-grid">${s.fotos.map((f, j) => html`<figure key=${f.id + '-' + j} className="sb-ph" style=${{ '--r': SB_ROT[j], '--k': j, '--tr': (j % 2 ? '5deg' : '-4deg'), margin: 0 }}>
+            <span className=${'sb-tp' + (j === 2 || j === 3 ? ' c' : '')}></span>
+            ${f.imagen ? html`<img src=${f.imagen} alt=${f.titulo} loading="lazy"/>` : html`<div className="ph"></div>`}
+            <span className="sb-n">${f.foto}/${s.total}</span>
+          </figure>`)}</div>
+          <div className="sb-lab">
+            <small><span>${e.categoria || 'Evento'}</span><span>·</span><span>${e.fecha}</span></small>
+            <b>${e.titulo}</b>
+            <span>${e.lugar ? e.lugar + ' · ' : ''}${s.pags > 1 ? `Fotos ${desde}–${hasta} de ${s.total}` : `${s.total} fotos`}</span>
+          </div>
+        </div>`;
+      }
+      const cls = 'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
+      return html`<div key=${s.key || k} className=${cls} aria-hidden=${k !== cur}>
         <div className="media">
           ${e.imagen ? html`<img src=${e.imagen} alt=${e.titulo}/>` : html`<div className="ph"><${Icon} name=${ic} size=${250} stroke=${1.1} className="ph-ico"/></div>`}
         </div>
@@ -761,7 +820,7 @@ function Carousel({ items, interval }) {
       </div>`;
     })}
     ${n <= 12
-      ? html`<div className="segs" aria-hidden="true">${items.map((e, k) => html`<span key=${'s' + k} className=${k < cur ? 'done' : k === cur ? 'cur' : ''}><i key=${'i' + cur}></i></span>`)}</div>`
+      ? html`<div className="segs" aria-hidden="true">${slides.map((s, k) => html`<span key=${'s' + k} className=${k < cur ? 'done' : k === cur ? 'cur' : ''}><i key=${'i' + cur}></i></span>`)}</div>`
       : html`<div className="segs" aria-hidden="true"><span className="cur"><i key=${'i' + cur}></i></span></div><div className="car-count num">${cur + 1} / ${n}</div>`}
   </section>`;
 }
