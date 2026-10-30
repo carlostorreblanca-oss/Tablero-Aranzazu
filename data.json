@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-29 18:48",
+  "actualizado": "2026-10-30 07:08",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1793298035902,
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "29 oct 2026",
-   "diasAcumulados": 28,
+   "corte": "30 oct 2026",
+   "diasAcumulados": 29,
    "total": {
-    "dia": 88,
-    "acum": 2918,
+    "dia": 42,
+    "acum": 2974,
     "meta": 3692,
-    "plan": 3335,
-    "pctProgramado": 90
+    "plan": 3454,
+    "pctProgramado": 94
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 3,
-     "acum": 107,
+     "dia": 5,
+     "acum": 112,
      "meta": 136,
-     "plan": 123
+     "plan": 127
     },
     {
      "nombre": "Supervisores",
-     "dia": 29,
-     "acum": 408,
+     "dia": 5,
+     "acum": 419,
      "meta": 580,
-     "plan": 524
+     "plan": 543
     },
     {
      "nombre": "Operadores",
-     "dia": 56,
-     "acum": 2403,
+     "dia": 32,
+     "acum": 2443,
      "meta": 2976,
-     "plan": 2688
+     "plan": 2784
     }
    ],
    "toleranciaAmarillo": 5
@@ -3812,7 +3812,7 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep1.jpg",
    "foto": 1,
-   "fotosEvento": 7
+   "fotosEvento": 8
   },
   {
    "id": "asisep-1",
@@ -3824,7 +3824,7 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep2.jpg",
    "foto": 2,
-   "fotosEvento": 7
+   "fotosEvento": 8
   },
   {
    "id": "asisep-2",
@@ -3836,7 +3836,7 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep3.jpg",
    "foto": 3,
-   "fotosEvento": 7
+   "fotosEvento": 8
   },
   {
    "id": "asisep-3",
@@ -3848,7 +3848,7 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep4.jpg",
    "foto": 4,
-   "fotosEvento": 7
+   "fotosEvento": 8
   },
   {
    "id": "asisep-4",
@@ -3860,7 +3860,7 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep5.jpg",
    "foto": 5,
-   "fotosEvento": 7
+   "fotosEvento": 8
   },
   {
    "id": "asisep-5",
@@ -3872,7 +3872,7 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep6.jpg",
    "foto": 6,
-   "fotosEvento": 7
+   "fotosEvento": 8
   },
   {
    "id": "asisep-6",
@@ -3884,7 +3884,19 @@
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep7.jpg",
    "foto": 7,
-   "fotosEvento": 7
+   "fotosEvento": 8
+  },
+  {
+   "id": "asisep-7",
+   "evento": "asisep",
+   "categoria": "Reconocimiento",
+   "titulo": "Asistencia perfecta · septiembre",
+   "fecha": "28 oct",
+   "lugar": "Mina Aranzazu · RIT",
+   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
+   "imagen": "eventos/asisep8.jpg",
+   "foto": 8,
+   "fotosEvento": 8
   },
   {
    "id": "cumpleoct-0",
