@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-10-30 09:21",
+  "actualizado": "2026-10-30 18:47",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1793298035902,
+   "baseDatos": 1793405721686,
    "csvh": "611d12add4ff"
   },
   "tema": "oct"
@@ -4080,9 +4080,7 @@
   }
  ],
  "avisosTicker": [
-  "¡Hoy Evento de Cambio de turno!!",
-  "Hoy Evento Cumpleañeros",
-  "HOY Evento de Asistencia Perfecta!!!",
+  "Busca resultados con seguridad",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
   "¡Encuentra el Rojo y Corrige!"
  ],
