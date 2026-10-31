@@ -503,6 +503,40 @@ button{font:inherit;color:inherit}
 .slide.scrap.on .sb-lab{animation:sblab .7s 1.05s cubic-bezier(.2,.8,.25,1.2) both}
 @keyframes sblab{from{opacity:0;transform:translate(-50%,-50%) rotate(-12deg) scale(.6)}to{opacity:1;transform:translate(-50%,-50%) rotate(-2.5deg)}}
 @media (prefers-reduced-motion:reduce){.slide.scrap.on .sb-ph,.slide.scrap.on .sb-lab{animation:none}}
+
+/* ===== Día de Muertos (31 oct – 2 nov): papel picado, cempasúchil, catrina ===== */
+.dm-capa{position:absolute;inset:0;pointer-events:none;z-index:30;overflow:hidden}
+.dm-picado{position:absolute;left:0;right:0;top:113px;height:24px}
+.dm-picado svg,.dm-flores svg{display:block;width:100%;height:100%;overflow:visible}
+.dm-picado .pf{transform-box:fill-box;transform-origin:50% 0;animation:dmviento 4.5s ease-in-out infinite alternate}
+@keyframes dmviento{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+.dm-flores{position:absolute;left:0;right:0;top:1001px;height:30px}
+.dm-petalo{position:absolute;top:-30px;width:var(--w,12px);height:calc(var(--w,12px) * .62);border-radius:60% 40% 55% 45%;background:radial-gradient(circle at 35% 35%,#FFD166,#FF9F1C 55%,#E85D04);opacity:.78;box-shadow:0 0 6px rgba(255,140,0,.35);animation:dmcae var(--d,16s) linear infinite;animation-delay:var(--dl,0s)}
+@keyframes dmcae{0%{transform:translate3d(0,0,0) rotate(0deg)}25%{transform:translate3d(var(--x1,30px),280px,0) rotate(120deg)}50%{transform:translate3d(var(--x2,-20px),560px,0) rotate(220deg)}75%{transform:translate3d(var(--x1,30px),840px,0) rotate(310deg)}100%{transform:translate3d(var(--x2,-20px),1130px,0) rotate(420deg)}}
+.chip.theme.dm{border-color:#FF9F1C;background:linear-gradient(90deg,rgba(255,159,28,.22),rgba(255,61,154,.22));box-shadow:0 0 18px rgba(255,159,28,.35)}
+.chip.theme.dm .ico{color:#FFD166}
+.slide.dmp{background:radial-gradient(55% 65% at 78% 62%,rgba(255,159,28,.38),transparent 70%),radial-gradient(45% 50% at 10% 95%,rgba(255,61,154,.28),transparent 70%),linear-gradient(165deg,#2C1244 0%,#160A26 60%,#0E0618 100%)}
+.slide.dmp::after{display:none}
+.dmp-picado{position:absolute;left:0;right:0;top:0;height:120px}
+.dmp-picado svg{display:block;width:100%;height:100%}
+.dmp-picado .pf{transform-box:fill-box;transform-origin:50% 0;animation:dmviento 3.8s ease-in-out infinite alternate}
+.dmp-txt{position:absolute;left:44px;top:122px;width:56%;display:grid;row-gap:12px;z-index:5}
+.dmp-txt small{justify-self:start;font:800 15px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:#1A0B2A;background:#FFD166;padding:8px 14px;border-radius:99px}
+.dmp-txt h2{margin:0;font:900 92px/.86 var(--f-display);text-transform:uppercase;letter-spacing:.01em;background:linear-gradient(95deg,#FFD166 0%,#FF9F1C 38%,#FF3D9A 78%,#C77DFF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 18px rgba(255,120,0,.35))}
+.dmp-txt h2 span{display:block;font-size:.5em;letter-spacing:.08em}
+.dmp-txt p{margin:0;font:500 20px/1.36 var(--f-body);color:rgba(255,244,230,.92);text-wrap:pretty;max-width:470px}
+.dmp-txt em{font:700 28px/1 'Caveat',cursive;font-style:normal;color:#FFB4D9;white-space:nowrap;text-shadow:0 2px 10px rgba(14,6,24,.9)}
+.dmp-cat{position:absolute;right:6px;bottom:0;height:94%;z-index:2;transform-origin:50% 100%}
+.dmp-cat svg{height:100%;width:auto;display:block;overflow:visible}
+.slide.dmp.on .dmp-cat{animation:dmflota 6s ease-in-out infinite}
+@keyframes dmflota{0%,100%{transform:rotate(-1.2deg) translateY(0)}50%{transform:rotate(1.2deg) translateY(-6px)}}
+.dmp-base{position:absolute;left:0;right:0;bottom:-10px;height:84px;z-index:4}
+.dmp-base svg{display:block;width:100%;height:100%;overflow:visible}
+.dmp-llama{transform-box:fill-box;transform-origin:50% 100%;animation:dmllama 1.3s ease-in-out infinite alternate}
+@keyframes dmllama{0%{transform:scale(1,1) rotate(-2deg);opacity:.95}50%{transform:scale(.92,1.08) rotate(2deg);opacity:1}100%{transform:scale(1.04,.94) rotate(-1deg);opacity:.9}}
+.slide.dmp.on .dmp-txt>*{animation:csin .9s both}
+.slide.dmp.on .dmp-txt>*:nth-child(2){animation-delay:.15s}.slide.dmp.on .dmp-txt>*:nth-child(3){animation-delay:.3s}.slide.dmp.on .dmp-txt>*:nth-child(4){animation-delay:.45s}
+@media (prefers-reduced-motion:reduce){.dm-petalo,.dm-picado .pf,.dmp-picado .pf,.slide.dmp.on .dmp-cat,.dmp-llama,.slide.dmp.on .dmp-txt>*{animation:none}.dm-petalo{display:none}}
 /* ===== Versión celular: una columna con scroll, sin lienzo escalado ===== */
 html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
 #app{height:auto}
@@ -1007,6 +1041,7 @@ const ICONS = {
   gift:'<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>',
   flame:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
   gem:'<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>',
+  skull:'<circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M8 20v2h8v-2"/><path d="m12.5 17-.5-1-.5 1h1z"/><path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20"/>',
   monitor:'<rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>'
 };
 function Icon({ name, size = 24, stroke = 2, className = '' }) {
@@ -1134,7 +1169,7 @@ function Header({ meta, theme, pantalla, clima }) {
       <div className="unit"><b>${meta.unidad}</b><small>${meta.ubicacion}</small></div>
     </div>
     <div className="hdr-mid">
-      ${theme.id !== 'core' && html`<span className="chip theme"><${Icon} name=${theme.icon} size=${22}/>${theme.nombre}</span>`}
+      ${theme.id !== 'core' && html`<span className=${'chip theme' + (theme.id === 'muertos' ? ' dm' : '')}><${Icon} name=${theme.icon} size=${22}/>${theme.nombre}</span>`}
       <${Weather} clima=${clima} p=${p}/>
       ${meta.esDemo && html`<span className="chip demo"><${Icon} name="alert" size=${18}/>${meta.demoTexto || 'Datos de ejemplo'}</span>`}
     </div>
@@ -1223,12 +1258,143 @@ function armarDiapositivas(items) {
   });
   return out;
 }
-function Carousel({ items, interval }) {
-  const slides = useMemo(() => armarDiapositivas(items), [items]);
+
+/* ===== Día de Muertos (31 oct – 2 nov) ===== */
+const DM_TEMA = { id:'muertos', nombre:'Día de Muertos', meses:'31 oct – 2 nov', icon:'skull', months:[],
+  acc:'#FF9F1C', acc2:'#FF3D9A', deep:'#7B2CBF', inkL:'#B45309', bg:'#140A1F', surf:'#1E1030', surf2:'#28163E', line:'#46295F',
+  stripe:'linear-gradient(90deg,#FF3D9A 0%,#FF9F1C 20%,#FFD23F 35%,#2EC4B6 50%,#00A6FB 62%,#7B2CBF 78%,#FF3D9A 100%)' };
+function enDiaDeMuertos(t) { return (t.m === 10 && t.d === 31) || (t.m === 11 && (t.d === 1 || t.d === 2)); }
+const DM_COL = ['#FF3D9A', '#FF9F1C', '#7B2CBF', '#2EC4B6', '#FFD23F', '#00A6FB'];
+function dmFlor(cx, cy, r) {
+  let o = '';
+  const capas = [[1, 14, '#C2410C'], [0.82, 12, '#E85D04'], [0.62, 11, '#F48C06'], [0.42, 9, '#FFBA08']];
+  capas.forEach(([f, n, c], li) => {
+    const rr = r * f;
+    for (let k = 0; k < n; k++) {
+      const a = (360 / n) * k + li * 13;
+      o += `<ellipse cx="${cx}" cy="${cy - rr * 0.55}" rx="${(rr * 0.34).toFixed(1)}" ry="${(rr * 0.55).toFixed(1)}" fill="${c}" transform="rotate(${a} ${cx} ${cy})"/>`;
+    }
+  });
+  o += `<circle cx="${cx}" cy="${cy}" r="${(r * 0.2).toFixed(1)}" fill="#9A3412"/><circle cx="${cx - r * 0.06}" cy="${cy - r * 0.06}" r="${(r * 0.08).toFixed(1)}" fill="#FFD166" opacity=".7"/>`;
+  return o;
+}
+function dmRosa(cx, cy, r) {
+  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#FF3D9A"/><path d="M${cx - r * .55} ${cy} a${r * .55} ${r * .55} 0 1 1 ${r * .55} ${r * .55} a${r * .35} ${r * .35} 0 1 1 -${r * .1} -${r * .62} a${r * .18} ${r * .18} 0 1 1 ${r * .2} ${r * .25}" fill="none" stroke="#B5175E" stroke-width="${Math.max(1.5, r * .09).toFixed(1)}" stroke-linecap="round"/>`;
+}
+function dmHoja(cx, cy, l, a) { return `<ellipse cx="${cx}" cy="${cy}" rx="${l}" ry="${(l * .38).toFixed(1)}" fill="#2D6A4F" transform="rotate(${a} ${cx} ${cy})"/>`; }
+function dmBandera(x, y, w, h, color, rot) {
+  const z = Math.max(4, Math.round(w / 9));
+  let d = `M${x} ${y}H${x + w}V${y + h - z * 1.4}`;
+  for (let xx = x + w; xx > x + 0.1; xx -= z) d += `L${(xx - z / 2).toFixed(1)} ${y + h}L${Math.max(x, xx - z).toFixed(1)} ${(y + h - z * 1.4).toFixed(1)}`;
+  d += 'Z';
+  const cx = x + w / 2, cy = y + h * 0.45, s = w * 0.17;
+  d += `M${cx} ${cy - s}L${cx + s} ${cy}L${cx} ${cy + s}L${cx - s} ${cy}Z`;
+  if (w >= 40) {
+    const c = (px, py, r) => `M${(px - r).toFixed(1)} ${py.toFixed(1)}a${r} ${r} 0 1 0 ${2 * r} 0a${r} ${r} 0 1 0 ${-2 * r} 0Z`;
+    d += c(cx - s * 1.9, cy - s * 1.3, s * .32) + c(cx + s * 1.9, cy - s * 1.3, s * .32) + c(cx - s * 1.9, cy + s * 1.3, s * .32) + c(cx + s * 1.9, cy + s * 1.3, s * .32);
+    for (let k = 0; k < 4; k++) { const tx = x + w * (0.2 + k * 0.2); d += `M${(tx - s * .35).toFixed(1)} ${(y + h * .12).toFixed(1)}h${(s * .7).toFixed(1)}l${(-s * .35).toFixed(1)} ${(s * .55).toFixed(1)}Z`; }
+    d += `M${(cx - s * .5).toFixed(1)} ${(y + h * .8).toFixed(1)}h${s.toFixed(1)}v${(s * .5).toFixed(1)}h${(-s).toFixed(1)}Z`;
+  }
+  return `<g class="pf" style="animation-delay:${(-(x % 7) * 0.6).toFixed(1)}s"><path d="${d}" fill="${color}" fill-rule="evenodd" transform="rotate(${rot} ${cx} ${y})" opacity=".96"/></g>`;
+}
+function dmPicado(W, H, fw, fh, sag, n) {
+  let o = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2 Q${W / 2} ${2 + sag * 2} ${W} 2" fill="none" stroke="rgba(255,240,220,.55)" stroke-width="1.5"/>`;
+  const paso = W / n;
+  for (let k = 0; k < n; k++) {
+    const cx = paso * (k + .5), t = cx / W, y = 2 + sag * 4 * t * (1 - t) - 1;
+    o += dmBandera(cx - fw / 2, y, fw, fh, DM_COL[k % DM_COL.length], ((t - .5) * 6).toFixed(1));
+  }
+  return o + '</svg>';
+}
+function dmGuirnalda(W, n, r) {
+  let o = `<svg viewBox="0 0 ${W} ${r * 2 + 4}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">`;
+  const paso = W / n;
+  for (let k = 0; k < n; k++) {
+    const cx = paso * (k + .5);
+    o += dmHoja(cx - r * .9, r + 6, r * .7, -25) + dmHoja(cx + r * .9, r + 6, r * .7, 25);
+    o += k % 5 === 2 ? dmRosa(cx, r + 2, r * .72) : dmFlor(cx, r + 2, r * (0.86 + (k % 3) * 0.08));
+  }
+  return o + '</svg>';
+}
+const DM_CATRINA = (() => {
+  const ojo = (cx, cy) => {
+    let o = '';
+    for (let k = 0; k < 10; k++) { const a = k * 36; o += `<ellipse cx="${cx}" cy="${cy - 33}" rx="6" ry="10" fill="${k % 2 ? '#FF9F1C' : '#FF3D9A'}" transform="rotate(${a} ${cx} ${cy})"/>`; }
+    return o + `<ellipse cx="${cx}" cy="${cy}" rx="25" ry="23" fill="#24123A"/><circle cx="${cx - 8}" cy="${cy - 7}" r="5.5" fill="#FFFFFF" opacity=".9"/><circle cx="${cx + 7}" cy="${cy + 6}" r="2.5" fill="#FFFFFF" opacity=".55"/>`;
+  };
+  let pts = '';
+  for (let x = 184; x <= 246; x += 8) { const y = 343 + Math.sin((x - 184) / 62 * Math.PI) * 6; pts += `<line x1="${x}" y1="${(y - 8).toFixed(1)}" x2="${x}" y2="${(y + 8).toFixed(1)}" stroke="#24123A" stroke-width="2.6" stroke-linecap="round"/>`; }
+  let cuentas = '';
+  for (let k = 0; k <= 12; k++) { const t = k / 12, x = 160 + 110 * t, y = 418 + Math.sin(t * Math.PI) * 26; cuentas += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${k % 2 ? 5 : 7}" fill="${k % 2 ? '#FFD166' : '#FF9F1C'}" stroke="#9A3412" stroke-width="1"/>`; }
+  let olan = '';
+  for (let k = 0; k < 11; k++) { const x = 146 + k * 14; olan += `<circle cx="${x}" cy="${404 + Math.abs(5 - k) * 1.2}" r="10" fill="${k % 2 ? '#FF3D9A' : '#E0218A'}"/>`; }
+  let encaje = '';
+  for (let k = 0; k < 26; k++) { const x = 90 + (k * 37) % 260, y = 470 + ((k * 53) % 80); encaje += `<circle cx="${x}" cy="${y}" r="3" fill="#B388FF" opacity=".55"/>`; }
+  return `<svg viewBox="0 0 430 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Catrina">
+    <path d="M300 128 C330 70 380 40 412 30 C392 62 360 92 318 140 Z" fill="#7B2CBF"/><path d="M308 132 C340 90 372 70 404 64" stroke="#C77DFF" stroke-width="3" fill="none"/>
+    <path d="M292 132 C300 70 330 26 356 6 C350 48 330 96 304 142 Z" fill="#FF3D9A"/><path d="M298 134 C310 84 330 44 350 18" stroke="#FFB4D9" stroke-width="3" fill="none"/>
+    <path d="M128 150 Q138 66 215 58 Q292 66 302 150 Z" fill="#3A1F5C"/><path d="M134 128 Q215 112 296 128 L298 148 Q215 132 132 148 Z" fill="#FF3D9A"/>
+    <path d="M140 230 Q138 166 215 164 Q292 166 290 230 Q292 285 270 312 Q262 324 262 342 Q262 368 240 374 L190 374 Q168 368 168 342 Q168 324 160 312 Q138 285 140 230 Z" fill="#FBF3E6" stroke="#24123A" stroke-width="3"/>
+    <path d="M200 374 L230 374 L233 402 L197 402 Z" fill="#EFE3D0"/>
+    <ellipse cx="215" cy="160" rx="196" ry="34" fill="#24123A"/><ellipse cx="215" cy="154" rx="190" ry="27" fill="#3A1F5C"/>
+    ${dmHoja(96, 150, 22, -30)}${dmHoja(150, 120, 18, 40)}${dmFlor(118, 138, 32)}${dmRosa(166, 124, 19)}${dmFlor(92, 166, 20)}${dmRosa(262, 128, 15)}${dmFlor(290, 140, 18)}
+    ${ojo(185, 266)}${ojo(245, 266)}
+    <g transform="translate(215 214)">${[0, 60, 120, 180, 240, 300].map(a => `<ellipse cx="0" cy="-11" rx="5" ry="9" fill="#2EC4B6" transform="rotate(${a})"/>`).join('')}<circle r="5" fill="#FF9F1C"/></g>
+    <circle cx="186" cy="208" r="3" fill="#FF3D9A"/><circle cx="244" cy="208" r="3" fill="#FF3D9A"/><circle cx="174" cy="220" r="2.5" fill="#7B2CBF"/><circle cx="256" cy="220" r="2.5" fill="#7B2CBF"/>
+    <path d="M215 316 Q202 303 207 294 Q211 288 215 295 Q219 288 223 294 Q228 303 215 316 Z" fill="#24123A"/>
+    <path d="M158 300 q-10 8 -2 16 q8 6 12 -2 q2 -6 -4 -6" fill="none" stroke="#FF3D9A" stroke-width="3" stroke-linecap="round"/><path d="M272 300 q10 8 2 16 q-8 6 -12 -2 q-2 -6 4 -6" fill="none" stroke="#FF3D9A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M180 343 Q215 356 250 343" fill="none" stroke="#24123A" stroke-width="3.2" stroke-linecap="round"/>${pts}
+    <circle cx="215" cy="364" r="3.5" fill="#FF9F1C"/>
+    <path d="M60 560 Q72 446 158 412 Q188 400 215 402 Q242 400 272 412 Q358 446 370 560 Z" fill="#7B2CBF"/><path d="M110 560 Q130 470 215 452 Q300 470 320 560 Z" fill="#5A189A" opacity=".55"/>
+    ${encaje}${olan}${cuentas}
+    ${dmHoja(318, 470, 24, -20)}${dmHoja(352, 512, 20, 30)}${dmFlor(312, 448, 36)}${dmRosa(276, 486, 20)}${dmFlor(346, 496, 26)}${dmFlor(120, 520, 22)}
+  </svg>`;
+})();
+function dmVela(x, base, h, w) {
+  return `<rect x="${x - w / 2}" y="${base - h}" width="${w}" height="${h}" rx="3" fill="#FFF3D6"/><rect x="${x - w / 2}" y="${base - h}" width="${w}" height="8" rx="3" fill="#F5E1B5"/><line x1="${x}" y1="${base - h}" x2="${x}" y2="${base - h - 6}" stroke="#3B2A1A" stroke-width="2"/>
+    <ellipse cx="${x}" cy="${base - h - 14}" rx="${w * 1.1}" ry="${w * 1.3}" fill="rgba(255,190,80,.28)"/>
+    <path class="dmp-llama" d="M${x} ${base - h - 30} C${x + 9} ${base - h - 18} ${x + 7} ${base - h - 6} ${x} ${base - h - 5} C${x - 7} ${base - h - 6} ${x - 9} ${base - h - 18} ${x} ${base - h - 30} Z" fill="#FFB703"/>`;
+}
+const DM_BASE = (() => {
+  const W = 1000, B = 96;
+  let o = `<svg viewBox="0 0 ${W} ${B}" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">`;
+  [70, 250, 470, 690].forEach((x, k) => { o += dmVela(x, B - 18, 34 + (k % 2) * 12, 16); });
+  for (let k = 0; k < 16; k++) { const cx = 20 + k * 64, cy = B - 22 + (k % 2) * 6; o += dmHoja(cx - 18, cy + 8, 15, -20) + dmHoja(cx + 18, cy + 8, 15, 20) + (k % 4 === 1 ? dmRosa(cx, cy, 15) : dmFlor(cx, cy, 22 + (k % 3) * 3)); }
+  return o + '</svg>';
+})();
+const DM_PICADO_HDR = dmPicado(1920, 24, 22, 19, 2, 56);
+const DM_PICADO_PORTADA = dmPicado(1000, 120, 66, 92, 10, 12);
+const DM_GUIRNALDA = dmGuirnalda(1920, 64, 13);
+const DM_PETALOS = Array.from({ length: 22 }, (_, k) => ({
+  left: ((k * 89.3) % 100).toFixed(1) + '%', w: 9 + (k * 7) % 9, d: 13 + (k * 5) % 11, dl: -((k * 3.7) % 20).toFixed(1), x1: ((k % 2 ? 1 : -1) * (20 + (k * 11) % 40)) + 'px', x2: ((k % 2 ? -1 : 1) * (10 + (k * 7) % 30)) + 'px'
+}));
+function DiaDeMuertosCapa() {
+  return html`<div className="dm-capa" aria-hidden="true">
+    <div className="dm-picado" dangerouslySetInnerHTML=${{ __html: DM_PICADO_HDR }}></div>
+    ${DM_PETALOS.map((p, k) => html`<i key=${'p' + k} className="dm-petalo" style=${{ left: p.left, '--w': p.w + 'px', '--d': p.d + 's', '--dl': p.dl + 's', '--x1': p.x1, '--x2': p.x2 }}></i>`)}
+    <div className="dm-flores" dangerouslySetInnerHTML=${{ __html: DM_GUIRNALDA }}></div>
+  </div>`;
+}
+function PortadaMuertos({ cls }) {
+  return html`<div className=${cls + ' dmp'}>
+    <div className="dmp-picado" dangerouslySetInnerHTML=${{ __html: DM_PICADO_PORTADA }}></div>
+    <div className="dmp-txt">
+      <small>1 y 2 de noviembre</small>
+      <h2>Día de Muertos<span>Fieles difuntos</span></h2>
+      <p>Hoy encendemos una vela por nuestros compañeros, familiares y amigos que se nos adelantaron. Mientras los recordemos, siguen con nosotros.</p>
+      <em>Con cariño, la familia CoMinVi · Aranzazu</em>
+    </div>
+    <div className="dmp-cat" dangerouslySetInnerHTML=${{ __html: DM_CATRINA }}></div>
+    <div className="dmp-base" dangerouslySetInnerHTML=${{ __html: DM_BASE }}></div>
+  </div>`;
+}
+
+function Carousel({ items, interval, portada }) {
+  const slides = useMemo(() => (portada ? [{ tipo: 'muertos', key: 'dm-portada', e: {} }] : []).concat(armarDiapositivas(items)), [items, portada]);
   const [i, setI] = useState(0);
   const prev = useRef(-1);
   const n = slides.length;
-  const dur = s => (s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : interval);
+  const dur = s => (s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : s && s.tipo === 'muertos' ? Math.round(interval * 2) : interval);
   useEffect(() => { if (i >= n) setI(0); }, [n]);
   useEffect(() => {
     if (n < 2) return;
@@ -1243,6 +1409,7 @@ function Carousel({ items, interval }) {
     ${slides.map((s, k) => {
       const e = s.e;
       const ic = CAT_ICON[e.categoria] || 'camera';
+      if (s.tipo === 'muertos') return html`<${PortadaMuertos} key=${s.key} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
       if (s.tipo === 'scrap') {
         const cls = 'slide scrap' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
         const desde = (s.pag - 1) * 6 + 1, hasta = Math.min(s.pag * 6, s.total);
@@ -1509,7 +1676,8 @@ function App() {
   const today = partsInTZ(tick, meta.zonaHoraria);
   const autoTheme = themeForMonth(today.m);
   const byId = id => THEMES.find(t => t.id === id);
-  const theme = cfg.override
+  const muertos = enDiaDeMuertos(today);
+  const theme = muertos ? DM_TEMA : cfg.override
     ? (cfg.auto ? autoTheme : (byId(cfg.themeId) || THEMES[0]))
     : (meta.tema === 'auto' ? autoTheme : (byId(meta.tema) || THEMES[0]));
 
@@ -1581,6 +1749,7 @@ function App() {
     const t0 = utc(today.y, today.m, today.d);
     const hoy = (data.personal || []).filter(p => { if (!p.cumpleanos) return false; const [mm, dd] = p.cumpleanos.split('-').map(Number); return mm === today.m && dd === today.d; }).map(p => p.nombre);
     const items = [].concat(data.avisosTicker || []);
+    if (enDiaDeMuertos(today)) items.unshift('Día de Muertos · 1 y 2 de noviembre: recordamos con cariño a nuestros fieles difuntos');
     if (hoy.length) items.splice(1, 0, `Hoy celebramos el cumpleaños de ${hoy.length > 1 ? hoy.slice(0, -1).join(', ') + ' y ' + hoy[hoy.length - 1] : hoy[0]}. ¡Muchas felicidades de parte de toda la familia CoMinVi!`);
     return items;
   }, [data, today.y, today.m, today.d]);
@@ -1593,12 +1762,13 @@ function App() {
           <main className="main">
             <div className="col left"><${Safety} seg=${data.seguridad || {}} today=${today} soloContador=${capOn}/>${capOn ? html`<${Capacitacion} cap=${cap} today=${today} fin=${capFin}/>` : html`<${Cultura} items=${data.cultura || []}/>`}</div>
             <div className="col mid">
-              <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval}/>
+              <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval} portada=${muertos}/>
               <${Results} res=${data.resultados || {}} today=${today}/>
             </div>
             <div className="col right"><${People} personal=${data.personal || []} today=${today}/></div>
           </main>
           <${Ticker} items=${tickerItems}/>
+          ${muertos && html`<${DiaDeMuertosCapa}/>`}
         </div>
       </div>
     </div>
