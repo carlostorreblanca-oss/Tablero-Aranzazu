@@ -162,6 +162,9 @@ button{font:inherit;color:inherit}
 .res-head{display:flex;align-items:center;gap:14px}
 .res-head .eyebrow{flex:1}
 .res-head .corte{font:600 16px/1 var(--f-body);color:var(--faint)}
+/* Fecha de corte destacada (Resultados y CCRM) */
+.fecha-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:var(--acc);color:var(--on-acc);font:800 16px/1 var(--f-body);letter-spacing:.03em;text-transform:none;white-space:nowrap;flex:none}
+.eyebrow .count.fecha-chip{color:var(--on-acc);font-weight:800;letter-spacing:.03em}
 .res-grid{display:grid;grid-template-columns:minmax(0,1fr) 1px minmax(0,1fr);column-gap:26px;min-height:0}
 .res-grid .sep{background:var(--line)}
 .res-col{display:grid;align-content:start;row-gap:14px;min-width:0}
@@ -298,6 +301,7 @@ button{font:inherit;color:inherit}
 .res-head{flex-wrap:nowrap;gap:12px}
 .res-head .eyebrow{flex:none;font-size:15px}
 .res-head .corte{margin-left:auto;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.res-head .fecha-chip{font-size:15px;padding:5px 11px}
 .res-tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));column-gap:12px}
 .rt{display:grid;row-gap:7px;min-width:0;padding-right:12px;border-right:1px solid var(--line)}
 .rt:last-child{border-right:0;padding-right:0}
@@ -729,7 +733,7 @@ function Safety({ seg, today, soloContador }) {
       </div>`}
     </div>
     ${!soloContador && html`<div className="ccrm fadein">
-      <div className="eyebrow"><${Icon} name="hardhat" size=${22}/>CCRM<span className="count">${c.corte ? 'Al ' + c.corte : ''}</span></div>
+      <div className="eyebrow"><${Icon} name="hardhat" size=${22}/>CCRM${c.corte && html`<span className="count fecha-chip num">Al ${c.corte}</span>`}</div>
       <div className="ccrm-body">
         <div className="semaforo" aria-label=${'Semáforo ' + estTxt}><i className=${'r' + (est === 'bad' ? ' on' : '')}></i><i className=${'y' + (est === 'warn' ? ' on' : '')}></i><i className=${'g' + (est === 'ok' ? ' on' : '')}></i></div>
         <div className="ccrm-num">
@@ -842,7 +846,7 @@ function Results({ res, today }) {
     d.disparosPlan ? T('Disparos', `${d.disparos} de ${d.disparosPlan}`, '', d.disparos, d.disparosPlan, `Relleno RF día ${f0(d.rellenoRF)} · mes ${f0(m.rellenoRF)} m³${(d.rellenoCRF || m.rellenoCRF) ? ' · CRF ' + f0(m.rellenoCRF) + ' m³' : ''}`, 'Día ' + diaN) : null
   ].filter(Boolean);
   return html`<section className="panel results" aria-label="Resultados operativos">
-    <div className="res-head"><div className="eyebrow"><${Icon} name="pickaxe" size=${20}/>Resultados operativos</div><span className="corte num">${res.corte ? 'Corte al ' + res.corte + ' · toneladas secas · acumulado contra plan al día' : ''}</span></div>
+    <div className="res-head"><div className="eyebrow"><${Icon} name="pickaxe" size=${20}/>Resultados operativos</div><span className="corte num">toneladas secas · acumulado contra plan al día</span>${res.corte && html`<span className="fecha-chip num">Corte al ${res.corte}</span>`}</div>
     <div className="res-tiles">${tiles.map(x => html`<div className="rt" key=${x.k}>
       <span className="rt-k"><i>${x.per}</i>${x.k}</span>
       <div className="rt-v"><b className="num">${x.v}${x.u && html`<small>${x.u}</small>`}</b>${x.pend ? html`<span className="rt-p pend">Pendiente</span>` : html`<span className=${'rt-p num ' + x.t}>${x.p.toFixed(1)}%</span>`}</div>
