@@ -1002,7 +1002,8 @@ function Results({ res, today }) {
   const f1 = n => (n || 0).toLocaleString('es-MX', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const sg = n => (n > 0 ? '+' : n < 0 ? '−' : '') ;
   const diaN = (res.corte || '').split(' ')[0] || '';
-  const mesN = cap1(MESES[today.m - 1]);
+  const mesC = MESES.findIndex(x => x.slice(0, 3) === String((res.corte || '').split(' ')[1] || '').toLowerCase().slice(0, 3));
+  const mesN = cap1(MESES[mesC >= 0 ? mesC : today.m - 1]);
   const T = (k, v, u, real, plan, sub, per, pend) => { const p = pctOf(real, plan); return pend ? { k, v: '—', u: '', p: 0, t: 'pend', sub, per, pend: true } : { k, v, u, p, t: tone(p), sub, per }; };
   const extPend = d.extraccionSecas == null || (d.extraccionPendiente === true);
   const tiles = [
