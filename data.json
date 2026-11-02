@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-01 14:32",
+  "actualizado": "2026-11-01 18:48",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1793492273049,
+   "baseDatos": 1793578710555,
    "csvh": "611d12add4ff"
   },
   "tema": "nov"
@@ -3191,7 +3191,7 @@
    "puesto": "Auxiliar de Calidad",
    "unidad": "Calidad",
    "cumpleanos": "03-17",
-   "ingreso": "2026-03-02",
+   "ingreso": "2026-02-03",
    "foto": ""
   },
   {
