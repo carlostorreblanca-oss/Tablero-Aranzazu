@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-02 06:51",
+  "actualizado": "2026-11-02 10:42",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1793578710555,
@@ -3755,6 +3755,78 @@
  ],
  "eventosFotos": [
   {
+   "id": "muertos-0",
+   "evento": "muertos",
+   "categoria": "Celebración",
+   "titulo": "Día de Muertos",
+   "fecha": "2 nov",
+   "lugar": "Mina Aranzazu · Cabrestante",
+   "descripcion": "Celebramos el Día de Muertos con pan de muerto y bebida caliente para el personal al inicio del turno.",
+   "imagen": "eventos/muertos1.jpg",
+   "foto": 1,
+   "fotosEvento": 6
+  },
+  {
+   "id": "muertos-1",
+   "evento": "muertos",
+   "categoria": "Celebración",
+   "titulo": "Día de Muertos",
+   "fecha": "2 nov",
+   "lugar": "Mina Aranzazu · Cabrestante",
+   "descripcion": "Celebramos el Día de Muertos con pan de muerto y bebida caliente para el personal al inicio del turno.",
+   "imagen": "eventos/muertos2.jpg",
+   "foto": 2,
+   "fotosEvento": 6
+  },
+  {
+   "id": "muertos-2",
+   "evento": "muertos",
+   "categoria": "Celebración",
+   "titulo": "Día de Muertos",
+   "fecha": "2 nov",
+   "lugar": "Mina Aranzazu · Cabrestante",
+   "descripcion": "Celebramos el Día de Muertos con pan de muerto y bebida caliente para el personal al inicio del turno.",
+   "imagen": "eventos/muertos3.jpg",
+   "foto": 3,
+   "fotosEvento": 6
+  },
+  {
+   "id": "muertos-3",
+   "evento": "muertos",
+   "categoria": "Celebración",
+   "titulo": "Día de Muertos",
+   "fecha": "2 nov",
+   "lugar": "Mina Aranzazu · Cabrestante",
+   "descripcion": "Celebramos el Día de Muertos con pan de muerto y bebida caliente para el personal al inicio del turno.",
+   "imagen": "eventos/muertos4.jpg",
+   "foto": 4,
+   "fotosEvento": 6
+  },
+  {
+   "id": "muertos-4",
+   "evento": "muertos",
+   "categoria": "Celebración",
+   "titulo": "Día de Muertos",
+   "fecha": "2 nov",
+   "lugar": "Mina Aranzazu · Cabrestante",
+   "descripcion": "Celebramos el Día de Muertos con pan de muerto y bebida caliente para el personal al inicio del turno.",
+   "imagen": "eventos/muertos5.jpg",
+   "foto": 5,
+   "fotosEvento": 6
+  },
+  {
+   "id": "muertos-5",
+   "evento": "muertos",
+   "categoria": "Celebración",
+   "titulo": "Día de Muertos",
+   "fecha": "2 nov",
+   "lugar": "Mina Aranzazu · Cabrestante",
+   "descripcion": "Celebramos el Día de Muertos con pan de muerto y bebida caliente para el personal al inicio del turno.",
+   "imagen": "eventos/muertos6.jpg",
+   "foto": 6,
+   "fotosEvento": 6
+  },
+  {
    "id": "turnooct28-0",
    "evento": "turnooct28",
    "categoria": "Convivencia",
@@ -3993,90 +4065,6 @@
    "imagen": "eventos/cumpleoct8.jpg",
    "foto": 8,
    "fotosEvento": 8
-  },
-  {
-   "id": "turnooct18-0",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct181.jpg",
-   "foto": 1,
-   "fotosEvento": 7
-  },
-  {
-   "id": "turnooct18-1",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct182.jpg",
-   "foto": 2,
-   "fotosEvento": 7
-  },
-  {
-   "id": "turnooct18-2",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct183.jpg",
-   "foto": 3,
-   "fotosEvento": 7
-  },
-  {
-   "id": "turnooct18-3",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct184.jpg",
-   "foto": 4,
-   "fotosEvento": 7
-  },
-  {
-   "id": "turnooct18-4",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct185.jpg",
-   "foto": 5,
-   "fotosEvento": 7
-  },
-  {
-   "id": "turnooct18-5",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct186.jpg",
-   "foto": 6,
-   "fotosEvento": 7
-  },
-  {
-   "id": "turnooct18-6",
-   "evento": "turnooct18",
-   "categoria": "Convivencia",
-   "titulo": "Comida de cambio de turno · quesabirrias",
-   "fecha": "18 oct",
-   "lugar": "Comedor del Campamento Cabrestante",
-   "descripcion": "Comida de cambio de turno con quesabirrias y consomé en el comedor del Campamento Cabrestante, a partir de las 4:30 p. m.",
-   "imagen": "eventos/turnooct187.jpg",
-   "foto": 7,
-   "fotosEvento": 7
   }
  ],
  "avisosTicker": [
