@@ -537,6 +537,13 @@ button{font:inherit;color:inherit}
 .slide.dmp.on .dmp-txt>*{animation:csin .9s both}
 .slide.dmp.on .dmp-txt>*:nth-child(2){animation-delay:.15s}.slide.dmp.on .dmp-txt>*:nth-child(3){animation-delay:.3s}.slide.dmp.on .dmp-txt>*:nth-child(4){animation-delay:.45s}
 @media (prefers-reduced-motion:reduce){.dm-petalo,.dm-picado .pf,.dmp-picado .pf,.slide.dmp.on .dmp-cat,.dmp-llama,.slide.dmp.on .dmp-txt>*{animation:none}.dm-petalo{display:none}}
+
+/* Capacitación: formato de curso (vencimientos) */
+.capa-meta .capa-tag{font:800 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:5px 9px;border-radius:5px;background:var(--acc);color:var(--on-acc)}
+.habs em.venc{background:var(--bad);border-color:var(--bad);color:#fff;box-shadow:0 0 12px rgba(239,68,68,.45)}
+.habs em.porv{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.capa.muchos .capa-list{row-gap:5px}.capa.muchos .capa-row{padding-top:4px;padding-bottom:4px}.capa.muchos .cu{width:34px;height:34px}.capa.muchos .capa-row{grid-template-columns:34px minmax(0,1fr)}
+.capa.muchos .capa-row .tx b{font-size:19px}.capa.muchos .capa-row .tx{row-gap:3px}
 </style>
 
 <div id="app"></div>
@@ -1184,7 +1191,8 @@ function capPendientes(cap, today) { const h = ymd(today); return ((cap && cap.a
 function Capacitacion({ cap, today, fin }) {
   const now = useNow(1000);
   const hoy = ymd(today);
-  const dias = useMemo(() => { const g = {}; capPendientes(cap, today).forEach(r => { (g[r.fecha] = g[r.fecha] || []).push(r); }); return Object.keys(g).sort().map(f => ({ f, l: g[f] })); }, [cap, hoy]);
+  const POR_PAG = 4;
+  const dias = useMemo(() => { const g = {}; capPendientes(cap, today).forEach(r => { (g[r.fecha] = g[r.fecha] || []).push(r); }); const out = []; Object.keys(g).sort().forEach(f => { const l = g[f], np = Math.ceil(l.length / POR_PAG), tam = Math.ceil(l.length / np); for (let q = 0; q < np; q++) out.push({ f, l: l.slice(q * tam, q * tam + tam), parte: q + 1, partes: np, key: f + '-' + q }); }); return out; }, [cap, hoy]);
   const n = dias.length;
   const per = Math.max(20, Math.round((cap.minCapacitacion || 4) * 60 / Math.max(1, n)));
   const [i, setI] = useState(0);
@@ -1196,20 +1204,22 @@ function Capacitacion({ cap, today, fin }) {
   const corto = f => { const [y, m, d] = f.split('-').map(Number); return `${DIAS[new Date(utc(y, m, d)).getUTCDay()]} ${d}`; };
   const rest = Math.max(0, Math.round((fin - now) / 1000));
   const hayNoche = dia.l.some(r => r.cuadrilla === 'noche' && r.cambiaTurno !== false);
-  return html`<section className="panel capa fadein" aria-label="Capacitación: habilidades por vencer" style=${{ '--civ': per + 's' }}>
+  const enc = cap.encabezado || ['Habilidades', 'por vencer'];
+  const vlab = v => { const [y, m, d] = v.split('-').map(Number); return `${d} ${MESES[m - 1].slice(0, 3)}`; };
+  return html`<section className=${'panel capa fadein' + (dia.l.length > 6 ? ' muchos' : '')} aria-label=${'Capacitación: ' + enc.join(' ')} style=${{ '--civ': per + 's' }}>
     <div className="capa-hd">
       <div className="eyebrow"><${Icon} name="cap" size=${22}/>Capacitación<span className="count">CCRM en <b>${Math.floor(rest / 60)}:${String(rest % 60).padStart(2, '0')}</b></span></div>
-      <h3>Habilidades <span>por vencer</span></h3>
-      <div className="capa-meta"><span><${Icon} name="pin" size=${16}/>${cap.lugar}</span><span><${Icon} name="clock" size=${16}/>${cap.hora} h</span>${hayNoche && cap.notaNoche && html`<span className="capa-noche"><${Icon} name="moon" size=${16}/>${cap.notaNoche}</span>`}</div>
+      <h3>${enc[0]} <span>${enc[1]}</span></h3>
+      <div className="capa-meta">${cap.etiqueta && html`<span className="capa-tag">${cap.etiqueta}</span>`}<span><${Icon} name="pin" size=${16}/>${cap.lugar}</span><span><${Icon} name="clock" size=${16}/>${cap.hora} h</span>${hayNoche && cap.notaNoche && html`<span className="capa-noche"><${Icon} name="moon" size=${16}/>${cap.notaNoche}</span>`}</div>
     </div>
-    <div className="capa-tabs" aria-hidden="true">${dias.map((x, j) => html`<span key=${x.f} className=${j === k ? 'on' : ''}><small>${etiqueta(x.f)}</small><b>${corto(x.f)} oct</b>${j === k && n > 1 && html`<i key=${'p' + i}></i>`}</span>`)}</div>
-    <div className="capa-list fadein" key=${dia.f}>
+    <div className="capa-tabs" aria-hidden="true">${dias.map((x, j) => html`<span key=${x.key} className=${j === k ? 'on' : ''}><small>${etiqueta(x.f)}${x.partes > 1 ? ` · ${x.parte}/${x.partes}` : ''}</small><b>${corto(x.f)} ${MESES[Number(x.f.split('-')[1]) - 1].slice(0, 3)}</b>${j === k && n > 1 && html`<i key=${'p' + i}></i>`}</span>`)}</div>
+    <div className="capa-list fadein" key=${dia.key}>
       ${dia.l.map(r => html`<div className="capa-row" key=${r.nombre + r.fecha}>
         <span className=${'cu ' + r.cuadrilla} title=${r.cuadrilla === 'noche' ? 'Cuadrilla de noche' : 'Cuadrilla de día'}><${Icon} name=${r.cuadrilla === 'noche' ? 'moon' : 'sun'} size=${24}/></span>
-        <div className="tx"><b>${r.nombre}</b><div className="l2"><div className=${"habs" + (r.habilidades.length > 1 ? " dos" : "")}>${r.habilidades.map(h => html`<em key=${h}>${h}</em>`)}</div>${r.habilidades.length < 2 && html`<span>${r.puesto}</span>`}${r.hora && html`<span>${r.hora} h</span>`}</div></div>
+        <div className="tx"><b>${r.nombre}</b><div className="l2"><div className=${"habs" + (r.habilidades.length > 1 ? " dos" : "")}>${r.vence ? html`<em className=${r.vence < r.fecha ? 'venc' : 'porv'}>${r.vence < r.fecha ? 'Vencida ' : 'Vence '}${vlab(r.vence)}</em>` : r.habilidades.map(h => html`<em key=${h}>${h}</em>`)}</div>${r.habilidades.length < 2 && html`<span>${r.puesto}</span>`}${r.hora && html`<span>${r.hora} h</span>`}</div></div>
       </div>`)}
     </div>
-    <footer className="capa-ft"><${Icon} name="alert" size=${24}/><div><p>${cap.nota}</p><small>Capacitadores: ${(cap.capacitadores || []).join(' y ')}</small></div></footer>
+    <footer className="capa-ft"><${Icon} name="alert" size=${24}/><div><p>${cap.nota}</p>${(cap.capacitadores || []).length > 0 && html`<small>Capacitadores: ${cap.capacitadores.join(' y ')}</small>`}</div></footer>
   </section>`;
 }
 

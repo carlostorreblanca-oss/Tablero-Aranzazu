@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-02 10:42",
+  "actualizado": "2026-11-02 17:36",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1793578710555,
@@ -4145,127 +4145,147 @@
  ],
  "capacitacion": {
   "activo": true,
-  "archivo": "20261028.xlsx",
-  "titulo": "Programa de habilidades por vencer",
-  "lugar": "Sala de Capacitación, a un costado del almacén",
-  "hora": "7:00",
-  "capacitadores": [
-   "Juan Ovalle",
-   "Ernesto Hernández"
+  "archivo": "20261102.xlsx",
+  "tipo": "curso",
+  "titulo": "Reinducción SSMA",
+  "encabezado": [
+   "Reinducción",
+   "SSMA"
   ],
-  "notaNoche": "Noche: cambia a turno de día",
-  "nota": "¿Se te venció una habilidad o está por vencer y no estás en la lista? Acércate a Capacitación.",
+  "etiqueta": "Curso obligatorio",
+  "lugar": "Sala “El Temeroso”",
+  "hora": "8:00–16:30",
+  "capacitadores": [],
+  "notaNoche": "",
+  "nota": "Es muy importante que el personal que asista a la Capacitación cheque su asistencia en el reloj checador.",
   "minCcrm": 5,
   "minCapacitacion": 4,
   "lista": [
    {
-    "idBase": 149,
-    "nombre": "Martínez Gamboa José",
-    "puesto": "Eléctrico",
+    "idBase": 373,
+    "nombre": "Sánchez Galindo José Manuel",
+    "puesto": "Asistente residente",
     "habilidades": [
-     "Instalaciones eléctricas"
+     "Reinducción SSMA"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-10-29",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": false
+    "cambiaTurno": false,
+    "vence": "2026-11-16",
+    "depto": "Operación"
+   },
+   {
+    "idBase": 115,
+    "nombre": "Cervantes Núñez Otoniel Ricardo",
+    "puesto": "Operador de camión de volteo",
+    "habilidades": [
+     "Reinducción SSMA"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-11-03",
+    "hora": "",
+    "cambiaTurno": false,
+    "vence": "2026-09-25",
+    "depto": "Operación"
    },
    {
     "idBase": 8,
     "nombre": "Mireles Candia José Juan",
     "puesto": "Operador de jumbo anclador",
     "habilidades": [
-     "Operación de jumbo anclador"
+     "Reinducción SSMA"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-10-29",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": false
+    "cambiaTurno": false,
+    "vence": "2026-12-04",
+    "depto": "Operación"
    },
    {
     "idBase": 208,
     "nombre": "Pinales Ubario Jesús Alfredo",
     "puesto": "Operador de retroexcavadora",
     "habilidades": [
-     "Operación de retroexcavadora",
-     "Bloqueo de energía"
+     "Reinducción SSMA"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-10-30",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": false
+    "cambiaTurno": false,
+    "vence": "2026-11-22",
+    "depto": "Operación"
    },
    {
-    "idBase": 353,
-    "nombre": "Vallejo García Hugo",
-    "puesto": "Supervisor eléctrico",
+    "idBase": 206,
+    "nombre": "Ibarra Cano Josthyn Renato",
+    "puesto": "Ayudante de barrenación larga",
     "habilidades": [
-     "Bloqueo de energía"
+     "Reinducción SSMA"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-10-30",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": false
+    "cambiaTurno": false,
+    "vence": "2026-11-10",
+    "depto": "Operación"
    },
    {
-    "idBase": 126,
-    "nombre": "Hernández Escobedo Jesús Manuel",
-    "puesto": "Ayudante general",
+    "idBase": 200,
+    "nombre": "Camarillo Ramírez Christian Eduardo",
+    "puesto": "Mecánico",
     "habilidades": [
-     "Manejo de explosivos"
+     "Reinducción SSMA"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-10-31",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": false
+    "cambiaTurno": false,
+    "vence": "2026-09-05",
+    "depto": "Mantenimiento"
    },
    {
-    "idBase": 343,
-    "nombre": "Hernández Reynoso Jesús Ernesto",
-    "puesto": "Capacitador",
+    "idBase": 119,
+    "nombre": "González García Adrián Micael",
+    "puesto": "Mecánico",
     "habilidades": [
-     "Sustancias químicas"
+     "Reinducción SSMA"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-10-31",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": false
+    "cambiaTurno": false,
+    "vence": "2026-10-20",
+    "depto": "Mantenimiento"
    },
    {
-    "idBase": 46,
-    "nombre": "Alvarado González Martín",
-    "puesto": "Operador de barrenación larga",
+    "idBase": 202,
+    "nombre": "Juárez Serna Orlando Enrique",
+    "puesto": "Mecánico",
     "habilidades": [
-     "Trabajo en altura"
+     "Reinducción SSMA"
     ],
-    "cuadrilla": "noche",
-    "fecha": "2026-10-29",
+    "cuadrilla": "dia",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": true
+    "cambiaTurno": false,
+    "vence": "2026-10-24",
+    "depto": "Mantenimiento"
    },
    {
-    "idBase": 40,
-    "nombre": "Alday Miranda José Miguel",
-    "puesto": "Ayudante de jumbo anclador",
+    "idBase": 205,
+    "nombre": "Acevedo Samaniego Eduardo",
+    "puesto": "Ayudante de mecánico",
     "habilidades": [
-     "Operación de jumbo anclador"
+     "Reinducción SSMA"
     ],
-    "cuadrilla": "noche",
-    "fecha": "2026-10-29",
+    "cuadrilla": "dia",
+    "fecha": "2026-11-03",
     "hora": "",
-    "cambiaTurno": true
-   },
-   {
-    "idBase": 12,
-    "nombre": "Méndez Zamacona Juan Eduardo",
-    "puesto": "Operador de retroexcavadora",
-    "habilidades": [
-     "Operación de telehandler"
-    ],
-    "cuadrilla": "noche",
-    "fecha": "2026-10-30",
-    "hora": "",
-    "cambiaTurno": true
+    "cambiaTurno": false,
+    "vence": "2026-11-07",
+    "depto": "Mantenimiento"
    }
   ]
  }

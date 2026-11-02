@@ -205,6 +205,118 @@ def _frase(s, pref_op):
 
 DIAS_SEM = {"LUN": 0, "MAR": 1, "MIE": 2, "JUE": 3, "VIE": 4, "SAB": 5, "DOM": 6}
 
+
+# ---- Formato "CURSO OBLIGATORIO" (un curso, un día, lista con vencimientos) ----
+PUESTO_FRASES = {"ASIST. RESIDENTE": "Asistente residente", "OP. CAMION VOLTEO": "Operador de camión de volteo",
+    "OP. J. ANCLADOR": "Operador de jumbo anclador", "OP. RETROEXCAV.": "Operador de retroexcavadora",
+    "AYTE. BARRENAC. L.": "Ayudante de barrenación larga", "MECANICO": "Mecánico", "AYTE. DE MECANICO": "Ayudante de mecánico"}
+
+def _parecido(a, b):
+    import difflib
+    a, b = a.rstrip("."), b
+    if len(a) <= 4 and b.startswith(a[:1]):
+        it = iter(b)
+        if all(ch in it for ch in a):
+            return True
+    return b.startswith(a) or a.startswith(b) or difflib.SequenceMatcher(None, a, b).ratio() >= 0.72
+
+def buscar_persona(nombre, personal):
+    t = _sa(nombre).replace(".", ". ").split()
+    t = [x.rstrip(".") for x in t if x.strip(".")]
+    exacto = {_sa(p["nombre"]): p for p in personal or []}
+    if " ".join(t) in exacto:
+        return exacto[" ".join(t)], False
+    cands = []
+    for p in personal or []:
+        b = _sa(p["nombre"]).split()
+        if b[:2] != t[:2]:
+            continue
+        resto, br = t[2:], b[2:]
+        if resto and br and all(any(_parecido(x, y) for y in br) for x in resto) and len(resto) == len(br):
+            cands.append(p)
+    return (cands[0], True) if len(cands) == 1 else (None, False)
+
+def _deletreo(s):
+    s = s.strip().strip('"“”').strip()
+    pal = [w.replace(" ", "") for w in re.split(r"\s{2,}", s) if w.strip()]
+    return " ".join(w if (len(w) <= 4 and w.isupper() and not re.search(r"[ÁÉÍÓÚ]", w)) else w.capitalize() for w in pal)
+
+def leer_curso(cuerpo, f_arch, archivo, personal):
+    avisos, lista = [], []
+    titulo = lugar = horario = nota = ""
+    fecha = None
+    depto = ""
+    lineas = cuerpo.split("\n")
+    for i, ln in enumerate(lineas):
+        c = [x.strip() for x in ln.split("\t")]
+        while len(c) < 4:
+            c.append("")
+        k = _sa(c[0])
+        if not k or k.startswith("["):
+            continue
+        if k.startswith("CURSO"):
+            continue
+        if c[0].startswith('"') or c[0].startswith("“") or ('"' in c[0] and not titulo and fecha is None and not lugar):
+            titulo = _deletreo(c[0]); continue
+        if k.startswith("DIA:"):
+            md = re.search(r"([A-Za-zÁÉÍÓÚáéíóú]+)\s+(\d{1,2})[-/ ]([A-Za-z]{3})\w*[-/ ](\d{2,4})", c[0])
+            if not md:
+                raise SystemExit(f"Capacitación: no entiendo el día '{c[0]}'.")
+            an = int(md.group(4)); an = an + 2000 if an < 100 else an
+            fecha = datetime.date(an, MES3.index(md.group(3).lower()) + 1, int(md.group(2)))
+            ds = _sa(md.group(1))[:3]
+            if ds in DIAS_SEM and DIAS_SEM[ds] != fecha.weekday():
+                avisos.append(f"el día dice '{md.group(1)} {md.group(2)}' pero el {fecha.day} de {MESES[fecha.month-1]} de {fecha.year} es {['lunes','martes','miércoles','jueves','viernes','sábado','domingo'][fecha.weekday()]}; se usa la fecha")
+            continue
+        if k.startswith("LUGAR"):
+            lugar = c[0].split(":", 1)[1].strip().replace('"', "“", 1).replace('"', "”", 1); continue
+        if k.startswith("HORARIO"):
+            hs = re.findall(r"(\d{1,2}:\d{2})", c[0]); horario = "–".join(hs[:2]); continue
+        if k.startswith("NOTA"):
+            nota = c[0].split(":", 1)[1].strip()
+            if i + 1 < len(lineas) and lineas[i + 1].strip() and not lineas[i + 1].lstrip().startswith("["):
+                nota += " " + lineas[i + 1].split("\t")[0].strip()
+            continue
+        if k.startswith("NUM"):
+            continue
+        if re.match(r"^\d+$", c[0]) and c[1]:
+            if fecha is None:
+                raise SystemExit("Capacitación: el curso no trae día.")
+            p, corregido = buscar_persona(c[1], personal)
+            if p:
+                nom = nombre_bonito(p["nombre"])
+                if corregido:
+                    avisos.append(f"'{c[1]}' se identificó como {nom} (base de personal)")
+            else:
+                nom = tc(c[1]); avisos.append(f"'{c[1]}' no está en la base de personal; se muestra como viene")
+            pue = PUESTO_FRASES.get(_sa(c[2]).strip()) or _frase(c[2], "Operador")[0]
+            vence = None
+            mv = re.match(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", c[3])
+            if mv:
+                an = int(mv.group(3)); an = an + 2000 if an < 100 else an
+                vence = datetime.date(an, int(mv.group(2)), int(mv.group(1))).isoformat()
+            lista.append({"idBase": p["id"] if p else None, "nombre": nom, "puesto": pue, "habilidades": [titulo or "Curso"],
+                          "cuadrilla": "dia", "fecha": fecha.isoformat(), "hora": "", "cambiaTurno": False,
+                          "vence": vence, "depto": depto})
+            continue
+        if not c[1] and not c[2]:
+            depto = _deletreo(c[0]) if re.search(r"\b\w \w \w", c[0]) else c[0].strip().capitalize()
+    if not lista:
+        raise SystemExit("Capacitación: el archivo no trae colaboradores.")
+    if fecha < f_arch:
+        raise SystemExit(f"Capacitación: el curso ({fecha}) es anterior a la fecha del archivo {archivo}; no concuerda.")
+    if fecha > f_arch + datetime.timedelta(days=31):
+        raise SystemExit(f"Capacitación: el curso ({fecha}) está a más de un mes del archivo {archivo}; no concuerda.")
+    vencidas = [r for r in lista if r["vence"] and r["vence"] < fecha.isoformat()]
+    if vencidas:
+        avisos.append(f"{len(vencidas)} con la capacitación ya vencida al día del curso: " + ", ".join(f"{r['nombre']} ({r['vence']})" for r in vencidas))
+    t = titulo or "Curso obligatorio"
+    partes = t.rsplit(" ", 1) if " " in t else [t, ""]
+    return {"activo": True, "archivo": os.path.basename(archivo), "tipo": "curso", "titulo": t, "encabezado": partes,
+            "etiqueta": "Curso obligatorio", "lugar": lugar, "hora": horario, "capacitadores": [],
+            "notaNoche": "", "nota": nota or "Si tu capacitación está vencida o por vencer y no estás en la lista, acércate a Capacitación.",
+            "minCcrm": 5, "minCapacitacion": 4, "lista": lista}, avisos
+
 def leer_capacitacion(path, archivo, personal, hoy):
     raw = open(path, encoding="utf-8").read()
     if raw.lstrip().startswith("{"):
@@ -220,6 +332,8 @@ def leer_capacitacion(path, archivo, personal, hoy):
     if not mf:
         raise SystemExit(f"Capacitación: el nombre del archivo '{archivo}' no es AAAAMMDD.xlsx.")
     f_arch = datetime.date(int(mf.group(1)), int(mf.group(2)), int(mf.group(3)))
+    if re.search(r"(?mi)^\s*CURSO\b", cuerpo) and re.search(r"(?mi)^\s*D[IÍ]A:", cuerpo):
+        return leer_curso(cuerpo, f_arch, archivo, personal)
     base = {_sa(p["nombre"]): p for p in personal or []}
     avisos, lista = [], []
     lugar = capac = nota = ""
