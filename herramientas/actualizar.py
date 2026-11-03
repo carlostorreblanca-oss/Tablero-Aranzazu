@@ -126,7 +126,7 @@ def leer_ccrm(path):
     bloques = []
     for i, r in enumerate(rows):
         for c, v in enumerate(r):
-            t = re.match(r"CCRM AL D[IÍ]A (\d{1,2}) DE ([A-ZÁÉÍÓÚ]+) (\d{4})", v.strip().upper())
+            t = re.match(r"CCRM AL D[IÍ]A (\d{1,2}) (?:DE )?([A-ZÁÉÍÓÚ]+) (\d{4})", v.strip().upper())
             if not t:
                 continue
             dia, mes_txt, anio = int(t.group(1)), t.group(2).lower(), int(t.group(3))
