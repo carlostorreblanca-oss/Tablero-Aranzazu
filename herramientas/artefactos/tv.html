@@ -621,7 +621,7 @@ button{font:inherit;color:inherit}
 @media (prefers-reduced-motion:reduce){.az-flota,.az-brillo i,.azp-rayos,.azp-art *,.slide.azp.on .azp-c,.slide.azp.on .azp-in>*,.azp-c .pulso{animation:none!important}.az-flota{display:none}}
 </style>
 
-<meta name="tablero-build" content="c9e273679ade">
+<meta name="tablero-build" content="426698bf2f43">
 <div id="app"></div>
 
 <div id="boot-err" hidden style="position:fixed;left:16px;right:16px;top:16px;z-index:99;padding:16px;border-radius:8px;background:#7F1D1D;color:#FFFFFF;font:600 15px/1.4 system-ui,sans-serif"></div>
@@ -1071,6 +1071,24 @@ function Logo() {
   </svg>`;
 }
 
+/* Clima en vivo: pronóstico de Open-Meteo (gratuito, sin clave) para Concepción del Oro; se refresca cada 3 h */
+const CLIMA_COORD = { lat: 24.6247, lon: -101.4197, lugar: 'Concepción del Oro' };
+const CLIMA_KEY = 'cominvi-tablero-clima';
+function useClimaVivo() {
+  const [c, setC] = useState(() => { try { return JSON.parse(localStorage.getItem(CLIMA_KEY) || 'null'); } catch (e) { return null; } });
+  useEffect(() => {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${CLIMA_COORD.lat}&longitude=${CLIMA_COORD.lon}&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=America%2FMexico_City&forecast_days=8`;
+    const cargar = () => fetch(url, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
+      const d = j && j.daily; if (!d || !d.time || !d.time.length) return;
+      const v = { lugar: CLIMA_COORD.lugar, fuente: 'Open-Meteo', actualizado: new Date().toISOString(),
+        dias: d.time.map((f, k) => ({ fecha: f, max: d.temperature_2m_max[k], min: d.temperature_2m_min[k], lluvia: d.precipitation_probability_max ? (d.precipitation_probability_max[k] || 0) : 0 })) };
+      setC(v); try { localStorage.setItem(CLIMA_KEY, JSON.stringify(v)); } catch (e) {}
+    }).catch(() => {});
+    cargar(); const id = setInterval(cargar, 3 * 60 * 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+  return c;
+}
 function Weather({ clima, p }) {
   if (!clima || !clima.dias) return null;
   const key = `${p.y}-${String(p.m).padStart(2,'0')}-${String(p.d).padStart(2,'0')}`;
@@ -1744,6 +1762,12 @@ function App() {
     return () => clearInterval(id);
   }, []);
 
+  /* Clima: el pronóstico en vivo tiene prioridad; si no hay internet usa el de data.json */
+  const climaVivo = useClimaVivo();
+  const hoyKey = `${today.y}-${String(today.m).padStart(2,'0')}-${String(today.d).padStart(2,'0')}`;
+  const tieneHoy = c => c && c.dias && c.dias.some(x => x.fecha === hoyKey);
+  const climaHoy = tieneHoy(climaVivo) ? climaVivo : data.clima;
+
   /* Tema y modo */
   useLayoutEffect(() => {
     const r = document.documentElement, s = r.style;
@@ -1814,7 +1838,7 @@ function App() {
     <div className="viewport" ref=${vp}>
       <div className="stage-box">
         <div className="stage" style=${{ transform: `scale(${scale})` }}>
-          <${Header} meta=${meta} theme=${theme} pantalla=${cfg.pantalla} clima=${data.clima}/>
+          <${Header} meta=${meta} theme=${theme} pantalla=${cfg.pantalla} clima=${climaHoy}/>
           <main className="main">
             <div className="col left"><${Safety} seg=${data.seguridad || {}} today=${today} soloContador=${capOn}/>${capOn ? html`<${Capacitacion} cap=${cap} today=${today} fin=${capFin}/>` : html`<${Cultura} items=${data.cultura || []}/>`}</div>
             <div className="col mid">
