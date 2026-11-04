@@ -544,8 +544,84 @@ button{font:inherit;color:inherit}
 .habs em.porv{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
 .capa.muchos .capa-list{row-gap:5px}.capa.muchos .capa-row{padding-top:4px;padding-bottom:4px}.capa.muchos .cu{width:34px;height:34px}.capa.muchos .capa-row{grid-template-columns:34px minmax(0,1fr)}
 .capa.muchos .capa-row .tx b{font-size:19px}.capa.muchos .capa-row .tx{row-gap:3px}
+
+/* ===== Noviembre Azul (salud masculina · cáncer de próstata) ===== */
+.az-capa{position:absolute;inset:0;pointer-events:none;z-index:30;overflow:hidden}
+.az-flota{position:absolute;bottom:-60px;width:var(--w,34px);opacity:var(--o,.32);animation:azsube var(--d,22s) linear infinite;animation-delay:var(--dl,0s)}
+.az-flota svg{display:block;width:100%;height:auto}
+@keyframes azsube{0%{transform:translate3d(0,0,0) rotate(-8deg)}25%{transform:translate3d(var(--x1,26px),-300px,0) rotate(8deg)}50%{transform:translate3d(var(--x2,-18px),-600px,0) rotate(-6deg)}75%{transform:translate3d(var(--x1,26px),-900px,0) rotate(7deg)}100%{transform:translate3d(var(--x2,-18px),-1200px,0) rotate(-8deg)}}
+.az-brillo{position:absolute;left:0;right:0;top:107px;height:5px;overflow:hidden}
+.az-brillo i{position:absolute;top:0;bottom:0;width:260px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.95),transparent);animation:azbr 5s ease-in-out infinite}
+@keyframes azbr{0%{left:-300px}60%,100%{left:2000px}}
+.chip.theme.az{border-color:#3BA3FF;background:linear-gradient(90deg,rgba(59,163,255,.22),rgba(125,211,252,.16));box-shadow:0 0 18px rgba(59,163,255,.35)}
+.chip.theme.az .ico{color:#7DD3FC}
+.slide.azp{background:radial-gradient(60% 70% at 80% 45%,rgba(59,163,255,.32),transparent 70%),radial-gradient(50% 50% at 0% 100%,rgba(29,78,216,.35),transparent 70%),linear-gradient(160deg,#0B1F45 0%,#07122A 65%,#050C1D 100%);color:#EAF4FF;overflow:hidden}
+.slide.azp::after{display:none}
+.azp-rayos{position:absolute;left:50%;top:50%;width:1600px;height:1600px;margin:-800px 0 0 -800px;background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(125,211,252,.07) 0deg 6deg,transparent 6deg 18deg);animation:azgira 60s linear infinite;opacity:.8;left:78%}
+@keyframes azgira{to{transform:rotate(360deg)}}
+.azp-in{position:absolute;inset:38px 34px 26px;display:grid;z-index:2}
+.azp-kick{justify-self:start;display:inline-flex;align-items:center;gap:8px;font:800 14px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:#07122A;background:linear-gradient(90deg,#7DD3FC,#3BA3FF);padding:8px 14px;border-radius:99px}
+.azp-h{margin:0;font:900 84px/.86 var(--f-display);text-transform:uppercase;letter-spacing:.01em;background:linear-gradient(95deg,#FFFFFF 0%,#BAE6FD 40%,#3BA3FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 18px rgba(59,163,255,.35))}
+.azp-h2{margin:0;font:800 34px/1 var(--f-display);text-transform:uppercase;letter-spacing:.03em;color:#FFFFFF}
+.azp-h2 span{color:#7DD3FC}
+.azp-sub{font:700 24px/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:#7DD3FC}
+.azp p{margin:0;font:500 18px/1.38 var(--f-body);color:rgba(234,244,255,.9)}
+/* Portada 1 */
+.azp1 .azp-in{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:10px}
+.azp1 .izq{display:grid;align-content:center;row-gap:14px}
+.azp-fechas{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.azp-f{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:12px;align-items:center;padding:10px 12px;border-radius:12px;background:rgba(13,29,63,.75);border:1px solid rgba(125,211,252,.35)}
+.azp-f .d{display:grid;justify-items:center;width:62px;padding:6px 0;border-radius:9px;background:linear-gradient(160deg,#3BA3FF,#1D4ED8);color:#fff}
+.azp-f .d b{font:900 34px/.85 var(--f-display)}.azp-f .d small{font:800 12px/1 var(--f-body);letter-spacing:.14em}
+.azp-f span{font:600 14.5px/1.25 var(--f-body);color:#EAF4FF}
+.azp-f em{display:block;font:800 12px/1 var(--f-body);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:#7DD3FC;margin-top:5px}
+.azp-f.hoy{border-color:#7DD3FC;box-shadow:0 0 0 2px rgba(125,211,252,.35),0 0 24px rgba(59,163,255,.45)}
+.azp1 .der{position:relative;display:grid;place-items:center}
+.azp-art{width:100%;max-width:380px;overflow:visible}
+.azp-art .bigote{transform-box:fill-box;transform-origin:50% 30%;animation:azbig 2.4s ease-in-out infinite}
+@keyframes azbig{0%,100%{transform:rotate(0) scaleX(1)}20%{transform:rotate(-4deg) scaleX(1.04)}40%{transform:rotate(3deg) scaleX(.98)}60%{transform:rotate(-2deg) scaleX(1.03)}}
+.azp-art .haz{transform-box:fill-box;transform-origin:0% 50%;animation:azhaz 2.2s ease-in-out infinite alternate}
+@keyframes azhaz{from{opacity:.45}to{opacity:.95}}
+.azp-art .lazo{transform-box:fill-box;transform-origin:50% 0%;animation:azlazo 4s ease-in-out infinite}
+@keyframes azlazo{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+/* Portada 2 */
+.azp2 .azp-in{grid-template-rows:auto minmax(0,1fr);row-gap:16px}
+.azp-cards{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;min-height:0}
+.azp-c{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:18px;align-items:center;align-content:center;padding:16px 20px 16px 22px;border-radius:14px;background:linear-gradient(160deg,rgba(18,38,79,.92),rgba(10,24,52,.92));border:1px solid rgba(125,211,252,.28);overflow:hidden}
+.azp-c::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,#7DD3FC,#1D4ED8)}
+.azp-c .n{width:66px;height:66px;border-radius:12px;display:grid;place-items:center;background:rgba(59,163,255,.18);color:#7DD3FC;border:1px solid rgba(125,211,252,.35)}
+.azp-c b{display:block;font:800 31px/1.02 var(--f-display);text-transform:uppercase;letter-spacing:.02em;color:#fff;margin-bottom:6px}
+.azp-c b em{font-style:normal;color:#7DD3FC}
+.azp-c span{font:500 20px/1.32 var(--f-body);color:rgba(234,244,255,.88)}
+.slide.azp.on .azp-c{animation:azin .7s cubic-bezier(.2,.8,.25,1.1) both}
+.slide.azp.on .azp-c:nth-child(2){animation-delay:.15s}.slide.azp.on .azp-c:nth-child(3){animation-delay:.3s}.slide.azp.on .azp-c:nth-child(4){animation-delay:.45s}
+@keyframes azin{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.azp-c .pulso{animation:azpul 1.6s ease-in-out infinite}
+@keyframes azpul{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+/* Portada 3 */
+.azp3 .azp-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);grid-template-rows:auto minmax(0,1fr) auto;column-gap:18px;row-gap:12px}
+.azp3 .azp-h2{grid-column:1/-1}
+.azp-edades{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.azp-e{display:grid;row-gap:6px;padding:12px 14px;border-radius:14px;background:rgba(13,29,63,.8);border:1px solid rgba(125,211,252,.3)}
+.azp-e b{font:900 78px/.8 var(--f-display);color:#7DD3FC}.azp-e b small{font-size:22px;margin-left:4px;color:#EAF4FF}
+.azp-e span{font:600 17px/1.28 var(--f-body)}
+.azp-vida{grid-column:1;display:grid;row-gap:12px;margin-top:22px}
+.azp-vida h4{margin:0;font:800 22px/1 var(--f-display);letter-spacing:.08em;text-transform:uppercase;color:#7DD3FC}
+.azp-vida div{display:flex;align-items:center;gap:12px;font:500 19px/1.28 var(--f-body)}
+.azp-vida div i{flex:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:rgba(59,163,255,.18);color:#7DD3FC;font-style:normal}
+.azp-qr{grid-column:2;grid-row:2;align-self:center;display:grid;justify-items:center;align-content:center;row-gap:8px;padding:14px;border-radius:16px;background:#FFFFFF;color:#07122A;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.azp-qr svg{width:200px;height:200px;display:block}
+.azp-qr b{font:800 16px/1.1 var(--f-display);letter-spacing:.06em;text-transform:uppercase}
+.azp-qr span{font:600 12.5px/1.25 var(--f-body);color:#334155}
+.azp-frase{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:13px 18px;border-radius:12px;background:linear-gradient(90deg,#1D4ED8,#3BA3FF);color:#fff;font:700 20px/1.25 var(--f-body);animation:azfr 3s ease-in-out infinite}
+@keyframes azfr{0%,100%{box-shadow:0 0 0 rgba(59,163,255,0)}50%{box-shadow:0 0 28px rgba(59,163,255,.55)}}
+.azp-frase svg{flex:none}
+.slide.azp.on .azp-in>*{animation:csin .8s both}
+.slide.azp.on .azp-in>*:nth-child(2){animation-delay:.12s}.slide.azp.on .azp-in>*:nth-child(3){animation-delay:.24s}.slide.azp.on .azp-in>*:nth-child(4){animation-delay:.36s}.slide.azp.on .azp-in>*:nth-child(5){animation-delay:.48s}
+@media (prefers-reduced-motion:reduce){.az-flota,.az-brillo i,.azp-rayos,.azp-art *,.slide.azp.on .azp-c,.slide.azp.on .azp-in>*,.azp-c .pulso{animation:none!important}.az-flota{display:none}}
 </style>
 
+<meta name="tablero-build" content="c9e273679ade">
 <div id="app"></div>
 
 <div id="boot-err" hidden style="position:fixed;left:16px;right:16px;top:16px;z-index:99;padding:16px;border-radius:8px;background:#7F1D1D;color:#FFFFFF;font:600 15px/1.4 system-ui,sans-serif"></div>
@@ -901,6 +977,7 @@ const ICONS = {
   gift:'<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>',
   flame:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
   gem:'<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>',
+  ribbon:'<path d="M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22"/><path d="m12 18 2.57-3.5"/><path d="M6.243 9.016a7 7 0 0 1 11.507-.009"/><path d="M9.35 14.53 12 11.22"/><path d="M9.35 14.53C7.728 12.246 6 10.221 6 7a6 5 0 0 1 12 0c-.005 3.22-1.778 5.235-3.43 7.5l3.557 4.527a1 1 0 0 1-.203 1.43l-1.894 1.36a1 1 0 0 1-1.384-.215L12 18l-2.679 3.593a1 1 0 0 1-1.39.213l-1.865-1.353a1 1 0 0 1-.203-1.422z"/>',
   skull:'<circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M8 20v2h8v-2"/><path d="m12.5 17-.5-1-.5 1h1z"/><path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20"/>',
   monitor:'<rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/>'
 };
@@ -1029,7 +1106,7 @@ function Header({ meta, theme, pantalla, clima }) {
       <div className="unit"><b>${meta.unidad}</b><small>${meta.ubicacion}</small></div>
     </div>
     <div className="hdr-mid">
-      ${theme.id !== 'core' && html`<span className=${'chip theme' + (theme.id === 'muertos' ? ' dm' : '')}><${Icon} name=${theme.icon} size=${22}/>${theme.nombre}</span>`}
+      ${theme.id !== 'core' && html`<span className=${'chip theme' + (theme.id === 'muertos' ? ' dm' : theme.id === 'novazul' ? ' az' : '')}><${Icon} name=${theme.icon} size=${22}/>${theme.nombre}</span>`}
       <${Weather} clima=${clima} p=${p}/>
       ${meta.esDemo && html`<span className="chip demo"><${Icon} name="alert" size=${18}/>${meta.demoTexto || 'Datos de ejemplo'}</span>`}
     </div>
@@ -1249,12 +1326,108 @@ function PortadaMuertos({ cls }) {
   </div>`;
 }
 
-function Carousel({ items, interval, portada }) {
-  const slides = useMemo(() => (portada ? [{ tipo: 'muertos', key: 'dm-portada', e: {} }] : []).concat(armarDiapositivas(items)), [items, portada]);
+
+/* ===== Noviembre Azul (todo noviembre, salvo Día de Muertos) ===== */
+/* Se activa el 4 de noviembre a las 00:01 (hora del centro de México) y termina el 30 de noviembre a las 23:59 */
+function enNoviembreAzul(t) { return t.m === 11 && (t.d > 4 || (t.d === 4 && (t.h > 0 || t.mi >= 1))) && !enDiaDeMuertos(t); }
+const AZ_TEMA = { id:'novazul', nombre:'Noviembre Azul', meses:'4 – 30 nov', icon:'ribbon', months:[],
+  acc:'#3BA3FF', acc2:'#7DD3FC', deep:'#1D4ED8', inkL:'#1D4ED8', bg:'#07122A', surf:'#0D1D3F', surf2:'#12264F', line:'#25407A',
+  stripe:'linear-gradient(90deg,#1D4ED8 0%,#3BA3FF 50%,#7DD3FC 100%)' };
+const AZ_QR = { n: 37, d: 'M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM9 0h1v1h-1zM10 0h1v1h-1zM11 0h1v1h-1zM12 0h1v1h-1zM14 0h1v1h-1zM15 0h1v1h-1zM21 0h1v1h-1zM22 0h1v1h-1zM23 0h1v1h-1zM25 0h1v1h-1zM28 0h1v1h-1zM30 0h1v1h-1zM31 0h1v1h-1zM32 0h1v1h-1zM33 0h1v1h-1zM34 0h1v1h-1zM35 0h1v1h-1zM36 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM9 1h1v1h-1zM11 1h1v1h-1zM12 1h1v1h-1zM14 1h1v1h-1zM20 1h1v1h-1zM24 1h1v1h-1zM25 1h1v1h-1zM26 1h1v1h-1zM27 1h1v1h-1zM28 1h1v1h-1zM30 1h1v1h-1zM36 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM12 2h1v1h-1zM14 2h1v1h-1zM15 2h1v1h-1zM18 2h1v1h-1zM21 2h1v1h-1zM24 2h1v1h-1zM27 2h1v1h-1zM30 2h1v1h-1zM32 2h1v1h-1zM33 2h1v1h-1zM34 2h1v1h-1zM36 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM14 3h1v1h-1zM15 3h1v1h-1zM17 3h1v1h-1zM22 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM27 3h1v1h-1zM30 3h1v1h-1zM32 3h1v1h-1zM33 3h1v1h-1zM34 3h1v1h-1zM36 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM8 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM15 4h1v1h-1zM17 4h1v1h-1zM18 4h1v1h-1zM19 4h1v1h-1zM20 4h1v1h-1zM21 4h1v1h-1zM22 4h1v1h-1zM23 4h1v1h-1zM25 4h1v1h-1zM30 4h1v1h-1zM32 4h1v1h-1zM33 4h1v1h-1zM34 4h1v1h-1zM36 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM17 5h1v1h-1zM20 5h1v1h-1zM25 5h1v1h-1zM26 5h1v1h-1zM27 5h1v1h-1zM30 5h1v1h-1zM36 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h1v1h-1zM28 6h1v1h-1zM30 6h1v1h-1zM31 6h1v1h-1zM32 6h1v1h-1zM33 6h1v1h-1zM34 6h1v1h-1zM35 6h1v1h-1zM36 6h1v1h-1zM8 7h1v1h-1zM9 7h1v1h-1zM12 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM16 7h1v1h-1zM17 7h1v1h-1zM18 7h1v1h-1zM19 7h1v1h-1zM20 7h1v1h-1zM21 7h1v1h-1zM24 7h1v1h-1zM0 8h1v1h-1zM2 8h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM9 8h1v1h-1zM11 8h1v1h-1zM12 8h1v1h-1zM15 8h1v1h-1zM16 8h1v1h-1zM19 8h1v1h-1zM22 8h1v1h-1zM25 8h1v1h-1zM26 8h1v1h-1zM27 8h1v1h-1zM30 8h1v1h-1zM31 8h1v1h-1zM32 8h1v1h-1zM33 8h1v1h-1zM34 8h1v1h-1zM1 9h1v1h-1zM3 9h1v1h-1zM4 9h1v1h-1zM5 9h1v1h-1zM10 9h1v1h-1zM12 9h1v1h-1zM13 9h1v1h-1zM14 9h1v1h-1zM15 9h1v1h-1zM17 9h1v1h-1zM18 9h1v1h-1zM20 9h1v1h-1zM21 9h1v1h-1zM23 9h1v1h-1zM25 9h1v1h-1zM28 9h1v1h-1zM31 9h1v1h-1zM34 9h1v1h-1zM35 9h1v1h-1zM6 10h1v1h-1zM9 10h1v1h-1zM10 10h1v1h-1zM13 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM19 10h1v1h-1zM21 10h1v1h-1zM22 10h1v1h-1zM26 10h1v1h-1zM27 10h1v1h-1zM28 10h1v1h-1zM29 10h1v1h-1zM30 10h1v1h-1zM32 10h1v1h-1zM33 10h1v1h-1zM35 10h1v1h-1zM36 10h1v1h-1zM3 11h1v1h-1zM4 11h1v1h-1zM14 11h1v1h-1zM15 11h1v1h-1zM19 11h1v1h-1zM20 11h1v1h-1zM21 11h1v1h-1zM26 11h1v1h-1zM29 11h1v1h-1zM33 11h1v1h-1zM36 11h1v1h-1zM0 12h1v1h-1zM1 12h1v1h-1zM2 12h1v1h-1zM3 12h1v1h-1zM4 12h1v1h-1zM5 12h1v1h-1zM6 12h1v1h-1zM7 12h1v1h-1zM8 12h1v1h-1zM12 12h1v1h-1zM15 12h1v1h-1zM17 12h1v1h-1zM19 12h1v1h-1zM22 12h1v1h-1zM23 12h1v1h-1zM24 12h1v1h-1zM25 12h1v1h-1zM26 12h1v1h-1zM27 12h1v1h-1zM29 12h1v1h-1zM30 12h1v1h-1zM31 12h1v1h-1zM32 12h1v1h-1zM33 12h1v1h-1zM34 12h1v1h-1zM35 12h1v1h-1zM36 12h1v1h-1zM3 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM8 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM14 13h1v1h-1zM16 13h1v1h-1zM18 13h1v1h-1zM19 13h1v1h-1zM23 13h1v1h-1zM26 13h1v1h-1zM28 13h1v1h-1zM29 13h1v1h-1zM31 13h1v1h-1zM0 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM9 14h1v1h-1zM11 14h1v1h-1zM15 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM22 14h1v1h-1zM25 14h1v1h-1zM27 14h1v1h-1zM28 14h1v1h-1zM30 14h1v1h-1zM31 14h1v1h-1zM32 14h1v1h-1zM33 14h1v1h-1zM35 14h1v1h-1zM36 14h1v1h-1zM0 15h1v1h-1zM1 15h1v1h-1zM2 15h1v1h-1zM4 15h1v1h-1zM7 15h1v1h-1zM8 15h1v1h-1zM9 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM15 15h1v1h-1zM19 15h1v1h-1zM21 15h1v1h-1zM22 15h1v1h-1zM23 15h1v1h-1zM26 15h1v1h-1zM28 15h1v1h-1zM29 15h1v1h-1zM30 15h1v1h-1zM31 15h1v1h-1zM32 15h1v1h-1zM35 15h1v1h-1zM36 15h1v1h-1zM0 16h1v1h-1zM1 16h1v1h-1zM2 16h1v1h-1zM3 16h1v1h-1zM4 16h1v1h-1zM5 16h1v1h-1zM6 16h1v1h-1zM7 16h1v1h-1zM8 16h1v1h-1zM9 16h1v1h-1zM11 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM18 16h1v1h-1zM22 16h1v1h-1zM23 16h1v1h-1zM24 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM30 16h1v1h-1zM31 16h1v1h-1zM32 16h1v1h-1zM34 16h1v1h-1zM36 16h1v1h-1zM0 17h1v1h-1zM5 17h1v1h-1zM8 17h1v1h-1zM12 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM16 17h1v1h-1zM22 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM25 17h1v1h-1zM28 17h1v1h-1zM31 17h1v1h-1zM34 17h1v1h-1zM35 17h1v1h-1zM0 18h1v1h-1zM1 18h1v1h-1zM3 18h1v1h-1zM4 18h1v1h-1zM6 18h1v1h-1zM9 18h1v1h-1zM11 18h1v1h-1zM12 18h1v1h-1zM18 18h1v1h-1zM20 18h1v1h-1zM21 18h1v1h-1zM27 18h1v1h-1zM28 18h1v1h-1zM29 18h1v1h-1zM30 18h1v1h-1zM35 18h1v1h-1zM36 18h1v1h-1zM1 19h1v1h-1zM2 19h1v1h-1zM4 19h1v1h-1zM5 19h1v1h-1zM9 19h1v1h-1zM10 19h1v1h-1zM11 19h1v1h-1zM16 19h1v1h-1zM21 19h1v1h-1zM22 19h1v1h-1zM27 19h1v1h-1zM28 19h1v1h-1zM29 19h1v1h-1zM31 19h1v1h-1zM36 19h1v1h-1zM1 20h1v1h-1zM2 20h1v1h-1zM6 20h1v1h-1zM7 20h1v1h-1zM8 20h1v1h-1zM12 20h1v1h-1zM13 20h1v1h-1zM17 20h1v1h-1zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM24 20h1v1h-1zM25 20h1v1h-1zM29 20h1v1h-1zM30 20h1v1h-1zM32 20h1v1h-1zM33 20h1v1h-1zM34 20h1v1h-1zM0 21h1v1h-1zM2 21h1v1h-1zM3 21h1v1h-1zM4 21h1v1h-1zM5 21h1v1h-1zM7 21h1v1h-1zM10 21h1v1h-1zM11 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM16 21h1v1h-1zM17 21h1v1h-1zM18 21h1v1h-1zM19 21h1v1h-1zM20 21h1v1h-1zM21 21h1v1h-1zM23 21h1v1h-1zM24 21h1v1h-1zM28 21h1v1h-1zM29 21h1v1h-1zM33 21h1v1h-1zM0 22h1v1h-1zM2 22h1v1h-1zM6 22h1v1h-1zM8 22h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM12 22h1v1h-1zM15 22h1v1h-1zM16 22h1v1h-1zM17 22h1v1h-1zM20 22h1v1h-1zM26 22h1v1h-1zM27 22h1v1h-1zM28 22h1v1h-1zM29 22h1v1h-1zM31 22h1v1h-1zM32 22h1v1h-1zM33 22h1v1h-1zM35 22h1v1h-1zM36 22h1v1h-1zM0 23h1v1h-1zM1 23h1v1h-1zM2 23h1v1h-1zM4 23h1v1h-1zM5 23h1v1h-1zM7 23h1v1h-1zM8 23h1v1h-1zM10 23h1v1h-1zM14 23h1v1h-1zM17 23h1v1h-1zM18 23h1v1h-1zM19 23h1v1h-1zM20 23h1v1h-1zM21 23h1v1h-1zM22 23h1v1h-1zM23 23h1v1h-1zM26 23h1v1h-1zM28 23h1v1h-1zM29 23h1v1h-1zM30 23h1v1h-1zM31 23h1v1h-1zM32 23h1v1h-1zM1 24h1v1h-1zM2 24h1v1h-1zM4 24h1v1h-1zM6 24h1v1h-1zM12 24h1v1h-1zM13 24h1v1h-1zM14 24h1v1h-1zM15 24h1v1h-1zM16 24h1v1h-1zM19 24h1v1h-1zM22 24h1v1h-1zM24 24h1v1h-1zM25 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM29 24h1v1h-1zM30 24h1v1h-1zM31 24h1v1h-1zM32 24h1v1h-1zM34 24h1v1h-1zM35 24h1v1h-1zM0 25h1v1h-1zM1 25h1v1h-1zM3 25h1v1h-1zM8 25h1v1h-1zM9 25h1v1h-1zM12 25h1v1h-1zM15 25h1v1h-1zM17 25h1v1h-1zM18 25h1v1h-1zM19 25h1v1h-1zM20 25h1v1h-1zM21 25h1v1h-1zM22 25h1v1h-1zM23 25h1v1h-1zM25 25h1v1h-1zM26 25h1v1h-1zM31 25h1v1h-1zM33 25h1v1h-1zM0 26h1v1h-1zM2 26h1v1h-1zM3 26h1v1h-1zM6 26h1v1h-1zM7 26h1v1h-1zM8 26h1v1h-1zM9 26h1v1h-1zM11 26h1v1h-1zM13 26h1v1h-1zM15 26h1v1h-1zM16 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM27 26h1v1h-1zM29 26h1v1h-1zM30 26h1v1h-1zM32 26h1v1h-1zM34 26h1v1h-1zM35 26h1v1h-1zM36 26h1v1h-1zM0 27h1v1h-1zM3 27h1v1h-1zM5 27h1v1h-1zM7 27h1v1h-1zM11 27h1v1h-1zM12 27h1v1h-1zM13 27h1v1h-1zM14 27h1v1h-1zM15 27h1v1h-1zM20 27h1v1h-1zM21 27h1v1h-1zM22 27h1v1h-1zM26 27h1v1h-1zM27 27h1v1h-1zM28 27h1v1h-1zM29 27h1v1h-1zM31 27h1v1h-1zM32 27h1v1h-1zM0 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM9 28h1v1h-1zM10 28h1v1h-1zM14 28h1v1h-1zM15 28h1v1h-1zM17 28h1v1h-1zM22 28h1v1h-1zM24 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1zM28 28h1v1h-1zM29 28h1v1h-1zM30 28h1v1h-1zM31 28h1v1h-1zM32 28h1v1h-1zM33 28h1v1h-1zM34 28h1v1h-1zM8 29h1v1h-1zM11 29h1v1h-1zM12 29h1v1h-1zM13 29h1v1h-1zM16 29h1v1h-1zM18 29h1v1h-1zM19 29h1v1h-1zM20 29h1v1h-1zM21 29h1v1h-1zM22 29h1v1h-1zM23 29h1v1h-1zM27 29h1v1h-1zM28 29h1v1h-1zM32 29h1v1h-1zM33 29h1v1h-1zM0 30h1v1h-1zM1 30h1v1h-1zM2 30h1v1h-1zM3 30h1v1h-1zM4 30h1v1h-1zM5 30h1v1h-1zM6 30h1v1h-1zM9 30h1v1h-1zM10 30h1v1h-1zM13 30h1v1h-1zM15 30h1v1h-1zM16 30h1v1h-1zM18 30h1v1h-1zM21 30h1v1h-1zM22 30h1v1h-1zM25 30h1v1h-1zM28 30h1v1h-1zM30 30h1v1h-1zM32 30h1v1h-1zM34 30h1v1h-1zM35 30h1v1h-1zM36 30h1v1h-1zM0 31h1v1h-1zM6 31h1v1h-1zM8 31h1v1h-1zM11 31h1v1h-1zM12 31h1v1h-1zM13 31h1v1h-1zM15 31h1v1h-1zM20 31h1v1h-1zM21 31h1v1h-1zM23 31h1v1h-1zM24 31h1v1h-1zM28 31h1v1h-1zM32 31h1v1h-1zM33 31h1v1h-1zM35 31h1v1h-1zM0 32h1v1h-1zM2 32h1v1h-1zM3 32h1v1h-1zM4 32h1v1h-1zM6 32h1v1h-1zM8 32h1v1h-1zM10 32h1v1h-1zM11 32h1v1h-1zM13 32h1v1h-1zM14 32h1v1h-1zM15 32h1v1h-1zM18 32h1v1h-1zM19 32h1v1h-1zM20 32h1v1h-1zM22 32h1v1h-1zM24 32h1v1h-1zM25 32h1v1h-1zM27 32h1v1h-1zM28 32h1v1h-1zM29 32h1v1h-1zM30 32h1v1h-1zM31 32h1v1h-1zM32 32h1v1h-1zM34 32h1v1h-1zM35 32h1v1h-1zM0 33h1v1h-1zM2 33h1v1h-1zM3 33h1v1h-1zM4 33h1v1h-1zM6 33h1v1h-1zM8 33h1v1h-1zM12 33h1v1h-1zM13 33h1v1h-1zM14 33h1v1h-1zM15 33h1v1h-1zM16 33h1v1h-1zM17 33h1v1h-1zM19 33h1v1h-1zM20 33h1v1h-1zM21 33h1v1h-1zM23 33h1v1h-1zM27 33h1v1h-1zM28 33h1v1h-1zM30 33h1v1h-1zM32 33h1v1h-1zM34 33h1v1h-1zM36 33h1v1h-1zM0 34h1v1h-1zM2 34h1v1h-1zM3 34h1v1h-1zM4 34h1v1h-1zM6 34h1v1h-1zM8 34h1v1h-1zM9 34h1v1h-1zM12 34h1v1h-1zM13 34h1v1h-1zM17 34h1v1h-1zM20 34h1v1h-1zM21 34h1v1h-1zM22 34h1v1h-1zM25 34h1v1h-1zM28 34h1v1h-1zM34 34h1v1h-1zM35 34h1v1h-1zM36 34h1v1h-1zM0 35h1v1h-1zM6 35h1v1h-1zM9 35h1v1h-1zM13 35h1v1h-1zM14 35h1v1h-1zM16 35h1v1h-1zM18 35h1v1h-1zM21 35h1v1h-1zM22 35h1v1h-1zM26 35h1v1h-1zM27 35h1v1h-1zM28 35h1v1h-1zM29 35h1v1h-1zM30 35h1v1h-1zM32 35h1v1h-1zM36 35h1v1h-1zM0 36h1v1h-1zM1 36h1v1h-1zM2 36h1v1h-1zM3 36h1v1h-1zM4 36h1v1h-1zM5 36h1v1h-1zM6 36h1v1h-1zM8 36h1v1h-1zM9 36h1v1h-1zM10 36h1v1h-1zM12 36h1v1h-1zM17 36h1v1h-1zM22 36h1v1h-1zM23 36h1v1h-1zM25 36h1v1h-1zM26 36h1v1h-1zM29 36h1v1h-1zM30 36h1v1h-1zM32 36h1v1h-1zM33 36h1v1h-1zM34 36h1v1h-1zM35 36h1v1h-1zM36 36h1v1h-1z', url: 'gob.mx/csg · Día Nacional contra el Cáncer de Próstata' };
+const AZ_BIGOTE = 'M60 20C52 6 36 4 26 14 18 22 10 24 2 18c4 14 20 20 34 12 10-4 18-6 24 0 6-6 14-4 24 0 14 8 30 2 34-12-8 6-16 4-24-4C84 4 68 6 60 20Z';
+const AZ_LAZO = (x, y, s, c1, c2, id) => `<g transform="translate(${x} ${y}) scale(${s})"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient></defs><path d="M22 112 L54 52 C68 26 62 4 44 4 C26 4 20 26 34 52 L66 112" fill="none" stroke="url(#${id})" stroke-width="16" stroke-linejoin="round"/><path d="M34 52 C24 34 28 12 44 12" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="3" stroke-linecap="round"/></g>`;
+const AZ_SVG_LAZO = `<svg viewBox="0 0 90 120" xmlns="http://www.w3.org/2000/svg">${AZ_LAZO(1, 2, 1, '#BAE6FD', '#1D4ED8', 'azl')}</svg>`;
+const AZ_SVG_BIGOTE = `<svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg"><path d="${AZ_BIGOTE}" fill="#7DD3FC"/></svg>`;
+const AZ_ARTE = `<svg class="azp-art" viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minero con bigote y moño azul">
+  <defs><radialGradient id="azfondo" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3BA3FF"/><stop offset="1" stop-color="#1D4ED8"/></radialGradient>
+  <linearGradient id="azcasco" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD84D"/><stop offset="1" stop-color="#F2A900"/></linearGradient>
+  <linearGradient id="azhaz" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="rgba(255,250,200,.9)"/><stop offset="1" stop-color="rgba(255,250,200,0)"/></linearGradient></defs>
+  <circle cx="190" cy="230" r="160" fill="url(#azfondo)"/><circle cx="190" cy="230" r="160" fill="none" stroke="#BAE6FD" stroke-width="6" stroke-dasharray="4 14" opacity=".7"/>
+  <path class="haz" d="M262 150 L400 96 L400 214 Z" fill="url(#azhaz)"/>
+  <ellipse cx="190" cy="196" rx="132" ry="22" fill="#C98A00"/>
+  <path d="M84 192 C84 110 130 76 190 76 C250 76 296 110 296 192 Z" fill="url(#azcasco)"/>
+  <path d="M176 80 h28 v112 h-28 Z" fill="#FFE27A" opacity=".75"/>
+  <rect x="160" y="128" width="60" height="40" rx="10" fill="#1E293B"/><circle cx="190" cy="148" r="14" fill="#FFF7C2"/><circle cx="190" cy="148" r="7" fill="#FFFFFF"/>
+  <ellipse cx="190" cy="204" rx="140" ry="16" fill="#F2A900"/>
+  <g class="bigote"><path transform="translate(70 238) scale(2)" d="${AZ_BIGOTE}" fill="#0B1F45"/><path transform="translate(70 238) scale(2)" d="M60 20C52 8 38 7 28 15" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="2"/></g>
+  <g class="lazo">${AZ_LAZO(300, 268, 0.95, '#E0F2FE', '#3BA3FF', 'azl2')}</g>
+</svg>`;
+const AZ_FLOTAN = Array.from({ length: 16 }, (_, k) => ({
+  left: ((k * 61.7 + 5) % 96).toFixed(1) + '%', w: k % 2 ? 46 + (k * 7) % 22 : 26 + (k * 5) % 14, o: (0.18 + (k % 4) * 0.06).toFixed(2),
+  d: 20 + (k * 7) % 14, dl: -((k * 2.9) % 30).toFixed(1), x1: ((k % 2 ? 1 : -1) * (14 + (k * 9) % 30)) + 'px', x2: ((k % 2 ? -1 : 1) * (10 + (k * 5) % 24)) + 'px', b: k % 2 === 1
+}));
+function AzulCapa() {
+  return html`<div className="az-capa" aria-hidden="true">
+    <div className="az-brillo"><i></i></div>
+    ${AZ_FLOTAN.map((f, k) => html`<span key=${'f' + k} className="az-flota" style=${{ left: f.left, '--w': f.w + 'px', '--o': f.o, '--d': f.d + 's', '--dl': f.dl + 's', '--x1': f.x1, '--x2': f.x2 }} dangerouslySetInnerHTML=${{ __html: f.b ? AZ_SVG_BIGOTE : AZ_SVG_LAZO }}></span>`)}
+  </div>`;
+}
+function azFaltan(today, d) { const dd = Math.round((utc(today.y, 11, d) - utc(today.y, today.m, today.d)) / DAY); return dd === 0 ? 'Hoy' : dd === 1 ? 'Mañana' : dd > 1 ? `Faltan ${dd} días` : 'Ya pasó'; }
+const AZ_PUNTOS = [
+  { i: 'alert', t: html`Enemigo <em>silencioso</em>`, x: 'Al inicio no da síntomas ni dolor. No te confíes por “sentirte bien”.' },
+  { i: 'trend', t: html`<em>85% a 100%</em> de curación`, x: 'Cuando se detecta en etapas tempranas.' },
+  { i: 'heart', t: html`La salud no sabe de <em>prejuicios</em>`, x: 'Ir al médico es de mineros responsables que cuidan a su familia.' },
+  { i: 'bigote', t: html`El bigote de <em>Movember</em>`, x: 'Úsalo como pretexto para hablar de salud masculina y mental en el turno.' },
+];
+function PortadaAzul({ cls, pag, today }) {
+  const qr = html`<svg viewBox=${`-2 -2 ${AZ_QR.n + 4} ${AZ_QR.n + 4}`} shapeRendering="crispEdges" aria-label="Código QR al portal del Gobierno de México"><rect x="-2" y="-2" width=${AZ_QR.n + 4} height=${AZ_QR.n + 4} fill="#fff"/><path d=${AZ_QR.d} fill="#07122A"/></svg>`;
+  const ic = n => n === 'bigote' ? html`<svg width="40" height="16" viewBox="0 0 120 40" className="pulso"><path d=${AZ_BIGOTE} fill="currentColor"/></svg>` : html`<${Icon} name=${n} size=${28}/>`;
+  const f17 = azFaltan(today, 17), f29 = azFaltan(today, 29);
+  return html`<div className=${cls + ' azp azp' + (pag + 1)}>
+    <div className="azp-rayos"></div>
+    ${pag === 0 && html`<div className="azp-in">
+      <div className="izq">
+        <span className="azp-kick"><${Icon} name="ribbon" size=${16}/>Salud de los mineros</span>
+        <h2 className="azp-h">Noviembre Azul</h2>
+        <div className="azp-sub">Comprometidos con la salud de los mineros</div>
+        <p>La seguridad no solo está en el casco y las botas: <b>cuidar tu salud es el equipo de protección más importante.</b> Este mes concientizamos, prevenimos y detectamos a tiempo el cáncer de próstata.</p>
+        <div className="azp-fechas">
+          <div className=${'azp-f' + (f17 === 'Hoy' ? ' hoy' : '')}><div className="d"><b>17</b><small>NOV</small></div><span>Día Mundial de la Lucha contra el Cáncer de Próstata<em>${f17}</em></span></div>
+          <div className=${'azp-f' + (f29 === 'Hoy' ? ' hoy' : '')}><div className="d"><b>29</b><small>NOV</small></div><span>Día Nacional de la Lucha contra el Cáncer de Próstata en México<em>${f29}</em></span></div>
+        </div>
+      </div>
+      <div className="der" dangerouslySetInnerHTML=${{ __html: AZ_ARTE }}></div>
+    </div>`}
+    ${pag === 1 && html`<div className="azp-in">
+      <h3 className="azp-h2">¿Por qué romper el tabú <span>en la mina?</span></h3>
+      <div className="azp-cards">${AZ_PUNTOS.map((q, j) => html`<div className="azp-c" key=${'c' + j}><div className="n">${ic(q.i)}</div><div><b>${q.t}</b><span>${q.x}</span></div></div>`)}</div>
+    </div>`}
+    ${pag === 2 && html`<div className="azp-in">
+      <h3 className="azp-h2">Plan de acción: <span>prevención</span></h3>
+      <div>
+        <div className="azp-edades">
+          <div className="azp-e"><b>45<small>años</small></b><span>Chequeo general: antígeno prostático en sangre y/o exploración física.</span></div>
+          <div className="azp-e"><b>40<small>años</small></b><span>Si tienes antecedentes familiares de esta enfermedad.</span></div>
+        </div>
+        <div className="azp-vida"><h4>Estilo de vida en campamento y hogar</h4>
+          <div><i><${Icon} name="leaf" size=${18}/></i>Reduce grasas saturadas y carnes rojas en el comedor.</div>
+          <div><i><${Icon} name="alert" size=${18}/></i>Modera o elimina el alcohol y el tabaco.</div>
+          <div><i><${Icon} name="trend" size=${18}/></i>Mantén un peso saludable y actívate en tus descansos.</div>
+        </div>
+      </div>
+      <div className="azp-qr">${qr}<b>Infórmate más</b><span>Escanea para el portal oficial del Gobierno de México (gob.mx)</span></div>
+      <div className="azp-frase"><svg width="46" height="18" viewBox="0 0 120 40"><path d=${AZ_BIGOTE} fill="#fff"/></svg>“En la mina nos cuidamos entre todos. Este mes, dale prioridad a tu salud. ¡Hazte el chequeo!”</div>
+    </div>`}
+  </div>`;
+}
+const AZ_AVISOS = today => {
+  const d = today.d, out = [];
+  if (d === 17) out.push('HOY 17 de noviembre: Día Mundial de la Lucha contra el Cáncer de Próstata. ¡Hazte el chequeo!');
+  if (d === 29) out.push('HOY 29 de noviembre: Día Nacional de la Lucha contra el Cáncer de Próstata en México. ¡Hazte el chequeo!');
+  out.push('Noviembre Azul: comprometidos con la salud de los mineros');
+  if (d < 17) out.push('17 de noviembre: Día Mundial de la Lucha contra el Cáncer de Próstata');
+  if (d < 29) out.push('29 de noviembre: Día Nacional de la Lucha contra el Cáncer de Próstata en México');
+  out.push('Chequeo de próstata desde los 45 años; desde los 40 si tienes antecedentes familiares');
+  out.push('Detectado a tiempo, el cáncer de próstata tiene entre 85% y 100% de curación');
+  return out;
+};
+
+function Carousel({ items, interval, portada, today }) {
+  const slides = useMemo(() => (portada === 'muertos' ? [{ tipo: 'muertos', key: 'dm-portada', e: {} }] : portada === 'azul' ? [0, 1, 2].map(q => ({ tipo: 'azul', pag: q, key: 'az-' + q, e: {} })) : []).concat(armarDiapositivas(items)), [items, portada]);
   const [i, setI] = useState(0);
   const prev = useRef(-1);
   const n = slides.length;
-  const dur = s => (s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : s && s.tipo === 'muertos' ? Math.round(interval * 2) : interval);
+  const dur = s => (s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : s && s.tipo === 'muertos' ? Math.round(interval * 2) : s && s.tipo === 'azul' ? Math.round(interval * 1.4) : interval);
   useEffect(() => { if (i >= n) setI(0); }, [n]);
   useEffect(() => {
     if (n < 2) return;
@@ -1269,6 +1442,7 @@ function Carousel({ items, interval, portada }) {
     ${slides.map((s, k) => {
       const e = s.e;
       const ic = CAT_ICON[e.categoria] || 'camera';
+      if (s.tipo === 'azul') return html`<${PortadaAzul} key=${s.key} pag=${s.pag} today=${today} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
       if (s.tipo === 'muertos') return html`<${PortadaMuertos} key=${s.key} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
       if (s.tipo === 'scrap') {
         const cls = 'slide scrap' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
@@ -1541,7 +1715,8 @@ function App() {
   const autoTheme = themeForMonth(today.m);
   const byId = id => THEMES.find(t => t.id === id);
   const muertos = enDiaDeMuertos(today);
-  const theme = muertos ? DM_TEMA : cfg.override
+  const azul = enNoviembreAzul(today);
+  const theme = muertos ? DM_TEMA : azul ? AZ_TEMA : cfg.override
     ? (cfg.auto ? autoTheme : (byId(cfg.themeId) || THEMES[0]))
     : (meta.tema === 'auto' ? autoTheme : (byId(meta.tema) || THEMES[0]));
 
@@ -1551,6 +1726,22 @@ function App() {
     const load = () => fetch('data.json', { cache:'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (alive && j && typeof j === 'object' && j.seguridad) setData(j); }).catch(() => {});
     load(); const id = setInterval(load, 5 * 60 * 1000);
     return () => { alive = false; clearInterval(id); };
+  }, []);
+
+  /* Recarga automática: si se publicó un diseño nuevo, la pantalla se recarga sola (revisa cada 5 min) */
+  useEffect(() => {
+    const el = document.querySelector('meta[name="tablero-build"]'); const mio = el && el.content;
+    if (!mio || mio.indexOf('__BUILD__') >= 0 || !/^https?:/.test(location.protocol)) return;
+    const revisar = () => fetch(location.pathname + '?v=' + Date.now(), { cache:'no-store' }).then(r => r.ok ? r.text() : '').then(t => {
+      const m = t.match(/name="tablero-build" content="([0-9a-f]{6,})"/);
+      if (!m || m[1] === mio) return;
+      let ya = null; try { ya = sessionStorage.getItem('tablero-recarga'); } catch (e) {}
+      if (ya === m[1]) return;
+      try { sessionStorage.setItem('tablero-recarga', m[1]); } catch (e) {}
+      location.reload();
+    }).catch(() => {});
+    const id = setInterval(revisar, 5 * 60 * 1000);
+    return () => clearInterval(id);
   }, []);
 
   /* Tema y modo */
@@ -1613,6 +1804,7 @@ function App() {
     const t0 = utc(today.y, today.m, today.d);
     const hoy = (data.personal || []).filter(p => { if (!p.cumpleanos) return false; const [mm, dd] = p.cumpleanos.split('-').map(Number); return mm === today.m && dd === today.d; }).map(p => p.nombre);
     const items = [].concat(data.avisosTicker || []);
+    if (enNoviembreAzul(today)) { const az = AZ_AVISOS(today); items.splice(0, 0, ...az.slice(0, 3)); items.push(...az.slice(3)); }
     if (enDiaDeMuertos(today)) items.unshift('Día de Muertos · 1 y 2 de noviembre: recordamos con cariño a nuestros fieles difuntos');
     if (hoy.length) items.splice(1, 0, `Hoy celebramos el cumpleaños de ${hoy.length > 1 ? hoy.slice(0, -1).join(', ') + ' y ' + hoy[hoy.length - 1] : hoy[0]}. ¡Muchas felicidades de parte de toda la familia CoMinVi!`);
     return items;
@@ -1626,13 +1818,14 @@ function App() {
           <main className="main">
             <div className="col left"><${Safety} seg=${data.seguridad || {}} today=${today} soloContador=${capOn}/>${capOn ? html`<${Capacitacion} cap=${cap} today=${today} fin=${capFin}/>` : html`<${Cultura} items=${data.cultura || []}/>`}</div>
             <div className="col mid">
-              <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval} portada=${muertos}/>
+              <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval} portada=${muertos ? 'muertos' : azul ? 'azul' : null} today=${today}/>
               <${Results} res=${data.resultados || {}} today=${today}/>
             </div>
             <div className="col right"><${People} personal=${data.personal || []} today=${today}/></div>
           </main>
           <${Ticker} items=${tickerItems}/>
           ${muertos && html`<${DiaDeMuertosCapa}/>`}
+          ${azul && html`<${AzulCapa}/>`}
         </div>
       </div>
     </div>

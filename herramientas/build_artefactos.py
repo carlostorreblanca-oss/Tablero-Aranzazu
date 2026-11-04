@@ -15,6 +15,9 @@ window.addEventListener('error',function(e){var b=document.getElementById('boot-
 t=re.sub(r'<script src="https://cdnjs[^"]+react\.production\.min\.js"></script>\n<script src="https://cdnjs[^"]+react-dom\.production\.min\.js"></script>\n<script src="https://unpkg\.com/htm@3\.1\.1/dist/htm\.umd\.js"></script>\n', lambda m: guard+libs, t)
 t=t.replace("ReactDOM.createRoot(document.getElementById('app')).render(html`<${App}/>`);",
  "try { ReactDOM.createRoot(document.getElementById('app')).render(html`<${App}/>`); } catch (e) { var b=document.getElementById('boot-err'); b.hidden=false; b.textContent='No se pudo iniciar el tablero: '+e.message; }")
+import hashlib
+BUILD=hashlib.sha1(open('template.html','rb').read()).hexdigest()[:12]
+t=t.replace('/*__BUILD__*/', BUILD)
 t=t.replace('/*__DATA__*/', json.dumps(data,ensure_ascii=False)).replace('/*__LOGO__*/', open('logo.datauri').read().strip())
 open(os.path.join(OUT,'tv.html'),'w',encoding='utf-8').write(t)
 m=t.replace('</style>', mob_css+'\n</style>',1).replace('<title>Tablero Informativo Aranzazu</title>','<title>Tablero Aranzazu Móvil</title>')
