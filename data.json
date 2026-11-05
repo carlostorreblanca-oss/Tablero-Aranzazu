@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-04 06:47",
+  "actualizado": "2026-11-04 18:48",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1793729878777,
+   "baseDatos": 1793816274244,
    "csvh": "611d12add4ff"
   },
   "tema": "nov"
@@ -3539,7 +3539,7 @@
   {
    "id": 448,
    "nombre": "Almanza Salas Fernando",
-   "puesto": "Superviosr de Barrenacion Larga",
+   "puesto": "Supervisor de Barrenacion Larga",
    "unidad": "Operaciones",
    "cumpleanos": "02-02",
    "ingreso": "2026-09-10",
@@ -3755,6 +3755,54 @@
  ],
  "eventosFotos": [
   {
+   "id": "primerosaux1-0",
+   "evento": "primerosaux1",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: primeros auxilios · sesión 1",
+   "fecha": "4 nov",
+   "lugar": "Comedor / sala de capacitación",
+   "descripcion": "Sesión teórico-práctica de primeros auxilios con apoyo de presentación en pantalla.",
+   "imagen": "eventos/primerosau1.jpg",
+   "foto": 1,
+   "fotosEvento": 4
+  },
+  {
+   "id": "primerosaux1-1",
+   "evento": "primerosaux1",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: primeros auxilios · sesión 1",
+   "fecha": "4 nov",
+   "lugar": "Comedor / sala de capacitación",
+   "descripcion": "Sesión teórico-práctica de primeros auxilios con apoyo de presentación en pantalla.",
+   "imagen": "eventos/primerosau2.jpg",
+   "foto": 2,
+   "fotosEvento": 4
+  },
+  {
+   "id": "primerosaux1-2",
+   "evento": "primerosaux1",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: primeros auxilios · sesión 1",
+   "fecha": "4 nov",
+   "lugar": "Comedor / sala de capacitación",
+   "descripcion": "Sesión teórico-práctica de primeros auxilios con apoyo de presentación en pantalla.",
+   "imagen": "eventos/primerosau3.jpg",
+   "foto": 3,
+   "fotosEvento": 4
+  },
+  {
+   "id": "primerosaux1-3",
+   "evento": "primerosaux1",
+   "categoria": "Capacitación",
+   "titulo": "Capacitación: primeros auxilios · sesión 1",
+   "fecha": "4 nov",
+   "lugar": "Comedor / sala de capacitación",
+   "descripcion": "Sesión teórico-práctica de primeros auxilios con apoyo de presentación en pantalla.",
+   "imagen": "eventos/primerosau4.jpg",
+   "foto": 4,
+   "fotosEvento": 4
+  },
+  {
    "id": "muertos-0",
    "evento": "muertos",
    "categoria": "Celebración",
@@ -3967,102 +4015,6 @@
    "lugar": "Mina Aranzazu · RIT",
    "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
    "imagen": "eventos/asisep8.jpg",
-   "foto": 8,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-0",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct1.jpg",
-   "foto": 1,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-1",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct2.jpg",
-   "foto": 2,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-2",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct3.jpg",
-   "foto": 3,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-3",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct4.jpg",
-   "foto": 4,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-4",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct5.jpg",
-   "foto": 5,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-5",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct6.jpg",
-   "foto": 6,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-6",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct7.jpg",
-   "foto": 7,
-   "fotosEvento": 8
-  },
-  {
-   "id": "cumpleoct-7",
-   "evento": "cumpleoct",
-   "categoria": "Celebración",
-   "titulo": "Cumpleañeros de octubre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Pastel, bolsas de regalo y fotos con los cumpleañeros de octubre durante el RIT.",
-   "imagen": "eventos/cumpleoct8.jpg",
    "foto": 8,
    "fotosEvento": 8
   }
