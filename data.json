@@ -5,11 +5,11 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-05 06:47",
+  "actualizado": "2026-11-05 18:47",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1793816274244,
-   "csvh": "611d12add4ff"
+   "baseDatos": 1793914929896,
+   "csvh": "60967fc9824f"
   },
   "tema": "nov"
  },
@@ -1431,15 +1431,6 @@
    "foto": ""
   },
   {
-   "id": 166,
-   "nombre": "Lozano Rodriguez Leonel",
-   "puesto": "Mecanico Diesel",
-   "unidad": "Mantenimiento",
-   "cumpleanos": "09-18",
-   "ingreso": "2023-03-08",
-   "foto": ""
-  },
-  {
    "id": 167,
    "nombre": "Aleman Moreno Jose Ruben",
    "puesto": "Operador de Retroexcavadora",
@@ -1869,15 +1860,6 @@
    "unidad": "Operaciones",
    "cumpleanos": "04-07",
    "ingreso": "2025-03-18",
-   "foto": ""
-  },
-  {
-   "id": 220,
-   "nombre": "Mendoza Campos Manuel",
-   "puesto": "Oficial de Servicios",
-   "unidad": "Operaciones",
-   "cumpleanos": "03-31",
-   "ingreso": "2025-03-21",
    "foto": ""
   },
   {
@@ -2715,15 +2697,6 @@
    "unidad": "Mantenimiento",
    "cumpleanos": "05-27",
    "ingreso": "2026-07-03",
-   "foto": ""
-  },
-  {
-   "id": 330,
-   "nombre": "Davila Hernandez Jose Manuel",
-   "puesto": "Ayudante General",
-   "unidad": "Operaciones",
-   "cumpleanos": "06-30",
-   "ingreso": "2026-07-17",
    "foto": ""
   },
   {
@@ -3708,6 +3681,15 @@
    "foto": ""
   },
   {
+   "id": 468,
+   "nombre": "Serafin Pintor Hallyer de Rene",
+   "puesto": "Operador de Jumbo Anclador",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-04",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
    "id": 469,
    "nombre": "Muñoz Gutierrez Jose de Jesus",
    "puesto": "Operador de Scooptram",
@@ -3750,6 +3732,15 @@
    "unidad": "Mantenimiento",
    "cumpleanos": "12-16",
    "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 474,
+   "nombre": "Sin Dato",
+   "puesto": "# , C.p. ,",
+   "unidad": "#ref!",
+   "cumpleanos": "",
+   "ingreso": "",
    "foto": ""
   }
  ],
