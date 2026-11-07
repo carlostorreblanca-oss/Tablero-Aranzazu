@@ -5,11 +5,11 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-06 06:47",
+  "actualizado": "2026-11-06 18:49",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1793914929896,
-   "csvh": "60967fc9824f"
+   "baseDatos": 1794010559387,
+   "csvh": "45306df06689"
   },
   "tema": "nov"
  },
@@ -707,7 +707,7 @@
    "puesto": "Ayudante de Polvorero",
    "unidad": "Operaciones",
    "cumpleanos": "04-24",
-   "ingreso": "2019-06-07",
+   "ingreso": "2019-07-06",
    "foto": ""
   },
   {
@@ -1472,7 +1472,7 @@
    "puesto": "Operador de Camion de Volteo",
    "unidad": "Operaciones",
    "cumpleanos": "08-20",
-   "ingreso": "2023-06-07",
+   "ingreso": "2023-07-06",
    "foto": ""
   },
   {
@@ -2561,7 +2561,7 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "12-28",
-   "ingreso": "2026-05-07",
+   "ingreso": "2026-07-05",
    "foto": ""
   },
   {
@@ -2570,7 +2570,7 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "07-24",
-   "ingreso": "2026-05-07",
+   "ingreso": "2026-07-05",
    "foto": ""
   },
   {
@@ -2579,7 +2579,7 @@
    "puesto": "Operador de Jumbo Anclador",
    "unidad": "Operaciones",
    "cumpleanos": "07-09",
-   "ingreso": "2026-05-07",
+   "ingreso": "2026-07-05",
    "foto": ""
   },
   {
@@ -2588,7 +2588,7 @@
    "puesto": "Mecanico",
    "unidad": "Mantenimiento",
    "cumpleanos": "08-20",
-   "ingreso": "2026-05-07",
+   "ingreso": "2026-07-05",
    "foto": ""
   },
   {
@@ -3736,11 +3736,29 @@
   },
   {
    "id": 474,
-   "nombre": "Sin Dato",
-   "puesto": "# , C.p. ,",
-   "unidad": "#ref!",
-   "cumpleanos": "",
-   "ingreso": "",
+   "nombre": "Medina Romo Christian Alan",
+   "puesto": "Mecanico Diesel",
+   "unidad": "Operaciones",
+   "cumpleanos": "08-08",
+   "ingreso": "2026-11-06",
+   "foto": ""
+  },
+  {
+   "id": 475,
+   "nombre": "Avila Rosales Bruno Jaciel",
+   "puesto": "Ayudante de Jumbo Lineal",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-24",
+   "ingreso": "2026-11-06",
+   "foto": ""
+  },
+  {
+   "id": 476,
+   "nombre": "Ibarra Martinez Jose Francisco",
+   "puesto": "Paramedico",
+   "unidad": "Seguridad",
+   "cumpleanos": "04-05",
+   "ingreso": "2026-11-06",
    "foto": ""
   }
  ],
