@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-07 06:47",
+  "actualizado": "2026-11-07 07:22",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794010559387,
@@ -4031,7 +4031,8 @@
  "avisosTicker": [
   "Busca resultados con seguridad",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "¡Encuentra el Rojo y Corrige!"
+  "¡Encuentra el Rojo y Corrige!",
+  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
