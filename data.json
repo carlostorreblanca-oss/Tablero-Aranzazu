@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-07 12:07",
+  "actualizado": "2026-11-07 15:38",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794010559387,
@@ -3764,6 +3764,18 @@
  ],
  "eventosFotos": [
   {
+   "id": "turnonov07-0",
+   "evento": "turnonov07",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · hotdogs estilo Sonora",
+   "fecha": "7 nov",
+   "lugar": "Proyecto Aranzazu",
+   "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
+   "imagen": "eventos/turnonov071.jpg",
+   "foto": 1,
+   "fotosEvento": 1
+  },
+  {
    "id": "primerosaux1-0",
    "evento": "primerosaux1",
    "categoria": "Capacitación",
@@ -3930,102 +3942,6 @@
    "imagen": "eventos/turnooct284.jpg",
    "foto": 4,
    "fotosEvento": 4
-  },
-  {
-   "id": "asisep-0",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep1.jpg",
-   "foto": 1,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-1",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep2.jpg",
-   "foto": 2,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-2",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep3.jpg",
-   "foto": 3,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-3",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep4.jpg",
-   "foto": 4,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-4",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep5.jpg",
-   "foto": 5,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-5",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep6.jpg",
-   "foto": 6,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-6",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep7.jpg",
-   "foto": 7,
-   "fotosEvento": 8
-  },
-  {
-   "id": "asisep-7",
-   "evento": "asisep",
-   "categoria": "Reconocimiento",
-   "titulo": "Asistencia perfecta · septiembre",
-   "fecha": "28 oct",
-   "lugar": "Mina Aranzazu · RIT",
-   "descripcion": "Se entregaron los obsequios de la rifa a los colaboradores con asistencia perfecta en septiembre.",
-   "imagen": "eventos/asisep8.jpg",
-   "foto": 8,
-   "fotosEvento": 8
   }
  ],
  "avisosTicker": [
