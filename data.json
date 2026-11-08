@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-08 06:47",
+  "actualizado": "2026-11-08 09:19",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794010559387,
@@ -3773,7 +3773,7 @@
    "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
    "imagen": "eventos/turnonov071.jpg",
    "foto": 1,
-   "fotosEvento": 2
+   "fotosEvento": 6
   },
   {
    "id": "turnonov07-1",
@@ -3785,7 +3785,55 @@
    "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
    "imagen": "eventos/turnonov072.jpg",
    "foto": 2,
-   "fotosEvento": 2
+   "fotosEvento": 6
+  },
+  {
+   "id": "turnonov07-2",
+   "evento": "turnonov07",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · hotdogs estilo Sonora",
+   "fecha": "7 nov",
+   "lugar": "Proyecto Aranzazu",
+   "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
+   "imagen": "eventos/turnonov073.jpg",
+   "foto": 3,
+   "fotosEvento": 6
+  },
+  {
+   "id": "turnonov07-3",
+   "evento": "turnonov07",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · hotdogs estilo Sonora",
+   "fecha": "7 nov",
+   "lugar": "Proyecto Aranzazu",
+   "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
+   "imagen": "eventos/turnonov074.jpg",
+   "foto": 4,
+   "fotosEvento": 6
+  },
+  {
+   "id": "turnonov07-4",
+   "evento": "turnonov07",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · hotdogs estilo Sonora",
+   "fecha": "7 nov",
+   "lugar": "Proyecto Aranzazu",
+   "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
+   "imagen": "eventos/turnonov075.jpg",
+   "foto": 5,
+   "fotosEvento": 6
+  },
+  {
+   "id": "turnonov07-5",
+   "evento": "turnonov07",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · hotdogs estilo Sonora",
+   "fecha": "7 nov",
+   "lugar": "Proyecto Aranzazu",
+   "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
+   "imagen": "eventos/turnonov076.jpg",
+   "foto": 6,
+   "fotosEvento": 6
   },
   {
    "id": "primerosaux1-0",
