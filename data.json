@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-07 15:38",
+  "actualizado": "2026-11-07 18:46",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794010559387,
@@ -3773,7 +3773,19 @@
    "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
    "imagen": "eventos/turnonov071.jpg",
    "foto": 1,
-   "fotosEvento": 1
+   "fotosEvento": 2
+  },
+  {
+   "id": "turnonov07-1",
+   "evento": "turnonov07",
+   "categoria": "Convivencia",
+   "titulo": "Comida de cambio de turno · hotdogs estilo Sonora",
+   "fecha": "7 nov",
+   "lugar": "Proyecto Aranzazu",
+   "descripcion": "Comida de cambio de turno con hotdogs estilo Sonora para el personal.",
+   "imagen": "eventos/turnonov072.jpg",
+   "foto": 2,
+   "fotosEvento": 2
   },
   {
    "id": "primerosaux1-0",
