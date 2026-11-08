@@ -1,6 +1,6 @@
 # Actualización automática del tablero
 
-La tarea programada **Tablero INFORMATIVO Aranzazu** (7:00, 9:30 y 17:00, hora del centro de México; la de 9:30 es una segunda tarea con el mismo texto) sigue estos pasos. **Solo publica cuando algo cambió.**
+La tarea programada **Tablero INFORMATIVO Aranzazu** (6:30, 9:30 y 17:30, hora del centro de México) sigue estos pasos. **Solo publica cuando algo cambió.**
 
 > **Regla de oro:** cada fuente es independiente. Si una no se puede leer (archivo movido, sin permiso, error), **sigue con las demás**: corre `actualizar.py` sin el argumento de esa fuente, publica lo que sí cambió y en el informe final di qué fuente falló y por qué. Nunca detengas toda la actualización por una sola fuente.
 
