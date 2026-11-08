@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-08 09:19",
+  "actualizado": "2026-11-08 17:38",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794010559387,
+   "baseDatos": 1794161980629,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -707,7 +707,7 @@
    "puesto": "Ayudante de Polvorero",
    "unidad": "Operaciones",
    "cumpleanos": "04-24",
-   "ingreso": "2019-07-06",
+   "ingreso": "2019-06-07",
    "foto": ""
   },
   {
@@ -1472,7 +1472,7 @@
    "puesto": "Operador de Camion de Volteo",
    "unidad": "Operaciones",
    "cumpleanos": "08-20",
-   "ingreso": "2023-07-06",
+   "ingreso": "2023-06-07",
    "foto": ""
   },
   {
@@ -2561,7 +2561,7 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "12-28",
-   "ingreso": "2026-07-05",
+   "ingreso": "2026-05-07",
    "foto": ""
   },
   {
@@ -2570,7 +2570,7 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "07-24",
-   "ingreso": "2026-07-05",
+   "ingreso": "2026-05-07",
    "foto": ""
   },
   {
@@ -2579,7 +2579,7 @@
    "puesto": "Operador de Jumbo Anclador",
    "unidad": "Operaciones",
    "cumpleanos": "07-09",
-   "ingreso": "2026-07-05",
+   "ingreso": "2026-05-07",
    "foto": ""
   },
   {
@@ -2588,7 +2588,7 @@
    "puesto": "Mecanico",
    "unidad": "Mantenimiento",
    "cumpleanos": "08-20",
-   "ingreso": "2026-07-05",
+   "ingreso": "2026-05-07",
    "foto": ""
   },
   {
