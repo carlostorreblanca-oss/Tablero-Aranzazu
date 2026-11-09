@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-08 17:38",
+  "actualizado": "2026-11-09 06:44",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794161980629,
+   "baseDatos": 1794183421334,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "8 nov 2026",
-   "diasAcumulados": 7,
+   "corte": "9 nov 2026",
+   "diasAcumulados": 8,
    "total": {
-    "dia": 108,
-    "acum": 783,
+    "dia": 96,
+    "acum": 897,
     "meta": 3692,
-    "plan": 861,
-    "pctProgramado": 23
+    "plan": 985,
+    "pctProgramado": 27
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 1,
-     "acum": 26,
+     "dia": 7,
+     "acum": 33,
      "meta": 136,
-     "plan": 32
+     "plan": 36
     },
     {
      "nombre": "Supervisores",
-     "dia": 29,
-     "acum": 187,
+     "dia": 16,
+     "acum": 215,
      "meta": 580,
-     "plan": 135
+     "plan": 155
     },
     {
      "nombre": "Operadores",
-     "dia": 78,
-     "acum": 570,
+     "dia": 73,
+     "acum": 649,
      "meta": 2976,
-     "plan": 694
+     "plan": 794
     }
    ],
    "toleranciaAmarillo": 5
@@ -1517,7 +1517,7 @@
    "puesto": "Limpieza",
    "unidad": "Recursos Humanos",
    "cumpleanos": "08-17",
-   "ingreso": "2023-08-09",
+   "ingreso": "2023-09-08",
    "foto": ""
   },
   {
