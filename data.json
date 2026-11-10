@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-09 06:44",
+  "actualizado": "2026-11-10 06:44",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794183421334,
+   "baseDatos": 1794269951338,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "9 nov 2026",
-   "diasAcumulados": 8,
+   "corte": "10 nov 2026",
+   "diasAcumulados": 9,
    "total": {
-    "dia": 96,
-    "acum": 897,
+    "dia": 101,
+    "acum": 1024,
     "meta": 3692,
-    "plan": 985,
-    "pctProgramado": 27
+    "plan": 1108,
+    "pctProgramado": 30
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 7,
-     "acum": 33,
+     "dia": 3,
+     "acum": 36,
      "meta": 136,
-     "plan": 36
+     "plan": 41
     },
     {
      "nombre": "Supervisores",
-     "dia": 16,
-     "acum": 215,
+     "dia": 40,
+     "acum": 256,
      "meta": 580,
-     "plan": 155
+     "plan": 174
     },
     {
      "nombre": "Operadores",
-     "dia": 73,
-     "acum": 649,
+     "dia": 58,
+     "acum": 732,
      "meta": 2976,
-     "plan": 794
+     "plan": 893
     }
    ],
    "toleranciaAmarillo": 5
@@ -230,7 +230,7 @@
    "puesto": "Oficial de Voladuras Des",
    "unidad": "Operaciones",
    "cumpleanos": "04-05",
-   "ingreso": "2016-09-10",
+   "ingreso": "2016-10-09",
    "foto": ""
   },
   {
@@ -527,7 +527,7 @@
    "puesto": "Ayudante de Voladuras Bl",
    "unidad": "Operaciones",
    "cumpleanos": "01-13",
-   "ingreso": "2025-09-10",
+   "ingreso": "2025-10-09",
    "foto": ""
   },
   {
@@ -833,7 +833,7 @@
    "puesto": "Operador de Camion de Bajo Perfil",
    "unidad": "Operaciones",
    "cumpleanos": "12-30",
-   "ingreso": "2025-09-10",
+   "ingreso": "2025-10-09",
    "foto": ""
   },
   {
@@ -1517,7 +1517,7 @@
    "puesto": "Limpieza",
    "unidad": "Recursos Humanos",
    "cumpleanos": "08-17",
-   "ingreso": "2023-09-08",
+   "ingreso": "2023-08-09",
    "foto": ""
   },
   {
@@ -2147,7 +2147,7 @@
    "puesto": "Operador de Camion de Bajo Perfil",
    "unidad": "Operaciones",
    "cumpleanos": "07-01",
-   "ingreso": "2025-09-10",
+   "ingreso": "2025-10-09",
    "foto": ""
   },
   {
@@ -2156,7 +2156,7 @@
    "puesto": "Mecanico de Retro",
    "unidad": "Mantenimiento",
    "cumpleanos": "09-06",
-   "ingreso": "2025-09-10",
+   "ingreso": "2025-10-09",
    "foto": ""
   },
   {
@@ -3497,7 +3497,7 @@
    "puesto": "Mecanico",
    "unidad": "Mantenimiento",
    "cumpleanos": "09-25",
-   "ingreso": "2026-09-10",
+   "ingreso": "2026-10-09",
    "foto": ""
   },
   {
@@ -3506,7 +3506,7 @@
    "puesto": "Capitan de Mina",
    "unidad": "Operaciones",
    "cumpleanos": "07-15",
-   "ingreso": "2026-09-10",
+   "ingreso": "2026-10-09",
    "foto": ""
   },
   {
@@ -3515,7 +3515,7 @@
    "puesto": "Supervisor de Barrenacion Larga",
    "unidad": "Operaciones",
    "cumpleanos": "02-02",
-   "ingreso": "2026-09-10",
+   "ingreso": "2026-10-09",
    "foto": ""
   },
   {
@@ -3524,7 +3524,7 @@
    "puesto": "Supervisor de Servicios",
    "unidad": "Operaciones",
    "cumpleanos": "02-01",
-   "ingreso": "2026-09-10",
+   "ingreso": "2026-10-09",
    "foto": ""
   },
   {
