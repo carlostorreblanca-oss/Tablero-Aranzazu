@@ -5,11 +5,11 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-10 06:44",
+  "actualizado": "2026-11-11 06:45",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794269951338,
-   "csvh": "45306df06689"
+   "baseDatos": 1794356257588,
+   "csvh": "6b64910c101f"
   },
   "tema": "nov"
  },
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "10 nov 2026",
-   "diasAcumulados": 9,
+   "corte": "11 nov 2026",
+   "diasAcumulados": 10,
    "total": {
-    "dia": 101,
-    "acum": 1024,
+    "dia": 150,
+    "acum": 1194,
     "meta": 3692,
-    "plan": 1108,
-    "pctProgramado": 30
+    "plan": 1231,
+    "pctProgramado": 33
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 3,
+     "dia": 0,
      "acum": 36,
      "meta": 136,
-     "plan": 41
+     "plan": 45
     },
     {
      "nombre": "Supervisores",
-     "dia": 40,
-     "acum": 256,
+     "dia": 25,
+     "acum": 284,
      "meta": 580,
-     "plan": 174
+     "plan": 193
     },
     {
      "nombre": "Operadores",
-     "dia": 58,
-     "acum": 732,
+     "dia": 125,
+     "acum": 874,
      "meta": 2976,
-     "plan": 893
+     "plan": 992
     }
    ],
    "toleranciaAmarillo": 5
@@ -64,29 +64,29 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": 3720.35,
-   "extraccionHumedas": 3916.16,
-   "planExtraccion": 3540.61,
-   "desarrollo": 19.5,
-   "planDesarrollo": 30.0,
-   "disparos": 6.0,
-   "disparosPlan": 9.0,
+   "extraccionSecas": null,
+   "extraccionHumedas": 0.0,
+   "planExtraccion": 3604.06,
+   "desarrollo": 0.0,
+   "planDesarrollo": 28.9,
+   "disparos": 0.0,
+   "disparosPlan": 10.0,
    "rellenoRF": 0.0,
    "rellenoCRF": 0.0,
-   "extraccionPendiente": false
+   "extraccionPendiente": true
   },
   "mes": {
-   "extraccionSecas": 19358.85,
-   "extraccionHumedas": 20377.74,
-   "planExtraccion": 22974.92,
-   "desarrollo": 146.0,
-   "planDesarrollo": 165.2,
+   "extraccionSecas": 28554.19,
+   "extraccionHumedas": 30057.04,
+   "planExtraccion": 37620.32,
+   "desarrollo": 191.4,
+   "planDesarrollo": 286.0,
    "rellenoRF": 0.0,
    "rellenoCRF": 0.0
   },
-  "corte": "6 nov 2026",
-  "diaReporte": 6,
-  "fuente": "11_Reporte_Noviembre_DesaProd 2026.xlsx · hoja Resumen"
+  "corte": "10 nov 2026",
+  "diaReporte": 10,
+  "fuente": "Reporte_Noviembre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
   {
@@ -230,7 +230,7 @@
    "puesto": "Oficial de Voladuras Des",
    "unidad": "Operaciones",
    "cumpleanos": "04-05",
-   "ingreso": "2016-10-09",
+   "ingreso": "2016-09-10",
    "foto": ""
   },
   {
@@ -527,7 +527,7 @@
    "puesto": "Ayudante de Voladuras Bl",
    "unidad": "Operaciones",
    "cumpleanos": "01-13",
-   "ingreso": "2025-10-09",
+   "ingreso": "2025-09-10",
    "foto": ""
   },
   {
@@ -833,7 +833,7 @@
    "puesto": "Operador de Camion de Bajo Perfil",
    "unidad": "Operaciones",
    "cumpleanos": "12-30",
-   "ingreso": "2025-10-09",
+   "ingreso": "2025-09-10",
    "foto": ""
   },
   {
@@ -2147,7 +2147,7 @@
    "puesto": "Operador de Camion de Bajo Perfil",
    "unidad": "Operaciones",
    "cumpleanos": "07-01",
-   "ingreso": "2025-10-09",
+   "ingreso": "2025-09-10",
    "foto": ""
   },
   {
@@ -2156,7 +2156,7 @@
    "puesto": "Mecanico de Retro",
    "unidad": "Mantenimiento",
    "cumpleanos": "09-06",
-   "ingreso": "2025-10-09",
+   "ingreso": "2025-09-10",
    "foto": ""
   },
   {
@@ -3497,7 +3497,7 @@
    "puesto": "Mecanico",
    "unidad": "Mantenimiento",
    "cumpleanos": "09-25",
-   "ingreso": "2026-10-09",
+   "ingreso": "2026-09-10",
    "foto": ""
   },
   {
@@ -3506,7 +3506,7 @@
    "puesto": "Capitan de Mina",
    "unidad": "Operaciones",
    "cumpleanos": "07-15",
-   "ingreso": "2026-10-09",
+   "ingreso": "2026-09-10",
    "foto": ""
   },
   {
@@ -3515,7 +3515,7 @@
    "puesto": "Supervisor de Barrenacion Larga",
    "unidad": "Operaciones",
    "cumpleanos": "02-02",
-   "ingreso": "2026-10-09",
+   "ingreso": "2026-09-10",
    "foto": ""
   },
   {
@@ -3524,7 +3524,7 @@
    "puesto": "Supervisor de Servicios",
    "unidad": "Operaciones",
    "cumpleanos": "02-01",
-   "ingreso": "2026-10-09",
+   "ingreso": "2026-09-10",
    "foto": ""
   },
   {
@@ -3691,51 +3691,6 @@
   },
   {
    "id": 469,
-   "nombre": "Muñoz Gutierrez Jose de Jesus",
-   "puesto": "Operador de Scooptram",
-   "unidad": "Operaciones",
-   "cumpleanos": "05-10",
-   "ingreso": "2026-10-22",
-   "foto": ""
-  },
-  {
-   "id": 470,
-   "nombre": "Garay Alvarado Brandon Joel",
-   "puesto": "Supervisor de Mina",
-   "unidad": "Operaciones",
-   "cumpleanos": "12-05",
-   "ingreso": "2026-10-22",
-   "foto": ""
-  },
-  {
-   "id": 471,
-   "nombre": "Zambrano de la Torre Edgar Omar",
-   "puesto": "Topografo",
-   "unidad": "Calidad",
-   "cumpleanos": "08-24",
-   "ingreso": "2026-10-22",
-   "foto": ""
-  },
-  {
-   "id": 472,
-   "nombre": "Hernandez Magallanes Misael",
-   "puesto": "Ingeniero En Desarrollo",
-   "unidad": "Mantenimiento",
-   "cumpleanos": "09-29",
-   "ingreso": "2026-10-22",
-   "foto": ""
-  },
-  {
-   "id": 473,
-   "nombre": "Acosta Esquivel Adolfo",
-   "puesto": "Ingeniero En Desarrollo",
-   "unidad": "Mantenimiento",
-   "cumpleanos": "12-16",
-   "ingreso": "2026-10-22",
-   "foto": ""
-  },
-  {
-   "id": 474,
    "nombre": "Medina Romo Christian Alan",
    "puesto": "Mecanico Diesel",
    "unidad": "Operaciones",
@@ -3744,7 +3699,7 @@
    "foto": ""
   },
   {
-   "id": 475,
+   "id": 470,
    "nombre": "Avila Rosales Bruno Jaciel",
    "puesto": "Ayudante de Jumbo Lineal",
    "unidad": "Operaciones",
@@ -3753,7 +3708,7 @@
    "foto": ""
   },
   {
-   "id": 476,
+   "id": 471,
    "nombre": "Ibarra Martinez Jose Francisco",
    "puesto": "Paramedico",
    "unidad": "Seguridad",
