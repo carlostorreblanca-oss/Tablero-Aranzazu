@@ -5,11 +5,11 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-11 09:43",
+  "actualizado": "2026-11-11 17:44",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794356257588,
-   "csvh": "6b64910c101f"
+   "baseDatos": 1794430138943,
+   "csvh": "45306df06689"
   },
   "tema": "nov"
  },
@@ -79,7 +79,7 @@
    "extraccionSecas": 31098.37,
    "extraccionHumedas": 32735.13,
    "planExtraccion": 37620.32,
-   "desarrollo": 203.3,
+   "desarrollo": 200.8,
    "planDesarrollo": 286.0,
    "rellenoRF": 193.5,
    "rellenoCRF": 40.8
@@ -3691,6 +3691,51 @@
   },
   {
    "id": 469,
+   "nombre": "Muñoz Gutierrez Jose de Jesus",
+   "puesto": "Operador de Scooptram",
+   "unidad": "Operaciones",
+   "cumpleanos": "05-10",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 470,
+   "nombre": "Garay Alvarado Brandon Joel",
+   "puesto": "Supervisor de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-05",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 471,
+   "nombre": "Zambrano de la Torre Edgar Omar",
+   "puesto": "Topografo",
+   "unidad": "Calidad",
+   "cumpleanos": "08-24",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 472,
+   "nombre": "Hernandez Magallanes Misael",
+   "puesto": "Ingeniero En Desarrollo",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "09-29",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 473,
+   "nombre": "Acosta Esquivel Adolfo",
+   "puesto": "Ingeniero En Desarrollo",
+   "unidad": "Mantenimiento",
+   "cumpleanos": "12-16",
+   "ingreso": "2026-10-22",
+   "foto": ""
+  },
+  {
+   "id": 474,
    "nombre": "Medina Romo Christian Alan",
    "puesto": "Mecanico Diesel",
    "unidad": "Operaciones",
@@ -3699,7 +3744,7 @@
    "foto": ""
   },
   {
-   "id": 470,
+   "id": 475,
    "nombre": "Avila Rosales Bruno Jaciel",
    "puesto": "Ayudante de Jumbo Lineal",
    "unidad": "Operaciones",
@@ -3708,7 +3753,7 @@
    "foto": ""
   },
   {
-   "id": 471,
+   "id": 476,
    "nombre": "Ibarra Martinez Jose Francisco",
    "puesto": "Paramedico",
    "unidad": "Seguridad",
