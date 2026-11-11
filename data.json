@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-11 06:45",
+  "actualizado": "2026-11-11 09:43",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794356257588,
@@ -64,25 +64,25 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": null,
-   "extraccionHumedas": 0.0,
+   "extraccionSecas": 2544.19,
+   "extraccionHumedas": 2678.09,
    "planExtraccion": 3604.06,
-   "desarrollo": 0.0,
+   "desarrollo": 11.9,
    "planDesarrollo": 28.9,
-   "disparos": 0.0,
-   "disparosPlan": 10.0,
-   "rellenoRF": 0.0,
-   "rellenoCRF": 0.0,
-   "extraccionPendiente": true
+   "disparos": 3.0,
+   "disparosPlan": 7.0,
+   "rellenoRF": 193.5,
+   "rellenoCRF": 40.8,
+   "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 28554.19,
-   "extraccionHumedas": 30057.04,
+   "extraccionSecas": 31098.37,
+   "extraccionHumedas": 32735.13,
    "planExtraccion": 37620.32,
-   "desarrollo": 191.4,
+   "desarrollo": 203.3,
    "planDesarrollo": 286.0,
-   "rellenoRF": 0.0,
-   "rellenoCRF": 0.0
+   "rellenoRF": 193.5,
+   "rellenoCRF": 40.8
   },
   "corte": "10 nov 2026",
   "diaReporte": 10,
