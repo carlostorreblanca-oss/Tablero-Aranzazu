@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-11 17:44",
+  "actualizado": "2026-11-12 06:43",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794430138943,
+   "baseDatos": 1794442538997,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "11 nov 2026",
-   "diasAcumulados": 10,
+   "corte": "12 nov 2026",
+   "diasAcumulados": 11,
    "total": {
-    "dia": 150,
-    "acum": 1194,
+    "dia": 92,
+    "acum": 1296,
     "meta": 3692,
-    "plan": 1231,
-    "pctProgramado": 33
+    "plan": 1354,
+    "pctProgramado": 37
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 0,
-     "acum": 36,
+     "dia": 5,
+     "acum": 41,
      "meta": 136,
-     "plan": 45
+     "plan": 50
     },
     {
      "nombre": "Supervisores",
-     "dia": 25,
-     "acum": 284,
+     "dia": 14,
+     "acum": 302,
      "meta": 580,
-     "plan": 193
+     "plan": 213
     },
     {
      "nombre": "Operadores",
-     "dia": 125,
-     "acum": 874,
+     "dia": 73,
+     "acum": 953,
      "meta": 2976,
-     "plan": 992
+     "plan": 1091
     }
    ],
    "toleranciaAmarillo": 5
@@ -311,7 +311,7 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "06-28",
-   "ingreso": "2016-11-12",
+   "ingreso": "2016-12-11",
    "foto": ""
   },
   {
