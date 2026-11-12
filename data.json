@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-12 06:43",
+  "actualizado": "2026-11-12 15:35",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794442538997,
@@ -64,28 +64,28 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": 2544.19,
-   "extraccionHumedas": 2678.09,
-   "planExtraccion": 3604.06,
-   "desarrollo": 11.9,
-   "planDesarrollo": 28.9,
-   "disparos": 3.0,
-   "disparosPlan": 7.0,
-   "rellenoRF": 193.5,
-   "rellenoCRF": 40.8,
+   "extraccionSecas": 3181.1,
+   "extraccionHumedas": 3348.53,
+   "planExtraccion": 3912.82,
+   "desarrollo": 34.0,
+   "planDesarrollo": 28.3,
+   "disparos": 9.0,
+   "disparosPlan": 11.0,
+   "rellenoRF": 0.0,
+   "rellenoCRF": 400.8,
    "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 31098.37,
-   "extraccionHumedas": 32735.13,
-   "planExtraccion": 37620.32,
-   "desarrollo": 200.8,
-   "planDesarrollo": 286.0,
+   "extraccionSecas": 34279.48,
+   "extraccionHumedas": 36083.66,
+   "planExtraccion": 41533.13,
+   "desarrollo": 235.1,
+   "planDesarrollo": 314.3,
    "rellenoRF": 193.5,
-   "rellenoCRF": 40.8
+   "rellenoCRF": 441.6
   },
-  "corte": "10 nov 2026",
-  "diaReporte": 10,
+  "corte": "11 nov 2026",
+  "diaReporte": 11,
   "fuente": "Reporte_Noviembre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
@@ -4007,7 +4007,7 @@
  "avisosTicker": [
   "Busca resultados con seguridad",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "¡Encuentra el Rojo y Corrige!",
+  "12 de Noviembre; día internacional contra la Obesidad",
   "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
  ],
  "clima": {
