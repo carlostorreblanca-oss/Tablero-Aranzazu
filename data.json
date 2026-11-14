@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-13 09:44",
+  "actualizado": "2026-11-14 09:44",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794442538997,
+   "baseDatos": 1794664109068,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "13 nov 2026",
-   "diasAcumulados": 12,
+   "corte": "14 nov 2026",
+   "diasAcumulados": 13,
    "total": {
-    "dia": 58,
-    "acum": 1367,
+    "dia": 76,
+    "acum": 1467,
     "meta": 3692,
-    "plan": 1477,
-    "pctProgramado": 40
+    "plan": 1600,
+    "pctProgramado": 43
    },
    "niveles": [
     {
      "nombre": "Gerentes",
      "dia": 1,
-     "acum": 42,
+     "acum": 43,
      "meta": 136,
-     "plan": 54
+     "plan": 59
     },
     {
      "nombre": "Supervisores",
-     "dia": 7,
-     "acum": 313,
+     "dia": 8,
+     "acum": 324,
      "meta": 580,
-     "plan": 232
+     "plan": 251
     },
     {
      "nombre": "Operadores",
-     "dia": 50,
-     "acum": 1012,
+     "dia": 67,
+     "acum": 1100,
      "meta": 2976,
-     "plan": 1190
+     "plan": 1290
     }
    ],
    "toleranciaAmarillo": 5
@@ -64,28 +64,28 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": null,
-   "extraccionHumedas": 0.0,
-   "planExtraccion": 3497.5,
-   "desarrollo": 34.8,
-   "planDesarrollo": 32.0,
-   "disparos": 9.0,
-   "disparosPlan": 10.0,
-   "rellenoRF": 0.0,
-   "rellenoCRF": 0.0,
-   "extraccionPendiente": true
+   "extraccionSecas": 2891.85,
+   "extraccionHumedas": 3044.06,
+   "planExtraccion": 3908.27,
+   "desarrollo": 24.6,
+   "planDesarrollo": 29.0,
+   "disparos": 7.0,
+   "disparosPlan": 12.0,
+   "rellenoRF": 144.0,
+   "rellenoCRF": 404.6,
+   "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 34279.48,
-   "extraccionHumedas": 36083.66,
-   "planExtraccion": 45030.63,
-   "desarrollo": 269.9,
-   "planDesarrollo": 346.3,
-   "rellenoRF": 193.5,
-   "rellenoCRF": 441.6
+   "extraccionSecas": 39943.66,
+   "extraccionHumedas": 42045.96,
+   "planExtraccion": 48938.9,
+   "desarrollo": 296.1,
+   "planDesarrollo": 375.3,
+   "rellenoRF": 337.5,
+   "rellenoCRF": 1465.4
   },
-  "corte": "12 nov 2026",
-  "diaReporte": 12,
+  "corte": "13 nov 2026",
+  "diaReporte": 13,
   "fuente": "Reporte_Noviembre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
@@ -311,7 +311,7 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "06-28",
-   "ingreso": "2016-12-11",
+   "ingreso": "2016-11-12",
    "foto": ""
   },
   {
@@ -949,7 +949,7 @@
    "nombre": "Hernandez Garcia Emilio",
    "puesto": "Ayudante de Jumbo Anclador",
    "unidad": "Operaciones",
-   "cumpleanos": "",
+   "cumpleanos": "04-05",
    "ingreso": "2021-03-26",
    "foto": ""
   },
@@ -3123,15 +3123,6 @@
    "foto": ""
   },
   {
-   "id": 390,
-   "nombre": "Dueñas Guadalupe Juan Carlos",
-   "puesto": "Supervisor de Servicios",
-   "unidad": "Operaciones",
-   "cumpleanos": "01-22",
-   "ingreso": "2025-08-14",
-   "foto": ""
-  },
-  {
    "id": 392,
    "nombre": "Lazarin Castañeda Gloria Alejandra",
    "puesto": "Auxiliar de Calidad",
@@ -4007,7 +3998,7 @@
  "avisosTicker": [
   "Busca resultados con seguridad",
   "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "12 de Noviembre; día internacional contra la Obesidad",
+  "14 de Noviembre -  Dia muncial de la Diabetes",
   "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
  ],
  "clima": {
