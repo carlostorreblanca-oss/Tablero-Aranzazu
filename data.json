@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-14 09:44",
+  "actualizado": "2026-11-15 17:46",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794664109068,
+   "baseDatos": 1794680114367,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "14 nov 2026",
-   "diasAcumulados": 13,
+   "corte": "15 nov 2026",
+   "diasAcumulados": 14,
    "total": {
-    "dia": 76,
-    "acum": 1467,
+    "dia": 101,
+    "acum": 1612,
     "meta": 3692,
-    "plan": 1600,
-    "pctProgramado": 43
+    "plan": 1723,
+    "pctProgramado": 47
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 1,
-     "acum": 43,
+     "dia": 2,
+     "acum": 46,
      "meta": 136,
-     "plan": 59
+     "plan": 63
     },
     {
      "nombre": "Supervisores",
-     "dia": 8,
-     "acum": 324,
+     "dia": 16,
+     "acum": 360,
      "meta": 580,
-     "plan": 251
+     "plan": 271
     },
     {
      "nombre": "Operadores",
-     "dia": 67,
-     "acum": 1100,
+     "dia": 83,
+     "acum": 1206,
      "meta": 2976,
-     "plan": 1290
+     "plan": 1389
     }
    ],
    "toleranciaAmarillo": 5
@@ -64,28 +64,28 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": 2891.85,
-   "extraccionHumedas": 3044.06,
-   "planExtraccion": 3908.27,
-   "desarrollo": 24.6,
-   "planDesarrollo": 29.0,
+   "extraccionSecas": 3790.06,
+   "extraccionHumedas": 3989.54,
+   "planExtraccion": 3678.84,
+   "desarrollo": 25.0,
+   "planDesarrollo": 28.3,
    "disparos": 7.0,
-   "disparosPlan": 12.0,
-   "rellenoRF": 144.0,
-   "rellenoCRF": 404.6,
+   "disparosPlan": 7.0,
+   "rellenoRF": 211.5,
+   "rellenoCRF": 489.6,
    "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 39943.66,
-   "extraccionHumedas": 42045.96,
-   "planExtraccion": 48938.9,
-   "desarrollo": 296.1,
-   "planDesarrollo": 375.3,
-   "rellenoRF": 337.5,
-   "rellenoCRF": 1465.4
+   "extraccionSecas": 43756.94,
+   "extraccionHumedas": 46059.94,
+   "planExtraccion": 52617.74,
+   "desarrollo": 318.3,
+   "planDesarrollo": 403.6,
+   "rellenoRF": 549.0,
+   "rellenoCRF": 1955.0
   },
-  "corte": "13 nov 2026",
-  "diaReporte": 13,
+  "corte": "14 nov 2026",
+  "diaReporte": 14,
   "fuente": "Reporte_Noviembre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
@@ -3997,9 +3997,10 @@
  ],
  "avisosTicker": [
   "Busca resultados con seguridad",
-  "Campaña: “Calidad, seguridad y confianza en cada metro de mina construida”",
-  "14 de Noviembre -  Dia muncial de la Diabetes",
-  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
+  "HOY 15 de Noviembre, Campaña de Amacice",
+  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores",
+  "14 de Noviembre -  Dia mundial de la Diabetes",
+  "15 de Noviembre - Día mundial sin alcohol"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
@@ -4074,147 +4075,197 @@
  ],
  "capacitacion": {
   "activo": true,
-  "archivo": "20261102.xlsx",
-  "tipo": "curso",
-  "titulo": "Reinducción SSMA",
-  "encabezado": [
-   "Reinducción",
-   "SSMA"
+  "archivo": "20261114.xlsx",
+  "titulo": "Programa de habilidades por vencer",
+  "lugar": "Sala de Capacitación, a un costado del almacén",
+  "hora": "7:00",
+  "capacitadores": [
+   "Adrián Fonseca"
   ],
-  "etiqueta": "Curso obligatorio",
-  "lugar": "Sala “El Temeroso”",
-  "hora": "8:00–16:30",
-  "capacitadores": [],
-  "notaNoche": "",
-  "nota": "Es muy importante que el personal que asista a la Capacitación cheque su asistencia en el reloj checador.",
+  "notaNoche": "Noche: cambia a turno de día",
+  "nota": "¿Se te venció una habilidad o está por vencer y no estás en la lista? Acércate a Capacitación.",
   "minCcrm": 5,
   "minCapacitacion": 4,
   "lista": [
    {
-    "idBase": 373,
-    "nombre": "Sánchez Galindo José Manuel",
-    "puesto": "Asistente residente",
+    "idBase": null,
+    "nombre": "Nuñez de la Rosa J. Gregorio",
+    "puesto": "Ayudante de mecánico",
     "habilidades": [
-     "Reinducción SSMA"
+     "Bloqueo de energía"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-11-16",
-    "depto": "Operación"
+    "cambiaTurno": false
    },
    {
-    "idBase": 115,
-    "nombre": "Cervantes Núñez Otoniel Ricardo",
-    "puesto": "Operador de camión de volteo",
+    "idBase": 159,
+    "nombre": "Torres Mendoza Roberto",
+    "puesto": "Operador de bajo perfil",
     "habilidades": [
-     "Reinducción SSMA"
+     "Bloqueo de energía"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-09-25",
-    "depto": "Operación"
+    "cambiaTurno": false
    },
    {
-    "idBase": 8,
-    "nombre": "Mireles Candia José Juan",
-    "puesto": "Operador de jumbo anclador",
+    "idBase": 353,
+    "nombre": "Vallejo García Hugo",
+    "puesto": "Superv. eléctrico",
     "habilidades": [
-     "Reinducción SSMA"
+     "Bloqueo de energía"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-12-04",
-    "depto": "Operación"
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 159,
+    "nombre": "Torres Mendoza Roberto",
+    "puesto": "Operador de bajo perfil",
+    "habilidades": [
+     "Operación cbp"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-11-16",
+    "hora": "",
+    "cambiaTurno": false
    },
    {
     "idBase": 208,
     "nombre": "Pinales Ubario Jesús Alfredo",
-    "puesto": "Operador de retroexcavadora",
+    "puesto": "Operador de retroexcav.",
     "habilidades": [
-     "Reinducción SSMA"
+     "Bloqueo de energía"
     ],
-    "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "cuadrilla": "noche",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-11-22",
-    "depto": "Operación"
+    "cambiaTurno": true
    },
    {
-    "idBase": 206,
-    "nombre": "Ibarra Cano Josthyn Renato",
-    "puesto": "Ayudante de barrenación larga",
-    "habilidades": [
-     "Reinducción SSMA"
-    ],
-    "cuadrilla": "dia",
-    "fecha": "2026-11-03",
-    "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-11-10",
-    "depto": "Operación"
-   },
-   {
-    "idBase": 200,
-    "nombre": "Camarillo Ramírez Christian Eduardo",
+    "idBase": 105,
+    "nombre": "Verdin Arango Fortino",
     "puesto": "Mecánico",
     "habilidades": [
-     "Reinducción SSMA"
+     "Bloqueo de energía"
     ],
-    "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "cuadrilla": "noche",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-09-05",
-    "depto": "Mantenimiento"
+    "cambiaTurno": true
    },
    {
-    "idBase": 119,
-    "nombre": "González García Adrián Micael",
-    "puesto": "Mecánico",
+    "idBase": 349,
+    "nombre": "Ramírez Bueno Ángel",
+    "puesto": "Superv. mantto.",
     "habilidades": [
-     "Reinducción SSMA"
+     "Trabajo caliente"
     ],
-    "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "cuadrilla": "noche",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-10-20",
-    "depto": "Mantenimiento"
+    "cambiaTurno": true
    },
    {
-    "idBase": 202,
-    "nombre": "Juárez Serna Orlando Enrique",
-    "puesto": "Mecánico",
+    "idBase": 52,
+    "nombre": "Raudales Iñiguez Josue",
+    "puesto": "Soldador",
     "habilidades": [
-     "Reinducción SSMA"
+     "Trabajo caliente"
     ],
-    "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "cuadrilla": "noche",
+    "fecha": "2026-11-15",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-10-24",
-    "depto": "Mantenimiento"
+    "cambiaTurno": true
    },
    {
-    "idBase": 205,
-    "nombre": "Acevedo Samaniego Eduardo",
-    "puesto": "Ayudante de mecánico",
+    "idBase": 184,
+    "nombre": "Gallegos Escobedo Ismael",
+    "puesto": "Ayudante de j. anclador",
     "habilidades": [
-     "Reinducción SSMA"
+     "Manejo explosivos"
+    ],
+    "cuadrilla": "noche",
+    "fecha": "2026-11-16",
+    "hora": "",
+    "cambiaTurno": true
+   },
+   {
+    "idBase": null,
+    "nombre": "Hernandez Escobedo J. Manuel",
+    "puesto": "Ayudante de general",
+    "habilidades": [
+     "Manejo explosivos"
+    ],
+    "cuadrilla": "noche",
+    "fecha": "2026-11-16",
+    "hora": "",
+    "cambiaTurno": true
+   },
+   {
+    "idBase": 208,
+    "nombre": "Pinales Ubario Jesús Alfredo",
+    "puesto": "Operador de retroexcav.",
+    "habilidades": [
+     "Operación de retroexcav."
+    ],
+    "cuadrilla": "noche",
+    "fecha": "2026-11-17",
+    "hora": "",
+    "cambiaTurno": true
+   },
+   {
+    "idBase": 210,
+    "nombre": "Cepeda Coronado Iván",
+    "puesto": "Ayudante de j. anclador",
+    "habilidades": [
+     "Bloqueo de energía"
     ],
     "cuadrilla": "dia",
-    "fecha": "2026-11-03",
+    "fecha": "2026-11-18",
     "hora": "",
-    "cambiaTurno": false,
-    "vence": "2026-11-07",
-    "depto": "Mantenimiento"
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 199,
+    "nombre": "Arenas Macias Víctor Hugo",
+    "puesto": "Soldador",
+    "habilidades": [
+     "Trabajo en altura"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-11-18",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": 40,
+    "nombre": "Alday Miranda José Miguel",
+    "puesto": "Ayudante de j. anclador",
+    "habilidades": [
+     "Operación de j. anclador"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-11-19",
+    "hora": "",
+    "cambiaTurno": false
+   },
+   {
+    "idBase": null,
+    "nombre": "Mendez Zamacona Juan Edo.",
+    "puesto": "Operador de retroexcav.",
+    "habilidades": [
+     "Operación de telehandler"
+    ],
+    "cuadrilla": "dia",
+    "fecha": "2026-11-20",
+    "hora": "",
+    "cambiaTurno": false
    }
   ]
  }
