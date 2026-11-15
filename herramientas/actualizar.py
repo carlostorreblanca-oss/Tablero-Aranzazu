@@ -195,13 +195,19 @@ def _frase(s, pref_op):
         if i == 0 and kx in ("OP", "OPER"):
             out.append(pref_op); out.append("de"); continue
         if i == 0 and kx in ("AYTE", "AYUD"):
-            out.append("Ayudante"); out.append("de"); continue
+            out.append("Ayudante")
+            if not (i + 1 < len(w) and _sa(w[i + 1]).rstrip(".") == "GENERAL"):
+                out.append("de")
+            continue
         if kx == "L" and i == len(w) - 1 and i > 0:
             out.append("larga"); continue
         out.append(PALABRAS.get(kx, x.lower()))
     r = " ".join(out)
     r = re.sub(r"\bde de\b", "de", r)
     return r[:1].upper() + r[1:], conocido
+
+# Puestos confirmados por Capacitación/RH cuando el programa trae otro (idBase → puesto)
+PUESTO_CONFIRMADO = {349: "Supervisor eléctrico"}  # Ramírez Bueno Ángel (15 nov 2026)
 
 DIAS_SEM = {"LUN": 0, "MAR": 1, "MIE": 2, "JUE": 3, "VIE": 4, "SAB": 5, "DOM": 6}
 
@@ -375,12 +381,18 @@ def leer_capacitacion(path, archivo, personal, hoy):
         if fecha is None:
             raise SystemExit(f"Capacitación: '{c[0]}' no tiene día.")
         p = base.get(_sa(c[0]))
+        if not p:
+            p, corregido = buscar_persona(c[0], personal)
+            if p and corregido:
+                avisos.append(f"'{c[0]}' se identificó como {nombre_bonito(p['nombre'])} (base de personal)")
         if p:
             nom = nombre_bonito(p["nombre"])
         else:
             nom = tc(c[0]); avisos.append(f"'{c[0]}' no está en la base de personal; se muestra como viene")
         hab, _ = _frase(c[2], "Operación")
         pue, _ = _frase(c[1], "Operador")
+        if p and p["id"] in PUESTO_CONFIRMADO:
+            pue = PUESTO_CONFIRMADO[p["id"]]
         fs = fecha.isoformat()
         prev = next((r for r in lista if r["nombre"] == nom and r["fecha"] == fs and r["cuadrilla"] == cuad), None)
         if prev:

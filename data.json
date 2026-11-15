@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-15 17:46",
+  "actualizado": "2026-11-15 17:57",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1794680114367,
@@ -4088,8 +4088,8 @@
   "minCapacitacion": 4,
   "lista": [
    {
-    "idBase": null,
-    "nombre": "Nuñez de la Rosa J. Gregorio",
+    "idBase": 211,
+    "nombre": "Núñez de la Rosa Juan Gregorio",
     "puesto": "Ayudante de mecánico",
     "habilidades": [
      "Bloqueo de energía"
@@ -4162,7 +4162,7 @@
    {
     "idBase": 349,
     "nombre": "Ramírez Bueno Ángel",
-    "puesto": "Superv. mantto.",
+    "puesto": "Supervisor eléctrico",
     "habilidades": [
      "Trabajo caliente"
     ],
@@ -4196,9 +4196,9 @@
     "cambiaTurno": true
    },
    {
-    "idBase": null,
-    "nombre": "Hernandez Escobedo J. Manuel",
-    "puesto": "Ayudante de general",
+    "idBase": 126,
+    "nombre": "Hernández Escobedo Jesús Manuel",
+    "puesto": "Ayudante general",
     "habilidades": [
      "Manejo explosivos"
     ],
@@ -4256,8 +4256,8 @@
     "cambiaTurno": false
    },
    {
-    "idBase": null,
-    "nombre": "Mendez Zamacona Juan Edo.",
+    "idBase": 12,
+    "nombre": "Méndez Zamacona Juan Eduardo",
     "puesto": "Operador de retroexcav.",
     "habilidades": [
      "Operación de telehandler"
