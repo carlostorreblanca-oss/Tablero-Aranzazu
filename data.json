@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-16 17:43",
+  "actualizado": "2026-11-17 06:45",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794788251435,
+   "baseDatos": 1794874635208,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "16 nov 2026",
-   "diasAcumulados": 15,
+   "corte": "17 nov 2026",
+   "diasAcumulados": 16,
    "total": {
-    "dia": 122,
-    "acum": 1752,
+    "dia": 106,
+    "acum": 1897,
     "meta": 3692,
-    "plan": 1846,
-    "pctProgramado": 50
+    "plan": 1969,
+    "pctProgramado": 53
    },
    "niveles": [
     {
      "nombre": "Gerentes",
      "dia": 3,
-     "acum": 49,
+     "acum": 52,
      "meta": 136,
-     "plan": 68
+     "plan": 73
     },
     {
      "nombre": "Supervisores",
-     "dia": 15,
-     "acum": 365,
+     "dia": 14,
+     "acum": 388,
      "meta": 580,
-     "plan": 290
+     "plan": 309
     },
     {
      "nombre": "Operadores",
-     "dia": 104,
-     "acum": 1338,
+     "dia": 89,
+     "acum": 1457,
      "meta": 2976,
-     "plan": 1488
+     "plan": 1587
     }
    ],
    "toleranciaAmarillo": 5
@@ -3272,6 +3272,15 @@
    "puesto": "Oficial de Servicios",
    "unidad": "Operaciones",
    "cumpleanos": "09-12",
+   "ingreso": "2026-07-30",
+   "foto": ""
+  },
+  {
+   "id": 414,
+   "nombre": "Zavala Rodriguez Juan Antonio",
+   "puesto": "Ayudante de Alpha",
+   "unidad": "Operaciones",
+   "cumpleanos": "12-05",
    "ingreso": "2026-07-30",
    "foto": ""
   },
