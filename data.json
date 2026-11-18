@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-18 09:43",
+  "actualizado": "2026-11-18 17:44",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1794960886654,
+   "baseDatos": 1795025898773,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -64,28 +64,28 @@
  },
  "resultados": {
   "dia": {
-   "extraccionSecas": 3446.35,
-   "extraccionHumedas": 3627.74,
-   "planExtraccion": 3874.18,
-   "desarrollo": 32.0,
-   "planDesarrollo": 30.0,
-   "disparos": 9.0,
-   "disparosPlan": 9.0,
-   "rellenoRF": 0.0,
+   "extraccionSecas": 3777.62,
+   "extraccionHumedas": 3976.44,
+   "planExtraccion": 4012.17,
+   "desarrollo": 27.3,
+   "planDesarrollo": 31.9,
+   "disparos": 7.0,
+   "disparosPlan": 7.0,
+   "rellenoRF": 189.0,
    "rellenoCRF": 448.8,
    "extraccionPendiente": false
   },
   "mes": {
-   "extraccionSecas": 49792.94,
-   "extraccionHumedas": 52413.63,
-   "planExtraccion": 60400.34,
-   "desarrollo": 367.2,
-   "planDesarrollo": 467.4,
-   "rellenoRF": 549.0,
-   "rellenoCRF": 2893.4
+   "extraccionSecas": 53570.56,
+   "extraccionHumedas": 56390.07,
+   "planExtraccion": 64412.51,
+   "desarrollo": 394.5,
+   "planDesarrollo": 499.3,
+   "rellenoRF": 738.0,
+   "rellenoCRF": 3342.2
   },
-  "corte": "16 nov 2026",
-  "diaReporte": 16,
+  "corte": "17 nov 2026",
+  "diaReporte": 17,
   "fuente": "Reporte_Noviembre_DesaProd 2026.xlsx · hoja Resumen"
  },
  "personal": [
@@ -4005,6 +4005,7 @@
   }
  ],
  "avisosTicker": [
+  "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
   "Busca resultados con seguridad",
   "HOY 15 de Noviembre, Campaña de Amacice",
   "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores",
