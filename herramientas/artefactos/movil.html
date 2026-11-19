@@ -662,6 +662,38 @@ button{font:inherit;color:inherit}
 .slide.mp2.on .mp-carta{animation:csin .8s both}
 @media (prefers-reduced-motion:reduce){.slide.mp.on .mp-in>*,.slide.mp.on .mp-firma img,.slide.mp.on .mp-pie img,.slide.mp2.on .mp-carta{animation:none}}
 @media (prefers-reduced-motion:reduce){.az-flota,.az-brillo i,.azp-rayos,.azp-art *,.slide.azp.on .azp-c,.slide.azp.on .azp-in>*,.azp-c .pulso{animation:none!important}.az-flota{display:none}}
+
+/* ===== Día Internacional del Hombre (solo 19 nov) ===== */
+.slide.dhp{background:radial-gradient(70% 80% at 85% 40%,rgba(255,122,0,.30),transparent 65%),linear-gradient(160deg,#1A1D24 0%,#0E1015 70%);overflow:hidden}
+.slide.dhp::after{display:none}
+.dhp-rayas{position:absolute;inset:0;background:repeating-linear-gradient(-58deg,rgba(255,122,0,.07) 0 26px,transparent 26px 70px);animation:dhrayas 12s linear infinite}
+@keyframes dhrayas{from{background-position:0 0}to{background-position:280px 0}}
+.dhp-foto{position:absolute;right:0;top:38px;bottom:38px;width:440px;clip-path:polygon(0 0,100% 0,100% 100%,16% 100%);overflow:hidden}
+.dhp-kb{position:absolute;inset:0;transform-origin:20% 10%}
+.dhp-foto img{width:100%;height:100%;object-fit:cover;object-position:20% 0;display:block}
+.slide.dhp.on .dhp-kb{animation:dhkb 20s ease-out forwards}
+@keyframes dhkb{from{transform:scale(1.02)}to{transform:scale(1.14)}}
+.dhp-borde{position:absolute;right:397px;top:38px;bottom:38px;width:16px;background:#FF7A00;transform:skewX(7.2deg);box-shadow:0 0 24px rgba(255,122,0,.6)}
+.dhp-luz{position:absolute;left:14%;top:4.5%;width:170px;height:170px;margin:-85px 0 0 -85px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95) 0,rgba(196,181,253,.55) 18%,rgba(255,255,255,0) 60%);mix-blend-mode:screen;animation:dhluz 3s ease-in-out infinite;pointer-events:none}
+@keyframes dhluz{0%,100%{opacity:.55;transform:scale(.9)}50%{opacity:1;transform:scale(1.15)}}
+.dhp-txt{position:absolute;left:40px;top:40px;width:390px;display:grid;row-gap:14px;z-index:3}
+.dhp-logo{height:34px;width:auto;display:block;justify-self:start}
+.dhp-txt h2{margin:6px 0 0;font:900 50px/.9 var(--f-display);text-transform:uppercase;color:#fff;letter-spacing:.01em}
+.dhp-txt h2 span{display:block;color:#FF8A1F;font-size:1.16em}
+.dhp-fecha{justify-self:start;display:inline-flex;align-items:center;gap:10px;font:800 26px/1 var(--f-body);color:#fff;background:#FF7A00;padding:9px 22px 10px 16px;clip-path:polygon(0 0,100% 0,94% 100%,0 100%);box-shadow:0 0 24px rgba(255,122,0,.45)}
+.dhp-txt h4{margin:4px 0 0;font:800 23px/1.15 var(--f-body);color:#fff}
+.dhp-txt p{margin:0;font:500 17.5px/1.42 var(--f-body);color:rgba(255,255,255,.82);text-wrap:pretty}
+.dhp-val{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.dhp-val span{font:800 15px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:#FFB36B;border:1.5px solid rgba(255,138,31,.7);background:rgba(255,122,0,.12);border-radius:99px;padding:8px 13px}
+.dhp-pie{position:absolute;left:0;right:0;bottom:0;height:38px;display:flex;align-items:center;gap:12px;padding:0 40px;background:linear-gradient(90deg,#FF7A00,#FF9F1C);color:#1A1D24;font:800 17px/1 var(--f-body);letter-spacing:.04em;z-index:4}
+.slide.dhp.on .dhp-txt>*{animation:csin .8s both}
+.slide.dhp.on .dhp-txt>*:nth-child(2){animation-delay:.12s}.slide.dhp.on .dhp-txt>*:nth-child(3){animation-delay:.24s}.slide.dhp.on .dhp-txt>*:nth-child(4){animation-delay:.36s}.slide.dhp.on .dhp-txt>*:nth-child(5){animation-delay:.48s}
+.slide.dhp.on .dhp-val span{animation:dhchip .6s both}
+.slide.dhp.on .dhp-val span:nth-child(1){animation-delay:1s}.slide.dhp.on .dhp-val span:nth-child(2){animation-delay:1.25s}.slide.dhp.on .dhp-val span:nth-child(3){animation-delay:1.5s}.slide.dhp.on .dhp-val span:nth-child(4){animation-delay:1.75s}
+@keyframes dhchip{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
+.slide.dhp.on .dhp-foto{animation:dhfoto .9s cubic-bezier(.2,.8,.25,1) both}.slide.dhp.on .dhp-borde{animation:dhfoto .9s .1s cubic-bezier(.2,.8,.25,1) both}
+@keyframes dhfoto{from{opacity:0;translate:60px 0}to{opacity:1;translate:0 0}}
+@media (prefers-reduced-motion:reduce){.dhp-rayas,.dhp-luz,.slide.dhp.on .dhp-kb,.slide.dhp.on .dhp-txt>*,.slide.dhp.on .dhp-val span,.slide.dhp.on .dhp-foto,.slide.dhp.on .dhp-borde{animation:none}}
 /* ===== Versión celular: una columna con scroll, sin lienzo escalado ===== */
 html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
 #app{height:auto}
@@ -811,7 +843,7 @@ html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
 @media (min-width:700px){.col.left{grid-column:1 / -1}}
 </style>
 
-<meta name="tablero-build" content="b1018431498e">
+<meta name="tablero-build" content="1b773bf62002">
 <div id="app"></div>
 
 <div id="boot-err" hidden style="position:fixed;left:16px;right:16px;top:16px;z-index:99;padding:16px;border-radius:8px;background:#7F1D1D;color:#FFFFFF;font:600 15px/1.4 system-ui,sans-serif"></div>
@@ -1520,6 +1552,25 @@ function DiaDeMuertosCapa() {
     <div className="dm-flores" dangerouslySetInnerHTML=${{ __html: DM_GUIRNALDA }}></div>
   </div>`;
 }
+
+/* ===== Día Internacional del Hombre: solo el 19 de noviembre (00:00–23:59, hora del centro de México) ===== */
+function enDiaDelHombre(t) { return t.m === 11 && t.d === 19; }
+function PortadaHombre({ cls }) {
+  return html`<div className=${cls + ' dhp'}>
+    <div className="dhp-rayas"></div>
+    <div className="dhp-foto"><div className="dhp-kb"><img src="eventos/dia-hombre-2026.jpg" alt="Minero con equipo de protección"/><div className="dhp-luz"></div></div></div>
+    <div className="dhp-borde"></div>
+    <div className="dhp-txt">
+      <img className="dhp-logo" src=${LOGO} alt="CoMinVi"/>
+      <h2>Día Internacional<span>del Hombre</span></h2>
+      <span className="dhp-fecha">19 de noviembre</span>
+      <h4>Ser hombre va más allá de los estereotipos.</h4>
+      <p>No significa ser fuerte todo el tiempo, ocultar las emociones ni cumplir expectativas impuestas. También es tener la libertad de:</p>
+      <div className="dhp-val"><span>Sentir</span><span>Expresar lo que pensamos</span><span>Cuidarnos</span><span>Respeto y empatía</span></div>
+    </div>
+    <div className="dhp-pie">¡Feliz Día a todos los hombres de la familia CoMinVi · Aranzazu!</div>
+  </div>`;
+}
 function PortadaMuertos({ cls }) {
   return html`<div className=${cls + ' dmp'}>
     <div className="dmp-picado" dangerouslySetInnerHTML=${{ __html: DM_PICADO_PORTADA }}></div>
@@ -1669,12 +1720,12 @@ function MensajePresidente({ cls, pag }) {
   </div>`;
 }
 
-function Carousel({ items, interval, portada, today, presidente }) {
-  const slides = useMemo(() => (presidente ? [0, 1].map(q => ({ tipo: 'pres', pag: q, key: 'mp-' + q, e: {} })) : []).concat(portada === 'muertos' ? [{ tipo: 'muertos', key: 'dm-portada', e: {} }] : portada === 'azul' ? [0, 1, 2].map(q => ({ tipo: 'azul', pag: q, key: 'az-' + q, e: {} })) : []).concat(armarDiapositivas(items)), [items, portada, presidente]);
+function Carousel({ items, interval, portada, today, presidente, hombre }) {
+  const slides = useMemo(() => (hombre ? [{ tipo: 'hombre', key: 'dh-portada', e: {} }] : []).concat(presidente ? [0, 1].map(q => ({ tipo: 'pres', pag: q, key: 'mp-' + q, e: {} })) : []).concat(portada === 'muertos' ? [{ tipo: 'muertos', key: 'dm-portada', e: {} }] : portada === 'azul' ? [0, 1, 2].map(q => ({ tipo: 'azul', pag: q, key: 'az-' + q, e: {} })) : []).concat(armarDiapositivas(items)), [items, portada, presidente, hombre]);
   const [i, setI] = useState(0);
   const prev = useRef(-1);
   const n = slides.length;
-  const dur = s => (s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : s && s.tipo === 'muertos' ? Math.round(interval * 2) : s && s.tipo === 'azul' ? Math.round(interval * 1.4) : s && s.tipo === 'pres' ? Math.round(interval * (s.pag ? 3 : 1.6)) : interval);
+  const dur = s => (s && s.tipo === 'hombre' ? Math.round(interval * 2) : s && s.tipo === 'scrap' ? Math.round(interval * 1.8) : s && s.tipo === 'muertos' ? Math.round(interval * 2) : s && s.tipo === 'azul' ? Math.round(interval * 1.4) : s && s.tipo === 'pres' ? Math.round(interval * (s.pag ? 3 : 1.6)) : interval);
   useEffect(() => { if (i >= n) setI(0); }, [n]);
   useEffect(() => {
     if (n < 2) return;
@@ -1691,6 +1742,7 @@ function Carousel({ items, interval, portada, today, presidente }) {
       const ic = CAT_ICON[e.categoria] || 'camera';
       if (s.tipo === 'pres') return html`<${MensajePresidente} key=${s.key} pag=${s.pag} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
       if (s.tipo === 'azul') return html`<${PortadaAzul} key=${s.key} pag=${s.pag} today=${today} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
+      if (s.tipo === 'hombre') return html`<${PortadaHombre} key=${s.key} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
       if (s.tipo === 'muertos') return html`<${PortadaMuertos} key=${s.key} cls=${'slide' + (k === cur ? ' on' : k === prev.current ? ' prev' : '')}/>`;
       if (s.tipo === 'scrap') {
         const cls = 'slide scrap' + (k === cur ? ' on' : k === prev.current ? ' prev' : '');
@@ -2060,6 +2112,7 @@ function App() {
     const items = [].concat(data.avisosTicker || []);
     if (enNoviembreAzul(today)) { const az = AZ_AVISOS(today); items.splice(0, 0, ...az.slice(0, 3)); items.push(...az.slice(3)); }
     if (enMensajePresidente(today)) items.unshift('Mensaje de nuestro Presidente: cumplir nuestro Código de Conducta es una responsabilidad compartida');
+    if (enDiaDelHombre(today)) items.unshift('Hoy 19 de noviembre: Día Internacional del Hombre · Ser hombre va más allá de los estereotipos');
     if (enDiaDeMuertos(today)) items.unshift('Día de Muertos · 1 y 2 de noviembre: recordamos con cariño a nuestros fieles difuntos');
     if (hoy.length) items.splice(1, 0, `Hoy celebramos el cumpleaños de ${hoy.length > 1 ? hoy.slice(0, -1).join(', ') + ' y ' + hoy[hoy.length - 1] : hoy[0]}. ¡Muchas felicidades de parte de toda la familia CoMinVi!`);
     return items;
@@ -2073,7 +2126,7 @@ function App() {
           <main className="main">
             <div className="col left"><${Safety} seg=${data.seguridad || {}} today=${today} soloContador=${capOn}/>${capOn ? html`<${Capacitacion} cap=${cap} today=${today} fin=${capFin}/>` : html`<${Cultura} items=${data.cultura || []}/>`}</div>
             <div className="col mid">
-              <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval} portada=${muertos ? 'muertos' : azul ? 'azul' : null} presidente=${enMensajePresidente(today)} today=${today}/>
+              <${Carousel} items=${data.eventosFotos || []} interval=${cfg.interval} portada=${muertos ? 'muertos' : azul ? 'azul' : null} presidente=${enMensajePresidente(today)} hombre=${enDiaDelHombre(today)} today=${today}/>
               <${Results} res=${data.resultados || {}} today=${today}/>
             </div>
             <div className="col right"><${People} personal=${data.personal || []} today=${today}/></div>
