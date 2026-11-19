@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-19 08:09",
+  "actualizado": "2026-11-19 17:45",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1795047652549,
+   "baseDatos": 1795112229603,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -2570,15 +2570,6 @@
    "puesto": "Operador de Scoop Tram",
    "unidad": "Operaciones",
    "cumpleanos": "07-24",
-   "ingreso": "2026-05-07",
-   "foto": ""
-  },
-  {
-   "id": 313,
-   "nombre": "Tovias Rodriguez Mario Alberto",
-   "puesto": "Operador de Jumbo Anclador",
-   "unidad": "Operaciones",
-   "cumpleanos": "07-09",
    "ingreso": "2026-05-07",
    "foto": ""
   },
