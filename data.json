@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-19 06:31",
+  "actualizado": "2026-11-19 06:45",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1795025898773,
+   "baseDatos": 1795047652549,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "18 nov 2026",
-   "diasAcumulados": 17,
+   "corte": "19 nov 2026",
+   "diasAcumulados": 18,
    "total": {
-    "dia": 89,
-    "acum": 1991,
+    "dia": 54,
+    "acum": 2074,
     "meta": 3692,
-    "plan": 2092,
-    "pctProgramado": 57
+    "plan": 2215,
+    "pctProgramado": 60
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 3,
+     "dia": 0,
      "acum": 55,
      "meta": 136,
-     "plan": 77
+     "plan": 82
     },
     {
      "nombre": "Supervisores",
-     "dia": 15,
-     "acum": 406,
+     "dia": 14,
+     "acum": 420,
      "meta": 580,
-     "plan": 329
+     "plan": 348
     },
     {
      "nombre": "Operadores",
-     "dia": 71,
-     "acum": 1530,
+     "dia": 40,
+     "acum": 1599,
      "meta": 2976,
-     "plan": 1686
+     "plan": 1786
     }
    ],
    "toleranciaAmarillo": 5
