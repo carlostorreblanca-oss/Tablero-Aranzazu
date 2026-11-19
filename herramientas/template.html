@@ -1659,10 +1659,13 @@ function App() {
   const tickerItems = useMemo(() => {
     const t0 = utc(today.y, today.m, today.d);
     const hoy = (data.personal || []).filter(p => { if (!p.cumpleanos) return false; const [mm, dd] = p.cumpleanos.split('-').map(Number); return mm === today.m && dd === today.d; }).map(p => p.nombre);
-    const items = [].concat(data.avisosTicker || []);
+    /* Avisos con vigencia: aparecen a las 00:00 de 'desde' y se quitan al terminar el día 'hasta' (hora de Zacatecas) */
+    const kHoy = `${today.y}-${String(today.m).padStart(2, '0')}-${String(today.d).padStart(2, '0')}`;
+    const items = Array.isArray(data.avisos)
+      ? data.avisos.filter(a => a && a.texto && (!a.desde || a.desde <= kHoy) && (!a.hasta || kHoy <= a.hasta)).map(a => a.texto)
+      : [].concat(data.avisosTicker || []);
     if (enNoviembreAzul(today)) { const az = AZ_AVISOS(today); items.splice(0, 0, ...az.slice(0, 3)); items.push(...az.slice(3)); }
     if (enMensajePresidente(today)) items.unshift('Mensaje de nuestro Presidente: cumplir nuestro Código de Conducta es una responsabilidad compartida');
-    if (enDiaDelHombre(today)) items.unshift('Hoy 19 de noviembre: Día Internacional del Hombre · Ser hombre va más allá de los estereotipos');
     if (enDiaDeMuertos(today)) items.unshift('Día de Muertos · 1 y 2 de noviembre: recordamos con cariño a nuestros fieles difuntos');
     if (hoy.length) items.splice(1, 0, `Hoy celebramos el cumpleaños de ${hoy.length > 1 ? hoy.slice(0, -1).join(', ') + ' y ' + hoy[hoy.length - 1] : hoy[0]}. ¡Muchas felicidades de parte de toda la familia CoMinVi!`);
     return items;

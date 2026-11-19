@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-19 06:45",
+  "actualizado": "2026-11-19 08:09",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1795047652549,
@@ -4042,11 +4042,9 @@
  ],
  "avisosTicker": [
   "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
+  "HOY 19 de noviembre: Dia internacional del Hombre",
   "Busca resultados con seguridad",
-  "HOY 15 de Noviembre, Campaña de Amacice",
-  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores",
-  "14 de Noviembre -  Dia mundial de la Diabetes",
-  "15 de Noviembre - Día mundial sin alcohol"
+  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
@@ -4314,5 +4312,49 @@
     "cambiaTurno": false
    }
   ]
- }
+ },
+ "avisos": [
+  {
+   "texto": "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
+   "desde": "2026-11-18",
+   "hasta": "2026-11-20",
+   "depto": "Recursos Humanos"
+  },
+  {
+   "texto": "HOY 19 de noviembre: Dia internacional del Hombre",
+   "desde": "2026-11-19",
+   "hasta": "2026-11-19",
+   "depto": "Recursos Humanos"
+  },
+  {
+   "texto": "Busca resultados con seguridad",
+   "desde": "2026-11-01",
+   "hasta": "2026-11-25",
+   "depto": "Operación"
+  },
+  {
+   "texto": "HOY 15 de Noviembre, Campaña de Amacice",
+   "desde": "2026-11-15",
+   "hasta": "2026-11-15",
+   "depto": "Operación"
+  },
+  {
+   "texto": "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores",
+   "desde": "2026-11-01",
+   "hasta": "2026-12-05",
+   "depto": "Platica de Seguridad"
+  },
+  {
+   "texto": "14 de Noviembre -  Dia mundial de la Diabetes",
+   "desde": "2026-11-14",
+   "hasta": "2026-11-15",
+   "depto": "Salud"
+  },
+  {
+   "texto": "15 de Noviembre - Día mundial sin alcohol",
+   "desde": "2026-11-15",
+   "hasta": "2026-11-16",
+   "depto": "Salud"
+  }
+ ]
 }

@@ -94,17 +94,61 @@ def leer_resumen(path):
     }
 
 
-# ---------------- Avisos (columna B) ----------------
+# ---------------- Avisos ----------------
+# Formato actual: Departamento | Fecha de inicio | Fecha final | Aviso (texto en la columna sin encabezado / "Aviso").
+# Fecha de inicio = desde qué día se muestra (00:00); Fecha final = vigencia (se quita al terminar ese día, 23:59).
+# Sin fechas, el aviso se muestra siempre. Formato anterior (texto en columna B, sin fechas) sigue funcionando.
+def _fecha_aviso(v):
+    v = (v or "").strip()
+    if not v:
+        return None
+    m = re.match(r"^(\d{1,2})[/\-.](\d{1,2})[/\-.](\d{2,4})", v)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        y = y + 2000 if y < 100 else y
+        return f"{y:04d}-{mo:02d}-{d:02d}"
+    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})", v)
+    if m:
+        return m.group(0)
+    if re.match(r"^\d{5}(\.\d+)?$", v):  # número de serie de Excel
+        return (datetime.date(1899, 12, 30) + datetime.timedelta(days=int(float(v)))).strftime("%Y-%m-%d")
+    return None
+
+
 def leer_avisos(path):
-    txt = open(path, encoding="utf-8").read()
-    m = re.search(r"## Sheet:[^\n]*\n(.*?)(?:\nFormulas:|\n## Sheet:|\Z)", txt, re.S)
-    body = m.group(1) if m else txt
+    """Devuelve [{texto, desde, hasta, depto}] (desde/hasta 'AAAA-MM-DD' o None)."""
+    raw = open(path, encoding="utf-8").read()
+    if raw.lstrip().startswith("{"):
+        try:
+            j = json.loads(raw)
+            raw = "\n".join(c.get("text", "") for c in j.get("contents", []))
+        except ValueError:
+            pass
+    m = re.search(r"## Sheet:[^\n]*\n(.*?)(?:\nFormulas:|\n## Sheet:|\Z)", raw, re.S)
+    rows = [r.split("\t") for r in (m.group(1) if m else raw).split("\n")]
+    head = [h.strip().lower() for h in rows[0]] if rows else []
+    ci = next((k for k, h in enumerate(head) if "inicio" in h or "incio" in h or "desde" in h), None)
+    cf = next((k for k, h in enumerate(head) if "final" in h or "vigencia" in h or "hasta" in h or h == "fin"), None)
+    if ci is None and cf is None:  # formato anterior: texto en columna B
+        return [{"texto": c[1].strip(), "desde": None, "hasta": None}
+                for c in rows if len(c) > 1 and c[1].strip()]
+    ct = next((k for k, h in enumerate(head) if "aviso" in h or "mensaje" in h or "texto" in h), None)
+    if ct is None:
+        ct = next((k for k, h in enumerate(head) if not h and k not in (0, ci, cf)), len(head) - 1)
     out = []
-    for r in body.split("\n"):
-        c = r.split("\t")
-        if len(c) > 1 and c[1].strip():
-            out.append(c[1].strip())
+    for c in rows[1:]:
+        t = c[ct].strip() if ct < len(c) else ""
+        if not t:
+            continue
+        g = lambda k: c[k] if k is not None and k < len(c) else ""
+        out.append({"texto": t, "desde": _fecha_aviso(g(ci)), "hasta": _fecha_aviso(g(cf)),
+                    "depto": c[0].strip().rstrip(":") if c else ""})
     return out
+
+
+def avisos_vigentes(avisos, hoy):
+    k = hoy.strftime("%Y-%m-%d")
+    return [a["texto"] for a in avisos if (not a.get("desde") or a["desde"] <= k) and (not a.get("hasta") or k <= a["hasta"])]
 
 
 # ---------------- CCRM (hoja CCRM del libro "CCRM DIARIO (<MES> <AÑO>).xlsx") ----------------
@@ -502,9 +546,11 @@ def main():
 
     if a.avisos:
         av = leer_avisos(a.avisos)
-        if av and av != data.get("avisosTicker"):
-            data["avisosTicker"] = av
-            cambios.append(f"avisos ({len(av)})")
+        if av and av != data.get("avisos"):
+            data["avisos"] = av
+            cambios.append(f"avisos ({len(av)}, con fechas)")
+        if av:  # respaldo para pantallas con versión anterior: solo los vigentes de hoy
+            data["avisosTicker"] = avisos_vigentes(av, hoy)
 
     if a.ccrm:
         cc = leer_ccrm(a.ccrm)
