@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-19 17:45",
+  "actualizado": "2026-11-20 06:43",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1795112229603,
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "19 nov 2026",
-   "diasAcumulados": 18,
+   "corte": "20 nov 2026",
+   "diasAcumulados": 19,
    "total": {
-    "dia": 54,
-    "acum": 2074,
+    "dia": 72,
+    "acum": 2176,
     "meta": 3692,
-    "plan": 2215,
-    "pctProgramado": 60
+    "plan": 2338,
+    "pctProgramado": 63
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 0,
-     "acum": 55,
+     "dia": 3,
+     "acum": 58,
      "meta": 136,
-     "plan": 82
+     "plan": 86
     },
     {
      "nombre": "Supervisores",
-     "dia": 14,
-     "acum": 420,
+     "dia": 11,
+     "acum": 439,
      "meta": 580,
-     "plan": 348
+     "plan": 367
     },
     {
      "nombre": "Operadores",
-     "dia": 40,
-     "acum": 1599,
+     "dia": 58,
+     "acum": 1679,
      "meta": 2976,
-     "plan": 1786
+     "plan": 1885
     }
    ],
    "toleranciaAmarillo": 5
@@ -4032,10 +4032,9 @@
   }
  ],
  "avisosTicker": [
-  "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
-  "HOY 19 de noviembre: Dia internacional del Hombre",
-  "Busca resultados con seguridad",
-  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
+  "20/11/2026",
+  "25/11/2026",
+  "05/12/2026"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
@@ -4306,43 +4305,43 @@
  },
  "avisos": [
   {
-   "texto": "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
+   "texto": "20/11/2026",
    "desde": "2026-11-18",
    "hasta": "2026-11-20",
    "depto": "Recursos Humanos"
   },
   {
-   "texto": "HOY 19 de noviembre: Dia internacional del Hombre",
+   "texto": "19/11/2026",
    "desde": "2026-11-19",
    "hasta": "2026-11-19",
    "depto": "Recursos Humanos"
   },
   {
-   "texto": "Busca resultados con seguridad",
+   "texto": "25/11/2026",
    "desde": "2026-11-01",
    "hasta": "2026-11-25",
    "depto": "Operación"
   },
   {
-   "texto": "HOY 15 de Noviembre, Campaña de Amacice",
+   "texto": "15/11/2026",
    "desde": "2026-11-15",
    "hasta": "2026-11-15",
    "depto": "Operación"
   },
   {
-   "texto": "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores",
+   "texto": "05/12/2026",
    "desde": "2026-11-01",
    "hasta": "2026-12-05",
    "depto": "Platica de Seguridad"
   },
   {
-   "texto": "14 de Noviembre -  Dia mundial de la Diabetes",
+   "texto": "15/11/2026",
    "desde": "2026-11-14",
    "hasta": "2026-11-15",
    "depto": "Salud"
   },
   {
-   "texto": "15 de Noviembre - Día mundial sin alcohol",
+   "texto": "16/11/2026",
    "desde": "2026-11-15",
    "hasta": "2026-11-16",
    "depto": "Salud"
