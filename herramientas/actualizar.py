@@ -127,6 +127,10 @@ def leer_avisos(path):
     m = re.search(r"## Sheet:[^\n]*\n(.*?)(?:\nFormulas:|\n## Sheet:|\Z)", raw, re.S)
     rows = [r.split("\t") for r in (m.group(1) if m else raw).split("\n")]
     head = [h.strip().lower() for h in rows[0]] if rows else []
+    # Si el encabezado del texto perdió las columnas vacías del final (tabulador recortado),
+    # complétalo hasta el ancho real de las filas para no confundir la columna de fecha con la del aviso.
+    ncols = max((len(r) for r in rows), default=0)
+    head += [""] * (ncols - len(head))
     ci = next((k for k, h in enumerate(head) if "inicio" in h or "incio" in h or "desde" in h), None)
     cf = next((k for k, h in enumerate(head) if "final" in h or "vigencia" in h or "hasta" in h or h == "fin"), None)
     if ci is None and cf is None:  # formato anterior: texto en columna B

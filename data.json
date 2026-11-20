@@ -5,7 +5,7 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-20 06:43",
+  "actualizado": "2026-11-20 09:44",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
    "baseDatos": 1795112229603,
@@ -4032,9 +4032,9 @@
   }
  ],
  "avisosTicker": [
-  "20/11/2026",
-  "25/11/2026",
-  "05/12/2026"
+  "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
+  "Busca resultados con seguridad",
+  "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
  ],
  "clima": {
   "lugar": "Concepción del Oro",
@@ -4305,43 +4305,43 @@
  },
  "avisos": [
   {
-   "texto": "20/11/2026",
+   "texto": "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
    "desde": "2026-11-18",
    "hasta": "2026-11-20",
    "depto": "Recursos Humanos"
   },
   {
-   "texto": "19/11/2026",
+   "texto": "HOY 19 de noviembre: Dia internacional del Hombre",
    "desde": "2026-11-19",
    "hasta": "2026-11-19",
    "depto": "Recursos Humanos"
   },
   {
-   "texto": "25/11/2026",
+   "texto": "Busca resultados con seguridad",
    "desde": "2026-11-01",
    "hasta": "2026-11-25",
    "depto": "Operación"
   },
   {
-   "texto": "15/11/2026",
+   "texto": "HOY 15 de Noviembre, Campaña de Amacice",
    "desde": "2026-11-15",
    "hasta": "2026-11-15",
    "depto": "Operación"
   },
   {
-   "texto": "05/12/2026",
+   "texto": "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores",
    "desde": "2026-11-01",
    "hasta": "2026-12-05",
    "depto": "Platica de Seguridad"
   },
   {
-   "texto": "15/11/2026",
+   "texto": "14 de Noviembre -  Dia mundial de la Diabetes",
    "desde": "2026-11-14",
    "hasta": "2026-11-15",
    "depto": "Salud"
   },
   {
-   "texto": "16/11/2026",
+   "texto": "15 de Noviembre - Día mundial sin alcohol",
    "desde": "2026-11-15",
    "hasta": "2026-11-16",
    "depto": "Salud"
