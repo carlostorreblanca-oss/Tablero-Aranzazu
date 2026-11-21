@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-20 09:44",
+  "actualizado": "2026-11-21 06:46",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1795198632505,
+   "baseDatos": 1795220215419,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "20 nov 2026",
-   "diasAcumulados": 19,
+   "corte": "21 nov 2026",
+   "diasAcumulados": 20,
    "total": {
-    "dia": 72,
-    "acum": 2176,
+    "dia": 65,
+    "acum": 2246,
     "meta": 3692,
-    "plan": 2338,
-    "pctProgramado": 63
+    "plan": 2461,
+    "pctProgramado": 67
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 3,
+     "dia": 0,
      "acum": 58,
      "meta": 136,
-     "plan": 86
+     "plan": 91
     },
     {
      "nombre": "Supervisores",
-     "dia": 11,
-     "acum": 439,
+     "dia": 4,
+     "acum": 444,
      "meta": 580,
-     "plan": 367
+     "plan": 387
     },
     {
      "nombre": "Operadores",
-     "dia": 58,
-     "acum": 1679,
+     "dia": 61,
+     "acum": 1744,
      "meta": 2976,
-     "plan": 1885
+     "plan": 1984
     }
    ],
    "toleranciaAmarillo": 5
@@ -4032,7 +4032,6 @@
   }
  ],
  "avisosTicker": [
-  "Voyager 1 - Alcanza 1 día Luz de distancia esta a 26,000 millones de kilometros de la Tierra",
   "Busca resultados con seguridad",
   "Codigo de Etica - En CoMinVi: Actuar con integridad, respeto y responsabilidad es el reflejo de nuestros Valores"
  ],
