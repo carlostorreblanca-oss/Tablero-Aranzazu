@@ -5,10 +5,10 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-25 11:28",
+  "actualizado": "2026-11-25 17:45",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1795565825524,
+   "baseDatos": 1795630653448,
    "csvh": "45306df06689"
   },
   "tema": "nov"
@@ -2408,15 +2408,6 @@
    "puesto": "Operador de Camion de Bajo Perfil",
    "unidad": "Operaciones",
    "cumpleanos": "09-28",
-   "ingreso": "2026-02-13",
-   "foto": ""
-  },
-  {
-   "id": 290,
-   "nombre": "Ortega Dominguez Myrna Magdalena",
-   "puesto": "Operador de Camion de Bajo Perfil",
-   "unidad": "Operaciones",
-   "cumpleanos": "07-08",
    "ingreso": "2026-02-13",
    "foto": ""
   },
