@@ -5,11 +5,11 @@
   "unidad": "Unidad Aranzazu",
   "ubicacion": "Concepción del Oro, Zacatecas",
   "zonaHoraria": "America/Mexico_City",
-  "actualizado": "2026-11-26 06:45",
+  "actualizado": "2026-11-27 06:47",
   "fuenteRH": {
    "tablero": "Tablero RH Aranzazu",
-   "baseDatos": 1795630653448,
-   "csvh": "45306df06689"
+   "baseDatos": 1795738627047,
+   "csvh": "69a0cafa8c99"
   },
   "tema": "nov"
  },
@@ -17,36 +17,36 @@
   "fechaUltimoAccidente": "2026-01-06",
   "recordDias": 0,
   "ccrm": {
-   "corte": "26 nov 2026",
-   "diasAcumulados": 25,
+   "corte": "27 nov 2026",
+   "diasAcumulados": 26,
    "total": {
-    "dia": 93,
-    "acum": 2746,
+    "dia": 128,
+    "acum": 2875,
     "meta": 3692,
-    "plan": 3077,
-    "pctProgramado": 83
+    "plan": 3200,
+    "pctProgramado": 87
    },
    "niveles": [
     {
      "nombre": "Gerentes",
-     "dia": 4,
-     "acum": 72,
+     "dia": 7,
+     "acum": 80,
      "meta": 136,
-     "plan": 113
+     "plan": 118
     },
     {
      "nombre": "Supervisores",
      "dia": 19,
-     "acum": 506,
+     "acum": 525,
      "meta": 580,
-     "plan": 483
+     "plan": 503
     },
     {
      "nombre": "Operadores",
-     "dia": 70,
-     "acum": 2168,
+     "dia": 102,
+     "acum": 2270,
      "meta": 2976,
-     "plan": 2480
+     "plan": 2579
     }
    ],
    "toleranciaAmarillo": 5
@@ -3705,6 +3705,24 @@
    "unidad": "Seguridad",
    "cumpleanos": "04-05",
    "ingreso": "2026-11-06",
+   "foto": ""
+  },
+  {
+   "id": 477,
+   "nombre": "Morales Violante Miguel Angel",
+   "puesto": "Operador de Simba",
+   "unidad": "Operaciones",
+   "cumpleanos": "09-29",
+   "ingreso": "2026-11-19",
+   "foto": ""
+  },
+  {
+   "id": 478,
+   "nombre": "Hernandez Miranda Hugo",
+   "puesto": "Capitan de Mina",
+   "unidad": "Operaciones",
+   "cumpleanos": "11-27",
+   "ingreso": "2026-12-01",
    "foto": ""
   }
  ],
